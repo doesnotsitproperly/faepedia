@@ -6,6 +6,19 @@ body {
     border: 3px solid black;
     font-family: "Cousine", sans-serif;
     font-size: 16px;
+    line-height: 2;
     margin: 20px auto;
     padding: 10px 10px 10px 10px;
+}
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1;
+    table-layout: fixed;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    overflow-wrap: break-word;
+    padding: 10px;
 }
