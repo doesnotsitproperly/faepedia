@@ -558,10 +558,15 @@ const createRow = (spell) => {
 
     // Name (and Link)
     td = document.createElement("td");
+
+    let b = document.createElement("b");
+
     let a = document.createElement("a");
     a.setAttribute("href", "../spells/" + spell[7] + ".html");
     a.textContent = spell[1];
-    td.appendChild(a);
+
+    b.appendChild(a);
+    td.appendChild(b);
     tr.appendChild(td);
 
     // School
