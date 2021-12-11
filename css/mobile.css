@@ -11,7 +11,7 @@ body {
     font-size: 32px;
     line-height: 2;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
 }
 h1 {
     font-family: "Nova Cut", serif;
@@ -25,9 +25,8 @@ table {
 }
 th, td {
     border: 1px solid black;
-    overflow: hidden;
     padding: 10px;
-    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 footer {
     font-size: 16px;
