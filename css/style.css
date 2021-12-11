@@ -33,3 +33,7 @@ footer {
     font-size: 80%;
     line-height: 1;
 }
+
+tbody tr:nth-child(even) {
+    background-color: plum;
+}
