@@ -16,7 +16,5 @@ const resizeBody = () => {
     }
 }
 
-if (!isMobile) {
-    resizeBody();
-    window.onresize = resizeBody;
-}
+resizeBody();
+window.onresize = resizeBody;
