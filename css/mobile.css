@@ -1,0 +1,35 @@
+html {
+    background-attachment: fixed;
+    background-color: coral;
+    background-image: linear-gradient(to bottom right, coral, slateblue);
+    background-repeat: no-repeat;
+}
+body {
+    background-color: thistle;
+    border: 3px solid black;
+    font-family: "Cousine", monospace;
+    font-size: 24px;
+    line-height: 2;
+    margin: 20px auto;
+    padding: 10px;
+}
+h1 {
+    font-family: "Nova Cut", serif;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    font-size: 20px;
+    line-height: 1;
+    table-layout: fixed;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    overflow-wrap: break-word;
+    padding: 10px;
+}
+footer {
+    font-size: 80%;
+    line-height: 1;
+}
