@@ -1,5 +1,5 @@
 const resizeBody = () => {
-    document.getElementById("body").style.width = (window.innerWidth / 3) * 2 + "px";
+    document.getElementById("body").style.width = (window.innerWidth / 5) * 3 + "px";
 }
 
 resizeBody();

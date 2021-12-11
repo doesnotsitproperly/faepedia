@@ -1,14 +1,21 @@
 html {
-    background-color: slateblue;
+    background-attachment: fixed;
+    background-color: coral;
+    background-image: linear-gradient(to bottom right, coral, slateblue);
+    background-repeat: no-repeat;
 }
 body {
-    background-color: aliceblue;
+    background-color: thistle;
     border: 3px solid black;
-    font-family: "Cousine", sans-serif;
+    font-family: "Cousine", monospace;
     font-size: 16px;
     line-height: 2;
     margin: 20px auto;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
+}
+h1 {
+    font-family: "Nova Cut", serif;
+    text-align: center;
 }
 table {
     border-collapse: collapse;
