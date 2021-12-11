@@ -29,3 +29,7 @@ th, td {
     overflow-wrap: break-word;
     padding: 10px;
 }
+footer {
+    font-size: 80%;
+    line-height: 1;
+}
