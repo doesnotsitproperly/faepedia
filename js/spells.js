@@ -586,10 +586,13 @@ const createRow = (spell) => {
             icon.textContent = "visibility";
             break;
         case "Enchantment":
-            icon.textContent = "star";
+            icon.textContent = "psychology";
             break;
         case "Evocation":
             icon.textContent = "auto_fix_high";
+            break;
+        case "Illusion":
+            icon.textContent = "contact_support";
             break;
         case "Necromancy":
             icon.textContent = "close";
