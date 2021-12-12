@@ -30,523 +30,488 @@
 
 const spells = [
     acidSplash = [
-        "Cantrip",                             // Level
-        "Acid Splash",                         // Name
-        "Conjuration",                         // School
-        "V, S",                                // Components
-        "1 Action",                            // Casting Time
-        "Instant",                             // Duration
-        "60 ft",                               // Range / Area
-        "acid_splash",                         // Link
-        "Artificer, Sorcerer, Wizard"          // Classes
+        "Cantrip",                    // Level
+        "Acid Splash",                // Name
+        "Conjuration",                // School
+        "V, S",                       // Components
+        "1 Action",                   // Casting Time
+        "Instant",                    // Duration
+        "60 ft",                      // Range / Area
+        "Artificer, Sorcerer, Wizard" // Classes
     ],
     bladeWard = [
-        "Cantrip",                             // Level
-        "Blade Ward",                          // Name
-        "Abjuration",                          // School
-        "V, S",                                // Components
-        "1 Action",                            // Casting Time
-        "1 Round",                             // Duration
-        "Self",                                // Range / Area
-        "blade_ward",                          // Link
-        "Bard, Sorcerer, Warlock, Wizard"      // Classes
+        "Cantrip",
+        "Blade Ward",
+        "Abjuration",
+        "V, S",
+        "1 Action",
+        "1 Round",
+        "Self",
+        "Bard, Sorcerer, Warlock, Wizard"
     ],
     boomingBlade = [
-        "Cantrip",                             // Level
-        "Booming Blade",                       // Name
-        "Evocation",                           // School
-        "S, M",                                // Components
-        "1 Action",                            // Casting Time
-        "1 Round",                             // Duration
-        "Self (5 ft Radius)",                  // Range / Area
-        "booming_blade",                       // Link
-        "Artificer, Sorcerer, Warlock, Wizard" // Classes
+        "Cantrip",
+        "Booming Blade",
+        "Evocation",
+        "S, M",
+        "1 Action",
+        "1 Round",
+        "Self (5 ft Radius)",
+        "Artificer, Sorcerer, Warlock, Wizard"
     ],
     chillTouch = [
-        "Cantrip",                             // Level
-        "Chill Touch",                         // Name
-        "Necromancy",                          // School
-        "V, S",                                // Components
-        "1 Action",                            // Casting Time
-        "1 Round",                             // Duration
-        "120 ft",                              // Range / Area
-        "chill_touch",                         // Link
-        "Sorcerer, Warlock, Wizard"            // Classes
+        "Cantrip",
+        "Chill Touch",
+        "Necromancy",
+        "V, S",
+        "1 Action",
+        "1 Round",
+        "120 ft",
+        "Sorcerer, Warlock, Wizard"
     ],
     controlFlames = [
-        "Cantrip",                             // Level
-        "Control Flames",                      // Name
-        "Transmutation",                       // School
-        "S",                                   // Components
-        "1 Action",                            // Casting Time
-        "Instant or 1 hr",                     // Duration
-        "60 ft",                               // Range / Area
-        "control_flames",                      // Link
-        "Druid, Sorcerer, Wizard"              // Classes
+        "Cantrip",
+        "Control Flames",
+        "Transmutation",
+        "S",
+        "1 Action",
+        "Instant or 1 hr",
+        "60 ft",
+        "Druid, Sorcerer, Wizard"
     ],
     createBonfire = [
-        "Cantrip",                             // Level
-        "Create Bonfire",                      // Name
-        "Conjuration",                         // School
-        "V, S",                                // Components
-        "1 Action",                            // Casting Time
-        "Concentration, up to 1 min",          // Duration
-        "60 ft",                               // Range / Area
-        "create_bonfire",                      // Link
-        "Druid, Sorcerer, Warlock, Wizard"     // Classes
+        "Cantrip",
+        "Create Bonfire",
+        "Conjuration",
+        "V, S",
+        "1 Action",
+        "Concentration, Up to 1 min",
+        "60 ft",
+        "Druid, Sorcerer, Warlock, Wizard"
     ],
     dancingLights = [
-        "Cantrip",                             // Level
-        "Dancing Lights",                      // Name
-        "Evocation",                           // School
-        "V, S, M",                             // Components
-        "1 Action",                            // Casting Time
-        "Concentration, up to 1 min",          // Duration
-        "120 ft",                              // Range / Area
-        "dancing_lights",                      // Link
-        "Artificer, Bard, Sorcerer, Wizard"    // Classes
+        "Cantrip",
+        "Dancing Lights",
+        "Evocation",
+        "V, S, M",
+        "1 Action",
+        "Concentration, Up to 1 min",
+        "120 ft",
+        "Artificer, Bard, Sorcerer, Wizard"
     ],
     druidcraft = [
-        "Cantrip",                             // Level
-        "Druidcraft",                          // Name
-        "Transmutation",                       // School
-        "V, S",                                // Components
-        "1 Action",                            // Casting Time
-        "Instant",                             // Duration
-        "30 ft",                               // Range / Area
-        "druidcraft",                          // Link
-        "Druid"                                // Classes
+        "Cantrip",
+        "Druidcraft",
+        "Transmutation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "30 ft",
+        "Druid"
     ],
     eldritchBlast = [
-        "Cantrip",                             // Level
-        "Eldritch Blast",                      // Name
-        "Evocation",                           // School
-        "V, S",                                // Components
-        "1 Action",                            // Casting Time
-        "Instant",                             // Duration
-        "120 ft",                              // Range / Area
-        "eldritch_blast",                      // Link
-        "Warlock"                              // Classes
+        "Cantrip",
+        "Eldritch Blast",
+        "Evocation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "120 ft",
+        "Warlock"
     ],
     encodeThoughts = [
-        "Cantrip",                             // Level
-        "Encode Thoughts",                     // Name
-        "Enchantment",                         // School
-        "S",                                   // Components
-        "1 Action",                            // Casting Time
-        "8 hr",                                // Duration
-        "Self",                                // Range / Area
-        "encode_thoughts",                     // Link
-        "Wizard"                               // Classes
+        "Cantrip",
+        "Encode Thoughts",
+        "Enchantment",
+        "S",
+        "1 Action",
+        "8 hr",
+        "Self",
+        "Wizard"
     ],
     fireBolt = [
-        "Cantrip",                             // Level
-        "Fire Bolt",                           // Name
-        "Evocation",                           // School
-        "V, S",                                // Components
-        "1 Action",                            // Casting Time
-        "Instant",                             // Duration
-        "120 ft",                              // Range / Area
-        "fire_bolt",                           // Link
-        "Artificer, Sorcerer, Wizard"          // Classes
+        "Cantrip",
+        "Fire Bolt",
+        "Evocation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "120 ft",
+        "Artificer, Sorcerer, Wizard"
     ],
     friends = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Friends",
+        "Enchantment",
+        "S, M",
+        "1 Action",
+        "Concentration, Up to 1 min",
+        "Self",
+        "Bard, Sorcerer, Warlock, Wizard"
     ],
     frostbite = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Frostbite",
+        "Evocation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "60 ft",
+        "Artificer, Druid, Sorcerer, Warlock, Wizard"
     ],
     greenFlameBlade = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Green-Flame Blade",
+        "Evocation",
+        "S, M",
+        "1 Action",
+        "Instant",
+        "Self (5 ft Radius)",
+        "Artificer, Sorcerer, Warlock, Wizard"
     ],
     guidance = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Guidance",
+        "Divination",
+        "V, S",
+        "1 Action",
+        "Concentration, Up to 1 min",
+        "Touch",
+        "Artificer, Cleric, Druid"
     ],
     gust = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Gust",
+        "Transmutation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "30 ft",
+        "Druid, Sorcerer, Wizard"
     ],
     infestation = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Infestation",
+        "Conjuration",
+        "V, S, M",
+        "1 Action",
+        "Instant",
+        "30 ft",
+        "Druid, Sorcerer, Warlock, Wizard"
     ],
     light = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Light",
+        "Evocation",
+        "V, M",
+        "1 Action",
+        "1 hr",
+        "Touch",
+        "Artificer, Bard, Cleric, Sorcerer, Wizard"
     ],
     lightningLure = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Lightning Lure",
+        "Evocation",
+        "V",
+        "1 Action",
+        "Instant",
+        "Self (15 ft Radius)",
+        "Artificer, Sorcerer, Warlock, Wizard"
     ],
     mageHand = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Mage Hand",
+        "Conjuration",
+        "V, S",
+        "1 Action",
+        "1 min",
+        "30 ft",
+        "Artificer, Bard, Sorcerer, Warlock, Wizard"
     ],
     magicStone = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Magic Stone",
+        "Transmutation",
+        "V, S",
+        "1 Bonus Action",
+        "1 min",
+        "Touch",
+        "Artificer, Druid, Warlock"
     ],
     mending = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Mending",
+        "Transmutation",
+        "V, S, M",
+        "1 min",
+        "Instant",
+        "Touch",
+        "Artificer, Bard, Cleric, Druid, Sorcerer, Wizard"
     ],
     message = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Message",
+        "Transmutation",
+        "V, S, M",
+        "1 Action",
+        "1 Round",
+        "120 ft",
+        "Artificer, Bard, Sorcerer, Wizard"
     ],
     mindSliver = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Mind Sliver",
+        "Enchantment",
+        "V",
+        "1 Action",
+        "1 Round",
+        "60 ft",
+        "Sorcerer, Warlock, Wizard"
     ],
     minorIllusion = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Minor Illusion",
+        "Illusion",
+        "S, M",
+        "1 Action",
+        "1 min",
+        "30 ft",
+        "Bard, Sorcerer, Warlock, Wizard"
     ],
     moldEarth = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Mold Earth",
+        "Transmutation",
+        "S",
+        "1 Action",
+        "Instant or 1 hr",
+        "30 ft",
+        "Druid, Sorcerer, Wizard"
     ],
     onOff = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "On/Off",
+        "Transmutation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "60 ft",
+        "Sorcerer, Warlock, Wizard"
     ],
     poisonSpray = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Poison Spray",
+        "Conjuration",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "10 ft",
+        "Artificer, Druid, Sorcerer, Warlock, Wizard"
     ],
     prestidigitation = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Prestidigitation",
+        "Transmutation",
+        "V, S",
+        "1 Action",
+        "Up to 1 hr",
+        "10 ft",
+        "Artificer, Bard, Sorcerer, Warlock, Wizard"
     ],
     primalSavagery = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Primal Savagery",
+        "Transmutation",
+        "S",
+        "1 Action",
+        "Instant",
+        "Self",
+        "Druid"
     ],
     produceFlame = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Produce Flame",
+        "Conjuration",
+        "V, S",
+        "1 Action",
+        "10 min",
+        "Self",
+        "Druid"
     ],
     rayOfFrost = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Ray of Frost",
+        "Evocation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "60 ft",
+        "Artificer, Sorcerer, Wizard"
     ],
     resistance = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Resistance",
+        "Abjuration",
+        "V, S, M",
+        "1 Action",
+        "Concentration, Up to 1 min",
+        "Touch",
+        "Artificer, Cleric, Druid"
     ],
     sacredFlame = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Sacred Flame",
+        "Evocation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "60 ft",
+        "Cleric"
     ],
     sappingSting = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Sapping Sting",
+        "Necromancy",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "30 ft",
+        "Wizard"
     ],
     shapeWater = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Shape Water",
+        "Transmutation",
+        "S",
+        "1 Action",
+        "Instant or 1 hr",
+        "30 ft",
+        "Druid, Sorcerer, Wizard"
     ],
     shillelagh = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Shillelagh",
+        "Transmutation",
+        "V, S, M",
+        "1 Bonus Action",
+        "1 min",
+        "Touch",
+        "Druid"
     ],
     shockingGrasp = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Shocking Grasp",
+        "Evocation",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "Touch",
+        "Artificer, Sorcerer, Wizard"
     ],
     spareTheDying = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Spare the Dying",
+        "Necromancy",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "Touch",
+        "Artificer, Cleric"
     ],
     swordBurst = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Sword Burst",
+        "Conjuration",
+        "V",
+        "1 Action",
+        "Instant",
+        "Self (5 ft Radius)",
+        "Artificer, Sorcerer, Warlock, Wizard"
     ],
     thaumaturgy = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Thaumaturgy",
+        "Transmutation",
+        "V",
+        "1 Action",
+        "Up to 1 min",
+        "30 ft",
+        "Cleric"
     ],
     thornWhip = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Thorn Whip",
+        "Transmutation",
+        "V, S, M",
+        "1 Action",
+        "Instant",
+        "30 ft",
+        "Artificer, Druid"
     ],
     thunderclap = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Thunderclap",
+        "Evocation",
+        "S",
+        "1 Action",
+        "Instant",
+        "Self (5 ft Radius)",
+        "Artificer, Bard, Druid, Sorcerer, Warlock, Wizard"
     ],
     tollTheDead = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Toll the Dead",
+        "Necromancy",
+        "V, S",
+        "1 Action",
+        "Instant",
+        "60 ft",
+        "Cleric, Warlock, Wizard"
     ],
     trueStrike = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "True Strike",
+        "Divination",
+        "S",
+        "1 Action",
+        "Concentration, Up to 1 Round",
+        "30 ft",
+        "Bard, Sorcerer, Warlock, Wizard"
     ],
     viciousMockery = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Vicious Mockery",
+        "Enchantment",
+        "V",
+        "1 Action",
+        "Instant",
+        "60 ft",
+        "Bard"
     ],
     wordOfRadiance = [
-        "Cantrip",                             // Level
-        "", // Name
-        "", // School
-        "", // Components
-        "", // Casting Time
-        "", // Duration
-        "", // Range / Area
-        "", // Link
-        ""  // Classes
+        "Cantrip",
+        "Word of Radiance",
+        "Evocation",
+        "V, M",
+        "1 Action",
+        "Instant",
+        "5 ft",
+        "Cleric"
     ]
 ];
+
+const snakeify = (str) => {
+    let newString = "";
+    for (letter in str) {
+        if (str[letter] == " " || str[letter] == "-" || str[letter] == "/") {
+            newString += "_";
+        } else {
+            newString += str[letter];
+        }
+    }
+    return newString.toLowerCase();
+}
 
 const createRow = (spell) => {
     let tr = document.createElement("tr");
@@ -562,7 +527,7 @@ const createRow = (spell) => {
     let b = document.createElement("b");
 
     let a = document.createElement("a");
-    a.setAttribute("href", "../spells/" + spell[7] + ".html");
+    a.setAttribute("href", "../spells/" + snakeify(spell[1]) + ".html");
     a.textContent = spell[1];
 
     b.appendChild(a);
@@ -634,15 +599,3 @@ const createRow = (spell) => {
 for (let s in spells) {
     createRow(spells[s]);
 }
-
-/* let cells = document.getElementsByTagName("td");
-for (e in cells) {
-    switch (cells[e].textContent) {
-        case "Abjuration":
-            let icon = document.createElement("span");
-            icon.setAttribute("class", "material-icons slateblue");
-            icon.textContent = "shield";
-            cells[e].prepend(icon);
-            break;
-    }
-} */
