@@ -571,7 +571,38 @@ const createRow = (spell) => {
 
     // School
     td = document.createElement("td");
-    td.textContent = spell[2];
+    td.textContent = " " + spell[2];
+
+    let icon = document.createElement("span");
+    icon.setAttribute("class", "material-icons md-18 slateblue");
+    switch (spell[2]) {
+        case "Abjuration":
+            icon.textContent = "shield";
+            break;
+        case "Conjuration":
+            icon.textContent = "sync_alt";
+            break;
+        case "Divination":
+            icon.textContent = "visibility";
+            break;
+        case "Enchantment":
+            icon.textContent = "star";
+            break;
+        case "Evocation":
+            icon.textContent = "auto_fix_high";
+            break;
+        case "Necromancy":
+            icon.textContent = "close";
+            break;
+        case "Transmutation":
+            icon.textContent = "cached";
+            break;
+        default:
+            icon.textContent = "warning";
+            break;
+    }
+
+    td.prepend(icon);
     tr.appendChild(td);
 
     // Components
@@ -600,3 +631,15 @@ const createRow = (spell) => {
 for (let s in spells) {
     createRow(spells[s]);
 }
+
+/* let cells = document.getElementsByTagName("td");
+for (e in cells) {
+    switch (cells[e].textContent) {
+        case "Abjuration":
+            let icon = document.createElement("span");
+            icon.setAttribute("class", "material-icons slateblue");
+            icon.textContent = "shield";
+            cells[e].prepend(icon);
+            break;
+    }
+} */
