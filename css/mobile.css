@@ -36,3 +36,10 @@ footer {
 tbody tr:nth-child(even) {
     background-color: plum;
 }
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+.material-icons.slateblue {
+    color: slateblue;
+}

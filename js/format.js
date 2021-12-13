@@ -12,9 +12,9 @@ const ifMobile = (nested) => {
 
 const resizeBody = () => {
     if (isMobile) {
-        document.getElementById("body").style.width = (window.innerWidth / 10) * 9 + "px";
+        document.getElementById("body").style.width = window.innerWidth * 0.9 + "px";
     } else {
-        document.getElementById("body").style.width = (window.innerWidth / 5) * 3 + "px";
+        document.getElementById("body").style.width = window.innerWidth * 0.6 + "px";
     }
 }
 
