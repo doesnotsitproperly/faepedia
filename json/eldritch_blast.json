@@ -1,0 +1,11 @@
+{
+    "level": "Cantrip",
+    "name": "Eldritch Blast",
+    "school": "",
+    "components": "V, S",
+    "materials": "",
+    "castingTime": "1 Action",
+    "duration": "Instant",
+    "rangeArea": "120 ft",
+    "classes": "Warlock"
+}

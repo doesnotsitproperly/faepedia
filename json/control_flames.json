@@ -1,0 +1,11 @@
+{
+    "level": "Cantrip",
+    "name": "Control Flames",
+    "school": "Transmutation",
+    "components": "S",
+    "materials": "",
+    "castingTime": "1 Action",
+    "duration": "Instant or 1 hr",
+    "rangeArea": "60 ft",
+    "classes": "Druid, Sorcerer, Wizard"
+}

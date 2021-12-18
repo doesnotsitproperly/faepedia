@@ -1,0 +1,11 @@
+{
+    "level": "Cantrip",
+    "name": "Encode Thoughts",
+    "school": "Enchantment",
+    "components": "V, S",
+    "materials": "",
+    "castingTime": "1 Action",
+    "duration": "8 hr",
+    "rangeArea": "Self",
+    "classes": "Wizard"
+}

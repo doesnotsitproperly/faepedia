@@ -1,0 +1,11 @@
+{
+    "level": "Cantrip",
+    "name": "Blade Ward",
+    "school": "Abjuration",
+    "components": "V, S",
+    "materials": "",
+    "castingTime": "1 Action",
+    "duration": "1 Round",
+    "rangeArea": "Self",
+    "classes": "Bard, Sorcerer, Warlock, Wizard"
+}

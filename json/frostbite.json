@@ -1,0 +1,11 @@
+{
+    "level": "Cantrip",
+    "name": "Frostbite",
+    "school": "Evocation",
+    "components": "V, S",
+    "materials": "",
+    "castingTime": "1 Action",
+    "duration": "Instant",
+    "rangeArea": "60 ft",
+    "classes": "Artificer, Druid, Sorcerer, Warloc, Wizard"
+}

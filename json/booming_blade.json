@@ -1,0 +1,11 @@
+{
+    "level": "Cantrip",
+    "name": "Booming Blade",
+    "school": "Evocation",
+    "components": "S, M",
+    "materials": "(a melee weapon worth at least 1 sp)",
+    "castingTime": "1 Action",
+    "duration": "1 Round",
+    "rangeArea": "Self (5 ft Radius)",
+    "classes": "Artificer, Sorcerer, Warlock, Wizard"
+}
