@@ -53,7 +53,7 @@ const readData = (data) => {
     p = document.createElement("p");
     let a = document.createElement("a");
     a.textContent = "Back to Spells";
-    a.setAttribute("href", "../index/spells.html");
+    a.setAttribute("href", "../spells.html");
     p.appendChild(a);
     body.prepend(p);
 }
