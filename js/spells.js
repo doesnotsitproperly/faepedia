@@ -61,7 +61,7 @@ const createRow = (data, spell) => {
     let b = document.createElement("b");
 
     let a = document.createElement("a");
-    a.setAttribute("href", "../spells/" + spell + ".html");
+    a.setAttribute("href", "spells/" + spell + ".html");
     a.textContent = data.name;
 
     b.appendChild(a);
@@ -131,7 +131,7 @@ const createRow = (data, spell) => {
 }
 
 for (let s in spells) {
-    fetch("../json/" + spells[s] + ".json")
+    fetch("json/" + spells[s] + ".json")
         .then(r => r.json())
         .then(d => createRow(d, spells[s]));
 }
