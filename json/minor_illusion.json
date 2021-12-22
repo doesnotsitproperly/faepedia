@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
-    "materials": "",
+    "name": "Minor Illusion",
+    "school": "Illusion",
+    "components": "S, M",
+    "materials": "(a bit of fleece)",
     "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "duration": "1 min",
+    "rangeArea": "30 ft",
+    "classes": "Bard, Sorcerer, Warlock, Wizard"
 }

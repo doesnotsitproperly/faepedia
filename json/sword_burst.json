@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
+    "name": "Sword Burst",
     "school": "Conjuration",
-    "components": "V, S",
+    "components": "V",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "Self (5 ft Radius)",
+    "classes": "Artificer, Sorcerer, Warlock, Wizard"
 }

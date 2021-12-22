@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
-    "materials": "",
+    "name": "Green-Flame Blade",
+    "school": "Evocation",
+    "components": "S, M",
+    "materials": "(a melee weapon worth at least 1 sp)",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "Self (5 ft Radius)",
+    "classes": "Artificer, Sorcerer, Warlock, Wizard"
 }

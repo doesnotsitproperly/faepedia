@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
-    "materials": "",
-    "castingTime": "1 Action",
+    "name": "Mending",
+    "school": "Transmutation",
+    "components": "V, S, M",
+    "materials": "(two lodestones)",
+    "castingTime": "1 min",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "Touch",
+    "classes": "Artificer, Bard, Cleric, Druid, Sorcerer, Wizard"
 }

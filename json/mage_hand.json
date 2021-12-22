@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
+    "name": "Mage Hand",
     "school": "Conjuration",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "duration": "1 min",
+    "rangeArea": "30 ft",
+    "classes": "Artificer, Bard, Sorcerer, Warlock, Wizard"
 }

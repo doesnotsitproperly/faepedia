@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
-    "materials": "",
+    "name": "Message",
+    "school": "Transmutation",
+    "components": "V, S, M",
+    "materials": "(a short piece of copper wire)",
     "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "duration": "1 Round",
+    "rangeArea": "120 ft",
+    "classes": "Artificer, Bard, Sorcerer, Wizard"
 }

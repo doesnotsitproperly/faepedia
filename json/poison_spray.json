@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
+    "name": "Poison Spray",
     "school": "Conjuration",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "10 ft",
+    "classes": "Artificer, Druid, Sorcerer, Warlock, Wizard"
 }

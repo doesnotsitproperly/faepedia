@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
+    "name": "Lightning Lure",
+    "school": "Evocation",
+    "components": "V",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "Self (15 ft Radius",
+    "classes": "Artificer, Sorcerer, Warlock, Wizard"
 }

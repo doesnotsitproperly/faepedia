@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
+    "name": "Shocking Grasp",
+    "school": "Evocation",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
+    "rangeArea": "Touch",
     "classes": "Artificer, Sorcerer, Wizard"
 }

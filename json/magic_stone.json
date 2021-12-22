@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
+    "name": "Magic Stone",
+    "school": "Transmutation",
     "components": "V, S",
     "materials": "",
-    "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "castingTime": "1 Bonus Action",
+    "duration": "1 min",
+    "rangeArea": "Touch",
+    "classes": "Artificer, Druid, Warlock"
 }

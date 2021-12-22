@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
+    "name": "Vicious Mockery",
+    "school": "Enchantment",
+    "components": "V",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
     "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "classes": "Bard"
 }

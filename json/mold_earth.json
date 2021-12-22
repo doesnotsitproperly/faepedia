@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
+    "name": "Mold Earth",
+    "school": "Transmutation",
+    "components": "S",
     "materials": "",
     "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "duration": "Instant or 1 hr",
+    "rangeArea": "30 ft",
+    "classes": "Druid, Sorcerer, Wizard"
 }

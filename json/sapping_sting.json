@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
+    "name": "Sapping Sting",
+    "school": "Necromancy",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "30 ft",
+    "classes": "Wizard"
 }

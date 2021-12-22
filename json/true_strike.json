@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
+    "name": "True Strike",
+    "school": "Divination",
+    "components": "S",
     "materials": "",
     "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "duration": "Concentration, Up to 1 Round",
+    "rangeArea": "30 ft",
+    "classes": "Bard, Sorcerer, Warlock, Wizard"
 }

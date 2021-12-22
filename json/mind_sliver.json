@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
+    "name": "Mind Sliver",
+    "school": "Enchantment",
+    "components": "V",
     "materials": "",
     "castingTime": "1 Action",
-    "duration": "Instant",
+    "duration": "1 Round",
     "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "classes": "Sorcerer, Warlock, Wizard"
 }

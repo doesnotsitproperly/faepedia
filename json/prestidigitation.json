@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
+    "name": "Prestidigitation",
+    "school": "Transmutation",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "duration": "Up to 1 hr",
+    "rangeArea": "10 ft",
+    "classes": "Artificer, Bard, Sorcerer, Warlock, Wizard"
 }

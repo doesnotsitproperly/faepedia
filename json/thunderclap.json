@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
+    "name": "Thunderclap",
+    "school": "Evocation",
+    "components": "S",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "Self (5 ft Radius)",
+    "classes": "Artificer, Bard, Druid, Sorcerer, Warlock, Wizard"
 }

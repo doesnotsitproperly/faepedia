@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
-    "components": "V, S",
-    "materials": "",
+    "name": "Thorn Whip",
+    "school": "Transmutation",
+    "components": "V, S, M",
+    "materials": "(the stem of a plant with thorns)",
     "castingTime": "1 Action",
     "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "rangeArea": "30 ft",
+    "classes": "Artificer, Druid"
 }

@@ -1,7 +1,7 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
+    "name": "Ray of Frost",
+    "school": "Evocation",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",

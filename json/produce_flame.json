@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
+    "name": "Produce Flame",
     "school": "Conjuration",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
-    "duration": "Instant",
-    "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "duration": "10 min",
+    "rangeArea": "Self",
+    "classes": "Druid"
 }

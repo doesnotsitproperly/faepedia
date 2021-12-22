@@ -1,11 +1,11 @@
 {
     "level": "Cantrip",
-    "name": "Friends",
-    "school": "Conjuration",
+    "name": "Sacred Flame",
+    "school": "Evocation",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
     "duration": "Instant",
     "rangeArea": "60 ft",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "classes": "Cleric"
 }
