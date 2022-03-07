@@ -72,35 +72,44 @@ const createRow = (data, spell) => {
     td = document.createElement("td");
     td.textContent = " " + data.school;
 
-    let icon = document.createElement("span");
-    icon.setAttribute("class", "material-icons md-18 slateblue");
+    let icon = document.createElement("img");
+    icon.setAttribute("width", "18");
     switch (data.school) {
         case "Abjuration":
-            icon.textContent = "shield";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1f6e1.svg");
+            icon.setAttribute("alt", "A shield emoji");
             break;
         case "Conjuration":
-            icon.textContent = "sync_alt";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1f500.svg");
+            icon.setAttribute("alt", "An emoji of two arrows pointing right while crossing over one another; a shuffle emoji");
             break;
         case "Divination":
-            icon.textContent = "visibility";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1f52e.svg");
+            icon.setAttribute("alt", "A crystal ball emoji");
             break;
         case "Enchantment":
-            icon.textContent = "psychology";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1f300.svg");
+            icon.setAttribute("alt", "A spiral shape emoji");
             break;
         case "Evocation":
-            icon.textContent = "auto_fix_high";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1fa84.svg");
+            icon.setAttribute("alt", "An emoji of a wand with sparkles coming out of its end");
             break;
         case "Illusion":
-            icon.textContent = "contact_support";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2754.svg");
+            icon.setAttribute("alt", "A white question mark emoji");
             break;
         case "Necromancy":
-            icon.textContent = "close";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2620.svg");
+            icon.setAttribute("alt", "An emoji of a cartoon human skull atop an X-shaped pair of bones");
             break;
         case "Transmutation":
-            icon.textContent = "cached";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1f501.svg");
+            icon.setAttribute("alt", "An emoji of two circular arrows pointing in a clockwise direction; a repeat symbol");
             break;
         default:
-            icon.textContent = "warning";
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u26a0.svg");
+            icon.setAttribute("alt", "An emoji of a triangle with an exclamation mark inside; a warning symbol");
             break;
     }
 

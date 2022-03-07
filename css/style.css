@@ -1,11 +1,11 @@
 html {
     background-attachment: fixed;
-    background-color: coral;
-    background-image: linear-gradient(to bottom right, coral, slateblue);
+    background-color: #ff6347;
+    background-image: linear-gradient(to bottom right, #ff6347, #6a5acd);
     background-repeat: no-repeat;
 }
 body {
-    background-color: thistle;
+    background-color: #d8bfd8;
     border: 3px solid black;
     font-family: "Cousine", monospace;
     font-size: 16px;
@@ -36,16 +36,13 @@ footer {
 }
 
 tbody tr:nth-child(even) {
-    background-color: plum;
+    background-color: #dda0dd;
 }
 
-.material-icons.md-18 {
+.icon {
+    color: #6a5acd;
     font-size: 18px;
 }
-.material-icons.slateblue {
-    color: slateblue;
-}
-
 .notice {
-    color: brown;
+    color: #a52a2a;
 }
