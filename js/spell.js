@@ -61,8 +61,8 @@ const readData = (data) => {
             img.setAttribute("alt", "An emoji of a wand with sparkles coming out of its end");
             break;
         case "Illusion":
-            img.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2754.svg");
-            img.setAttribute("alt", "A white question mark emoji");
+            img.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2753.svg");
+            img.setAttribute("alt", "A red question mark emoji");
             break;
         case "Necromancy":
             img.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2620.svg");

@@ -96,8 +96,8 @@ const createRow = (data, spell) => {
             icon.setAttribute("alt", "An emoji of a wand with sparkles coming out of its end");
             break;
         case "Illusion":
-            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2754.svg");
-            icon.setAttribute("alt", "A white question mark emoji");
+            icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2753.svg");
+            icon.setAttribute("alt", "A red question mark emoji");
             break;
         case "Necromancy":
             icon.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u2620.svg");
