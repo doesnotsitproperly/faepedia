@@ -1,5 +1,5 @@
 const readData = (data) => {
-    const body = document.getElementById("body");
+    const body = document.getElementsByTagName("body")[0];
 
     // Casting Time, Range / Area, Components, Duration
     let p = document.createElement("p");
