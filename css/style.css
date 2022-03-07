@@ -37,3 +37,6 @@ tbody tr:nth-child(even) {
 .notice {
     color: #a52a2a;
 }
+.right-align {
+    text-align: right;
+}
