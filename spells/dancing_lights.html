@@ -5,12 +5,15 @@
     <head>
         <meta charset="utf-8">
         <link href="../css/style.css" rel="stylesheet">
+        <link rel="stylesheet" id="platformStylesheet">
+
         <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+
         <link href="../icon.png" rel="shortcut icon">
         <title>Faepedia - Dancing Lights</title>
     </head>
-    <body id="body">
-        <script src="../js/format.js"></script>
+    <body>
+        <script src="../js/format.js" onload="platformFormat('../css')"></script>
         <p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p>
         <p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p>
         <script src="../js/spell.js" onload="populatePage('dancing_lights')"></script>

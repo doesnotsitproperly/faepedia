@@ -1,49 +1,9 @@
-html {
-    background-attachment: fixed;
-    background-color: coral;
-    background-image: linear-gradient(to bottom right, coral, slateblue);
-    background-repeat: no-repeat;
-}
 body {
-    background-color: thistle;
-    border: 3px solid black;
-    font-family: "Cousine", monospace;
     font-size: 32px;
-    line-height: 2;
-    margin: 20px auto;
-    padding: 20px;
-}
-h1 {
-    font-family: "Nova Cut", serif;
-    text-align: center;
-}
-table {
-    border-collapse: collapse;
-    line-height: 1.25;
-    table-layout: fixed;
-    width: 100%;
 }
 th, td {
-    border: 1px solid black;
-    padding: 10px;
     word-wrap: break-word;
 }
 footer {
     font-size: 16px;
-    line-height: 1;
-}
-
-tbody tr:nth-child(even) {
-    background-color: plum;
-}
-
-.material-icons.md-18 {
-    font-size: 18px;
-}
-.material-icons.slateblue {
-    color: slateblue;
-}
-
-.notice {
-    color: brown;
 }

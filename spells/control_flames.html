@@ -5,12 +5,15 @@
     <head>
         <meta charset="utf-8">
         <link href="../css/style.css" rel="stylesheet">
+        <link rel="stylesheet" id="platformStylesheet">
+
         <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+
         <link href="../icon.png" rel="shortcut icon">
         <title>Faepedia - Control Flames</title>
     </head>
-    <body id="body">
-        <script src="../js/format.js"></script>
+    <body>
+        <script src="../js/format.js" onload="platformFormat('../css')"></script>
         <p>You choose a nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:</p>
         <ul>
             <li>You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.</li>

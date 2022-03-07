@@ -5,12 +5,15 @@
     <head>
         <meta charset="utf-8">
         <link href="../css/style.css" rel="stylesheet">
+        <link rel="stylesheet" id="platformStylesheet">
+
         <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+
         <link href="../icon.png" rel="shortcut icon">
         <title>Faepedia - Acid Splash</title>
     </head>
-    <body id="body">
-        <script src="../js/format.js"></script>
+    <body>
+        <script src="../js/format.js" onload="platformFormat('../css')"></script>
         <p>You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.</p>
         <p><b>At higher levels:</b> This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
         <script src="../js/spell.js" onload="populatePage('acid_splash')"></script>
