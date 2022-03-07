@@ -1,7 +1,7 @@
 {
     "level": "Cantrip",
     "name": "Eldritch Blast",
-    "school": "",
+    "school": "Evocation",
     "components": "V, S",
     "materials": "",
     "castingTime": "1 Action",
