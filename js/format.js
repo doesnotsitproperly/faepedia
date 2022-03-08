@@ -18,28 +18,5 @@ const resizeBody = () => {
     }
 }
 
-const resizeEmoji = (size) => {
-    const emoji = document.getElementsByClassName("emoji");
-    if (isMobile) {
-        for (let i in emoji) {
-            if (size == "h1") {
-                emoji[i].height = 64;
-            } else {
-                emoji[i].height = 32;
-            }
-        }
-    } else {
-        for (let i in emoji) {
-            if (size == "h1") {
-                emoji[i].height = 32;
-            } else if (size == "table") {
-                emoji[i].height = 14;
-            } else {
-                emoji[i].height = 16;
-            }
-        }
-    }
-}
-
 resizeBody();
 window.onresize = resizeBody;
