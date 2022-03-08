@@ -1,3 +1,5 @@
+# This is a utility PowerShell script to find occurences of a certain string in files and replace it with another string
+
 param ($path, $oldValue, $newValue)
 
 if (($null -eq $path -or $null -eq $oldValue) -or ($null -eq $newValue -and "" -ne $newValue)) {
