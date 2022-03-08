@@ -7,3 +7,10 @@ th, td {
 footer {
     font-size: 16px;
 }
+
+.emoji {
+    height: 32px;
+}
+.emoji.h1 {
+    height: 64px;
+}

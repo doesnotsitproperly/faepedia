@@ -38,7 +38,7 @@ const readData = (data) => {
     }
 
     let img = document.createElement("img");
-    img.setAttribute("width", "20");
+    img.setAttribute("class", "emoji");
     switch (data.school) {
         case "Abjuration":
             img.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1f6e1.svg");

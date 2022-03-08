@@ -73,7 +73,7 @@ const createRow = (data, spell) => {
     td.textContent = " " + data.school;
 
     let img = document.createElement("img");
-    img.setAttribute("width", "18");
+    img.setAttribute("class", "emoji table");
     switch (data.school) {
         case "Abjuration":
             img.setAttribute("src", "https://raw.githubusercontent.com/googlefonts/noto-emoji/main/svg/emoji_u1f6e1.svg");
