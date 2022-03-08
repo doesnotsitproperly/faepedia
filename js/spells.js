@@ -61,7 +61,7 @@ const createRow = (data, spell) => {
     let b = document.createElement("b");
 
     let a = document.createElement("a");
-    a.setAttribute("href", "spells/" + spell + ".html");
+    a.setAttribute("href", "spells/" + spell);
     a.textContent = data.name;
 
     b.appendChild(a);

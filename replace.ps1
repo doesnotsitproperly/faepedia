@@ -5,6 +5,18 @@ if (($null -eq $path -or $null -eq $oldValue) -or ($null -eq $newValue -and "" -
     Return
 }
 
+$code = @"
+using System;
+namespace Custom {
+    public class String {
+        public static string Replace(string s, string oldValue, string newValue) {
+            return s.Replace(oldValue, newValue);
+        }
+    }
+}
+"@
+Add-Type -TypeDefinition $code -Language CSharp
+
 function ReplaceText {
     param ($f, $old, $new)
 
@@ -16,7 +28,7 @@ function ReplaceText {
     $text = [System.IO.File]::ReadAllText($f)
 
     "Replacing occurences of ${old} with ${new} in file ${f}"
-    $text = $text -replace $old, $new
+    $text = [Custom.String]::Replace($text, $old, $new)
     [System.IO.File]::WriteAllText($f, $text)
 }
 
