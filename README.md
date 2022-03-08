@@ -1,4 +1,4 @@
-# ![The Faepedia logo](icon.png | height=32) [Faepedia](https://doesnotsitproperly.github.io/faepedia/)
+# <img src="icon.png" height="32" alt="The Faepedia logo" /> [Faepedia](https://doesnotsitproperly.github.io/faepedia/)
 
 An open-source [D&D](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki
 
