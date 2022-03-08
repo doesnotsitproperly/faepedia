@@ -112,8 +112,10 @@ const createRow = (data, spell) => {
             img.setAttribute("alt", "An emoji of a triangle with an exclamation mark inside; a warning symbol");
             break;
     }
+    img.setAttribute("onload", "resizeEmoji('table')");
 
     td.prepend(img);
+
     tr.appendChild(td);
 
     // Components
