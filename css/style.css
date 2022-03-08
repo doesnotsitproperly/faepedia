@@ -1,10 +1,11 @@
 :root {
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-color: #6a5acd;
     background-image: linear-gradient(to bottom right, #ff6347, #6a5acd);
     background-repeat: no-repeat;
     height: 100%;
 }
+
 body {
     background-color: #d8bfd8;
     border: 3px solid black;
