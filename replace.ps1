@@ -1,6 +1,6 @@
 param ($path, $oldValue, $newValue)
 
-if ($null -eq $path -or $null -eq $oldValue -or $null -eq $newValue) {
+if (($null -eq $path -or $null -eq $oldValue) -or ($null -eq $newValue -and "" -ne $newValue)) {
     "Usage: replace.ps1 [Path] [OldValue] [NewValue]"
     Return
 }
