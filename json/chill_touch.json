@@ -7,5 +7,9 @@
     "castingTime": "1 Action",
     "duration": "1 Round",
     "rangeArea": "120 ft",
-    "classes": "Sorcerer, Warlock, Wizard"
+    "classes": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ]
 }

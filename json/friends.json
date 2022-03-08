@@ -7,5 +7,10 @@
     "castingTime": "1 Action",
     "duration": "Concentration, Up to 1 min",
     "rangeArea": "Self",
-    "classes": "Bard, Sorcerer, Warlock, Wizard"
+    "classes": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ]
 }

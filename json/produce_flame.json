@@ -7,5 +7,7 @@
     "castingTime": "1 Action",
     "duration": "10 min",
     "rangeArea": "Self",
-    "classes": "Druid"
+    "classes": [
+        "Druid"
+    ]
 }

@@ -7,5 +7,7 @@
     "castingTime": "1 Bonus Action",
     "duration": "1 min",
     "rangeArea": "Touch",
-    "classes": "Druid"
+    "classes": [
+        "Druid"
+    ]
 }

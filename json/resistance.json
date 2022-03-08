@@ -7,5 +7,9 @@
     "castingTime": "1 Action",
     "duration": "Concentration, Up to 1 min",
     "rangeArea": "Touch",
-    "classes": "Artificer, Cleric, Druid"
+    "classes": [
+        "Artificer",
+        "Cleric",
+        "Druid"
+    ]
 }

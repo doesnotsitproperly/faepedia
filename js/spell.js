@@ -89,7 +89,13 @@ const readData = (data) => {
     
     // Classes
     p = document.createElement("p");
-    p.textContent = "Classes: " + data.classes;
+    p.textContent = "Classes:";
+    for (let i in data.classes) {
+        if (i > 0) {
+            p.textContent += ",";
+        }
+        p.textContent += " " + data.classes[i];
+    }
     body.appendChild(p);
 
     // Return link

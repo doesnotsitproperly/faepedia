@@ -7,5 +7,10 @@
     "castingTime": "1 Action",
     "duration": "1 min",
     "rangeArea": "30 ft",
-    "classes": "Bard, Sorcerer, Warlock, Wizard"
+    "classes": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ]
 }

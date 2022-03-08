@@ -7,5 +7,10 @@
     "castingTime": "1 Action",
     "duration": "Concentration, Up to 1 Round",
     "rangeArea": "30 ft",
-    "classes": "Bard, Sorcerer, Warlock, Wizard"
+    "classes": [
+        "Bard",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ]
 }

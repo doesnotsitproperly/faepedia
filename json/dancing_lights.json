@@ -7,5 +7,10 @@
     "castingTime": "1 Action",
     "duration": "Concentration, Up to 1 min",
     "rangeArea": "120 ft",
-    "classes": "Artificer, Bard, Sorcerer, Wizard"
+    "classes": [
+        "Artificer",
+        "Bard",
+        "Sorcerer",
+        "Wizard"
+    ]
 }

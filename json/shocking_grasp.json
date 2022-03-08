@@ -7,5 +7,9 @@
     "castingTime": "1 Action",
     "duration": "Instant",
     "rangeArea": "Touch",
-    "classes": "Artificer, Sorcerer, Wizard"
+    "classes": [
+        "Artificer",
+        "Sorcerer",
+        "Wizard"
+    ]
 }

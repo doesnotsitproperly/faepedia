@@ -7,5 +7,9 @@
     "castingTime": "1 Action",
     "duration": "Instant",
     "rangeArea": "30 ft",
-    "classes": "Druid, Sorcerer, Wizard"
+    "classes": [
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+    ]
 }

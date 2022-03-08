@@ -7,5 +7,7 @@
     "castingTime": "1 Action",
     "duration": "Instant",
     "rangeArea": "30 ft",
-    "classes": "Druid"
+    "classes": [
+        "Druid"
+    ]
 }

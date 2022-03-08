@@ -7,5 +7,7 @@
     "castingTime": "1 Action",
     "duration": "Instant",
     "rangeArea": "60 ft",
-    "classes": "Cleric"
+    "classes": [
+        "Cleric"
+    ]
 }

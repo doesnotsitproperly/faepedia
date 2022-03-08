@@ -7,5 +7,12 @@
     "castingTime": "1 min",
     "duration": "Instant",
     "rangeArea": "Touch",
-    "classes": "Artificer, Bard, Cleric, Druid, Sorcerer, Wizard"
+    "classes": [
+        "Artificer",
+        "Bard",
+        "Cleric",
+        "Druid",
+        "Sorcerer",
+        "Wizard"
+    ]
 }

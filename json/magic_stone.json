@@ -7,5 +7,9 @@
     "castingTime": "1 Bonus Action",
     "duration": "1 min",
     "rangeArea": "Touch",
-    "classes": "Artificer, Druid, Warlock"
+    "classes": [
+        "Artificer",
+        "Druid",
+        "Warlock"
+    ]
 }

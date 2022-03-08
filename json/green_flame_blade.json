@@ -7,5 +7,10 @@
     "castingTime": "1 Action",
     "duration": "Instant",
     "rangeArea": "Self (5 ft Radius)",
-    "classes": "Artificer, Sorcerer, Warlock, Wizard"
+    "classes": [
+        "Artificer",
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+    ]
 }

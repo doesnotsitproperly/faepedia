@@ -7,5 +7,7 @@
     "castingTime": "1 Action",
     "duration": "8 hr",
     "rangeArea": "Self",
-    "classes": "Wizard"
+    "classes": [
+        "Wizard"
+    ]
 }
