@@ -95,7 +95,7 @@ const readData = (data) => {
     p = document.createElement("p");
     let a = document.createElement("a");
     a.textContent = "Back to Spells";
-    a.setAttribute("href", "../spells.html");
+    a.setAttribute("href", "../spells");
     p.appendChild(a);
     body.prepend(p);
 }
