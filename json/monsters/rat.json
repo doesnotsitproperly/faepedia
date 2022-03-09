@@ -1,0 +1,41 @@
+{
+    "name": "Rat",
+    "size": "Tiny",
+    "type": "Beast",
+    "alignment": "Unaligned",
+
+    "armorClass": "10",
+    "hitPoints": "1 (1d4 - 1)",
+    "speed": "20 ft",
+
+    "strength": "2 (-4)",
+    "dexterity": "11 (+0)",
+    "constitution": "9 (-1)",
+    "intelligence": "2 (-4)",
+    "wisdom": "10 (+0)",
+    "charisma": "4 (-3)",
+
+    "savingThrows": null,
+    "skills": null,
+    "senses": "Darkvision (30 ft), Passive Perception (10)",
+    "languages": "None",
+    "challenge": 0,
+    "experience": "(10 XP)",
+    "proficiencyBonus": "+2",
+
+    "features": [
+        {
+            "name": "Keen Smell",
+            "description": "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+        }
+    ],
+
+    "actions": [
+        {
+            "name": "Bite",
+            "description": "Melee Weapon Attack; +0 to hit; reach: 5 ft; one target; hit: 1 piercing damage"
+        }
+    ],
+
+    "legendaryActions": null
+}
