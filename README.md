@@ -1,12 +1,10 @@
 # <img src="logo.svg" height="32" alt="The Faepedia logo: a red and indigo ampersand" /> [Faepedia](https://doesnotsitproperly.github.io/faepedia/)
 
-A very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki. I wanted a Dungeons & Dragons wiki that was secure, pretty, and free, so I made it! 
-- Secure: Hosting on GitHub pages means that the site uses HTTPS, unlike the [DND 5th Edition Community Wiki](http://dnd5e.wikidot.com/), which is otherwise very helpful!
-- Pretty: I've put a lot of work into the look and feel of Faepedia; let me know what you think about it!
-- Free: Completely free and open-source! (Unlike [a certain website I know](https://www.google.com/search?q=d%26d+beyond)...)
+a very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki
 
-Bonus features:
-- Accessible: I am dedicated to making Faepedia accessible to the most people I can. If you know a way I can improve accessibility, let me know!
-- Modern: Faepedia uses modern ES6 for coding, and all files are made to be readable and understandable.
+i'm dedicated to making Faepedia accessible to as many people as i can. if you know a way i can improve the site, let me know (my email is doesnotsitproperly at gmail.com)!
 
-In summary, I think it's really cool. :)
+other useful Dungeons & Dragons sites:
+- [5e.tools](https://5e.tools/)
+- [dnd5e.wikidot.com](http://dnd5e.wikidot.com/)
+- [D&D Beyond](https://www.dndbeyond.com/)
