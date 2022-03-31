@@ -1,20 +1,24 @@
 const isMobile = navigator.userAgent.includes("Mobi");
 
-const platformFormat = (pathToCss) => {
-    const stylesheet = document.getElementById("platformStylesheet");
+const resizeBody = () => {
+    const body = document.getElementsByTagName("body")[0];
+
     if (isMobile) {
-        stylesheet.setAttribute("href", pathToCss + "/mobile.css");
-    } else {
-        stylesheet.setAttribute("href", pathToCss + "/default.css");
+        body.style.width = `${window.innerWidth * 0.9}px`;
+    }
+    else {
+        body.style.width = `${window.innerWidth * 0.6}px`;
     }
 }
 
-const resizeBody = () => {
-    const body = document.getElementsByTagName("body")[0];
+const platformFormat = (pathToCss) => {
+    const stylesheet = document.getElementById("platformStylesheet");
+
     if (isMobile) {
-        body.style.width = window.innerWidth * 0.9 + "px";
-    } else {
-        body.style.width = window.innerWidth * 0.6 + "px";
+        stylesheet.setAttribute("href", `${pathToCss}/mobile.css`);
+    }
+    else {
+        stylesheet.setAttribute("href", `${pathToCss}/default.css`);
     }
 }
 

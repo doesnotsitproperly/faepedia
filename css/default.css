@@ -1,3 +1,7 @@
+:root {
+    background-image: linear-gradient(to bottom right, #ff6347, #6a5acd);
+}
+
 body {
     font-size: 16px;
 }

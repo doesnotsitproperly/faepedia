@@ -1,134 +1,141 @@
+const school = {
+    abjuration: "abjuration",
+    conjuration: "conjuration",
+    divination: "divination",
+    enchantment: "enchantment",
+    evocation: "evocation",
+    illusion: "illusion",
+    necromancy: "necromancy",
+    transmutation: "transmutation"
+};
+
+const _class = {
+    artificer: "artificer",
+    bard: "bard",
+    cleric: "cleric",
+    druid: "druid",
+    paladin: "paladin",
+    ranger: "ranger",
+    sorcerer: "sorcerer",
+    warlock: "warlock",
+    wizard: "wizard"
+};
+
+class Spell {
+    name;
+    level;
+    school;
+    classes;
+    constructor(name, level, school, classes) {
+        this.name = name;
+        this.level = level;
+        this.school = school;
+        this.classes = classes;
+    }
+}
+
 const spells = [
-    "acid_splash",
-    "blade_ward",
-    "booming_blade",
-    "chill_touch",
-    "control_flames",
-    "create_bonfire",
-    "dancing_lights",
-    "druidcraft",
-    "eldritch_blast",
-    "encode_thoughts",
-    "fire_bolt",
-    "friends",
-    "frostbite",
-    "green_flame_blade",
-    "guidance",
-    "gust",
-    "infestation",
-    "light",
-    "lightning_lure",
-    "mage_hand",
-    "magic_stone",
-    "mending",
-    "message",
-    "mind_sliver",
-    "minor_illusion",
-    "mold_earth",
-    "poison_spray",
-    "prestidigitation",
-    "primal_savagery",
-    "produce_flame",
-    "ray_of_frost",
-    "resistance",
-    "sacred_flame",
-    "sapping_sting",
-    "shape_water",
-    "shillelagh",
-    "shocking_grasp",
-    "spare_the_dying",
-    "sword_burst",
-    "thaumaturgy",
-    "thorn_whip",
-    "thunderclap",
-    "toll_the_dead",
-    "true_strike",
-    "vicious_mockery",
-    "word_of_radiance"
+    new Spell("acidSplash", 0, school.conjuration, [
+        _class.artificer,
+        _class.sorcerer,
+        _class.wizard
+    ]),
+    new Spell("bladeWard", 0, school.abjuration, [
+        _class.bard,
+        _class.sorcerer,
+        _class.warlock,
+        _class.wizard
+    ]),
+    new Spell("boomingBlade", 0, school.evocation, [
+        _class.artificer,
+        _class.sorcerer,
+        _class.warlock,
+        _class.wizard
+    ]),
+    new Spell("chillTouch", 0, school.necromancy, [
+        _class.sorcerer,
+        _class.warlock,
+        _class.wizard
+    ]),
+    new Spell("controlFlames", 0, school.transmutation, [
+        _class.druid,
+        _class.sorcerer,
+        _class.wizard
+    ]),
+    new Spell("createBonfire", 0, school.abjuration, [
+        _class.druid,
+        _class.sorcerer,
+        _class.warlock,
+        _class.wizard
+    ]),
+    new Spell("dancingLights", 0, school.evocation, [
+        _class.artificer,
+        _class.bard,
+        _class.sorcerer,
+        _class.wizard
+    ]),
+    new Spell("druidcraft", 0, school.transmutation, [
+        _class.druid
+    ]),
+    new Spell("eldritchBlast", 0, school.evocation, [
+        _class.warlock
+    ]),
+    new Spell("encodeThoughts", 0, school.enchantment, [
+        _class.wizard
+    ]),
+    new Spell("fireBolt", 0, school.evocation, [
+        _class.artificer,
+        _class.sorcerer,
+        _class.wizard
+    ])
 ];
 
-for (let s in spells) {
-    fetch("json/spells/" + spells[s] + ".json")
-        .then(result => result.json())
-        .then(data => {
-            let tr = document.createElement("tr");
-        
-            // Level
-            let td = document.createElement("td");
-            td.textContent = data.level;
-            tr.appendChild(td);
-        
-            // Name (and Link)
-            td = document.createElement("td");
-        
-            let b = document.createElement("b");
-        
-            let a = document.createElement("a");
-            a.setAttribute("href", "spells/" + spells[s]);
-            a.textContent = data.name;
-        
-            b.appendChild(a);
-            td.appendChild(b);
-            tr.appendChild(td);
-        
-            // School
-            td = document.createElement("td");
-            td.textContent = " " + data.school;
-        
-            let icon = document.createElement("span");
-            switch (data.school) {
-                case "Abjuration":
-                    icon.textContent = "🛡️";
-                    break;
-                case "Conjuration":
-                    icon.textContent = "🔀";
-                    break;
-                case "Divination":
-                    icon.textContent = "🔮";
-                    break;
-                case "Enchantment":
-                    icon.textContent = "🌀";
-                    break;
-                case "Evocation":
-                    icon.textContent = "🪄";
-                    break;
-                case "Illusion":
-                    icon.textContent = "❓";
-                    break;
-                case "Necromancy":
-                    icon.textContent = "☠️";
-                    break;
-                case "Transmutation":
-                    icon.textContent = "🔁";
-                    break;
-                default:
-                    icon.textContent = "⚠️";
-                    break;
+let showSpells = {
+    cantrips: true,
+    firstLevel: true,
+    secondLevel: true,
+    thirdLevel: true,
+    fourthLevel: true,
+    fifthLevel: true,
+    sixthLevel: true,
+    seventhLevel: true,
+    eighthLevel: true,
+    ninthLevel: true,
+    abjuration: true,
+    conjuration: true,
+    divination: true,
+    enchantment: true,
+    evocation: true,
+    illusion: true,
+    necromancy: true,
+    transmutation: true,
+    artificer: true,
+    bard: true,
+    cleric: true,
+    druid: true,
+    paladin: true,
+    ranger: true,
+    sorcerer: true,
+    warlock: true,
+    wizard: true
+};
+
+const hideSpell = (spellAspect) => {
+    for (let spell of spells) {
+        if (spell.level == spellAspect || spell.school == spellAspect) {
+            document.getElementById(spell.name).hidden = true;
+        }
+        else {
+            for (let c of spell.classes) {
+                if (c == spellAspect) {
+                    document.getElementById(spell.name).hidden = true;
+                }
             }
-            td.prepend(icon);
-        
-            tr.appendChild(td);
-        
-            // Components
-            td = document.createElement("td");
-            td.textContent = data.components;
-            tr.appendChild(td);
-        
-            // Casting Time
-            td = document.createElement("td");
-            td.textContent = data.castingTime;
-            tr.appendChild(td);
-        
-            // Duration
-            td = document.createElement("td");
-            td.textContent = data.duration;
-            tr.appendChild(td);
-        
-            // Range / Area
-            td = document.createElement("td");
-            td.textContent = data.rangeArea;
-            tr.appendChild(td);
-        
-            document.getElementById("tbody").appendChild(tr);
-        });
+        }
+    }
+}
+
+let searchParams = new URLSearchParams(window.location.search);
+for (let pair of searchParams.entries()) {
+
 }

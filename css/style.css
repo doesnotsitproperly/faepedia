@@ -1,7 +1,6 @@
 :root {
     background-attachment: fixed;
-    background-color: #6a5acd;
-    background-image: linear-gradient(to bottom right, #ff6347, #6a5acd);
+    background-color: #b55f8a;
     background-repeat: no-repeat;
 }
 
@@ -23,6 +22,9 @@ table {
     table-layout: fixed;
     width: 100%;
 }
+tbody tr:nth-child(even) {
+    background-color: #dda0dd;
+}
 th, td {
     border: 1px solid black;
     padding: 10px;
@@ -31,13 +33,23 @@ footer {
     line-height: 1;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #dda0dd;
-}
-
 .notice {
     color: #a52a2a;
 }
 .right-align {
     text-align: right;
+}
+.spell-table tr td:nth-last-child(1) {
+    font-size: 75%;
+}
+
+.top-block {
+    margin-bottom: 0;
+}
+.middle-block {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bottom-block {
+    margin-top: 0;
 }
