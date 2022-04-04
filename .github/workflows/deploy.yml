@@ -16,4 +16,4 @@ jobs:
 
             - run: git add .
             - run: git commit -m "GitHub Actions - Deploy"
-            - run: git push origin gh-pages
+            - run: git push origin main:gh-pages
