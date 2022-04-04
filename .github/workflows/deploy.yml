@@ -1,0 +1,14 @@
+name: Deploy
+on: [push]
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-python@v3
+                with:
+                    python-version: "3.x"
+            - run: pip install chevron
+            - run: python mustache.py
+            - run: git commit -m "GitHub Actions - Deploy"
+            - run: git push origin gh-pages

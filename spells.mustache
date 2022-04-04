@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" id="platformStylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+
+        <link href="logo.svg" rel="shortcut icon">
+        <title>Faepedia - Spells</title>
+    </head>
+    <body>
+        <script src="js/format.js" onload="platformFormat('css')"></script>
+        <p><a href="./">Back to homepage</a></p>
+        <table class="spell-table">
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Name</th>
+                    <th>School</th>
+                    <th>Casting Time</th>
+                    <th>Range / Area</th>
+                    <th>Duration</th>
+                    <th>Classes</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#spells}}
+                <tr id="{{id}}">
+                    <td>{{level}}</td>
+                    <td><b><a href="{{link}}">{{name}}</a></b></td>
+                    <td>{{school}}</td>
+                    <td>{{castingTime}}</td>
+                    <td>{{rangeArea}}</td>
+                    <td>{{duration}}</td>
+                    <td>{{classes}}</td>
+                </tr>
+                {{/spells}}
+            </tbody>
+        </table>
+        <script src="js/spells.js"></script>
+    </body>
+</html>
