@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" id="platformStylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+
+        <link href="logo.svg" rel="shortcut icon">
+        <title>Faepedia - Spells</title>
+    </head>
+    <body>
+        <script src="js/format.js" onload="platformFormat('css')"></script>
+        <p><a href="./">Back to homepage</a></p>
+        <table class="spell-table">
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Name</th>
+                    <th>School</th>
+                    <th>Casting Time</th>
+                    <th>Range / Area</th>
+                    <th>Duration</th>
+                    <th>Classes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="acidSplash">
+                    <td>Cantrip</td>
+                    <td><b><a href="spells/acid_splash">Acid Splash</a></b></td>
+                    <td>🔀 Conjuration</td>
+                    <td>1 Action</td>
+                    <td>60 feet</td>
+                    <td>Instant</td>
+                    <td>Artificer, Sorcerer, Wizard</td>
+                </tr>
+                <tr id="bladeWard">
+                    <td>Cantrip</td>
+                    <td><b><a href="spells/blade_ward">Blade Ward</a></b></td>
+                    <td>🛡️ Abjuration</td>
+                    <td>1 Action</td>
+                    <td>Self</td>
+                    <td>1 Round</td>
+                    <td>Bard, Sorcerer, Warlock, Wizard</td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="js/spells.js"></script>
+    </body>
+</html>

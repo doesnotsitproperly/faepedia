@@ -1,4 +1,4 @@
-import chevron
+import chevron, os
 
 class Level:
     CANTRIP = "Cantrip"
@@ -33,7 +33,7 @@ def classes(array):
             string += f", {c}"
     return string
 
-with open("spells.mustache", "r") as f:
+with open(os.path.join("mustache", "spells.mustache"), "r") as f:
     render = chevron.render(f, {
         "spells": [
             {
