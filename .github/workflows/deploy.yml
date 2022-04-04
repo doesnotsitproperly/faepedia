@@ -14,5 +14,6 @@ jobs:
             - run: git config user.email "doesnotsitproperly@gmail.com"
             - run: git config user.name "doesnotsitproperly"
 
+            - run: git add
             - run: git commit -m "GitHub Actions - Deploy"
             - run: git push origin gh-pages
