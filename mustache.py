@@ -39,7 +39,7 @@ with open(os.path.join("mustache", "spells.mustache"), "r") as f:
             {
                 "id": "acidSplash",
                 "level": Level.CANTRIP,
-                "link": "spells/acid_splash",
+                "link": "spells/acid-splash",
                 "name": "Acid Splash",
                 "school": School.CONJURATION,
                 "castingTime": "1 Action",
@@ -50,7 +50,7 @@ with open(os.path.join("mustache", "spells.mustache"), "r") as f:
             {
                 "id": "bladeWard",
                 "level": Level.CANTRIP,
-                "link": "spells/blade_ward",
+                "link": "spells/blade-ward",
                 "name": "Blade Ward",
                 "school": School.ABJURATION,
                 "castingTime": "1 Action",
