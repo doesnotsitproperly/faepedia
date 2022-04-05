@@ -33,22 +33,37 @@ class Class:
     WARLOCK = "Warlock"
     WIZARD = "Wizard"
 
-def classes(array):
-    string = ""
-    for c in array:
-        if string == "":
-            string += c
+def toCamelCase(s: str) -> str:
+    first = True
+    newString = ""
+    for c in s:
+        if first:
+            newString += c.lower()
+            first = False
+        elif c == ' ':
+            pass
         else:
-            string += f", {c}"
-    return string
+            newString += c
+    return newString
+
+def toKebabCase(s: str) -> str:
+    newString = ""
+    for c in s:
+        if c.isupper():
+            newString += c.lower()
+        elif c == ' ':
+            newString += '-'
+        else:
+            newString += c
+    return newString
+
+seperator = ", "
 
 spells = {
     "spells": [
         {
-            "id": "acidSplash",
-            "level": Level.CANTRIP,
-            "link": "acid-splash",
             "name": "Acid Splash",
+            "level": Level.CANTRIP,
             "school": School.CONJURATION,
 
             "castingTime": "1 Action",
@@ -58,13 +73,11 @@ spells = {
 
             "description": "<p>You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take 1d6 acid damage.</p><p><b>At higher levels:</b> This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>",
 
-            "classes": classes([ Class.ARTIFICER, Class.SORCERER, Class.WIZARD ])
+            "classes": seperator.join([ Class.ARTIFICER, Class.SORCERER, Class.WIZARD ])
         },
         {
-            "id": "bladeWard",
-            "level": Level.CANTRIP,
-            "link": "blade-ward",
             "name": "Blade Ward",
+            "level": Level.CANTRIP,
             "school": School.ABJURATION,
 
             "castingTime": "1 Action",
@@ -74,13 +87,11 @@ spells = {
 
             "description": "<p>You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.</p>",
 
-            "classes": classes([ Class.BARD, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
+            "classes": seperator.join([ Class.BARD, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
         },
         {
-            "id": "boomingBlade",
-            "level": Level.CANTRIP,
-            "link": "booming-blade",
             "name": "Booming Blade",
+            "level": Level.CANTRIP,
             "school": School.EVOCATION,
 
             "castingTime": "1 Action",
@@ -90,31 +101,30 @@ spells = {
 
             "description": "<p>You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends.</p><p><b>At higher levels:</b> At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>",
 
-            "classes": classes([ Class.ARTIFICER, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
+            "classes": seperator.join([ Class.ARTIFICER, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
         }
     ]
 }
 
+# spells.html
 with open(os.path.join("mustache", "spells.mustache"), "r") as f:
-    render = chevron.render(f, spells)
+    for spell in spells.get("spells"):
+        spell["id"] = toCamelCase(spell.get("name"))
+        spell["link"] = toKebabCase(spell.get("name"))
 
+    render = chevron.render(f, spells)
 with open("spells.html", "w", encoding="utf-8") as f:
     f.write(render)
 
+# spells/*.html
 for spell in spells.get("spells"):
     link = spell.get("link")
 
-    if spell.get("level") == "Cantrip":
-        schoolAndLevel = spell.get("school")
-        schoolAndLevel += " cantrip"
-    else:
-        school = spell.get("school")
-        level = spell.get("level")
-        schoolAndLevel = f"{level} {school} spell"
-    spell["schoolAndLevel"] = schoolAndLevel
+    school = spell.get("school")
+    level = spell.get("level")
+    spell["schoolAndLevel"] = f"{school} cantrip" if spell.get("level") == "Cantrip" else f"{level} {school} spell"
 
     with open(os.path.join("mustache", "spell.mustache"), "r") as f:
         render = chevron.render(f, spell)
-
     with open(os.path.join("spells", f"{link}.html"), "w", encoding="utf-8") as f:
         f.write(html.unescape(render))
