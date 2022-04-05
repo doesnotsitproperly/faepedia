@@ -2,6 +2,8 @@
 
 a very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki
 
+uses [Chevron](https://github.com/noahmorrison/chevron) for [Mustache]([Mustache](https://mustache.github.io/))
+
 i'm dedicated to making Faepedia accessible to as many people as i can. if you know a way i can improve the site, let me know (my email is doesnotsitproperly at gmail.com)!
 
 other useful Dungeons & Dragons sites:
