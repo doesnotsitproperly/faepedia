@@ -1,6 +1,5 @@
 #!/bin/env python3
 
-from pydoc import describe
 import chevron, html, os
 
 class Level:
