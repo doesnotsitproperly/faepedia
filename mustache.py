@@ -35,18 +35,18 @@ class Class:
     WARLOCK = "Warlock"
     WIZARD = "Wizard"
 
+# HTML
 def bold(s: str) -> str:
     return "<b>" + s + "</b>"
-
+def paragraph(s: str) -> str:
+    return "<p>" + s + "</p>"
 def unorderedList(*s: str) -> str:
     items = ""
     for item in s:
         items += "<li>" + item + "</li>"
     return "<ul>" + items + "</ul>"
 
-def paragraph(s: str) -> str:
-    return "<p>" + s + "</p>"
-
+# Formatting
 def toCamelCase(s: str) -> str:
     first = True
     newString = ""
@@ -59,7 +59,6 @@ def toCamelCase(s: str) -> str:
         else:
             newString += c
     return newString
-
 def toKebabCase(s: str) -> str:
     newString = ""
     for c in s:
@@ -144,6 +143,20 @@ spells = {
             "description": paragraph("You choose a nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:") + unorderedList("You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.", "You instantaneously extinguish the flames within the cube.", "You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.", "You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour.") + paragraph("If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."),
 
             "classes": seperator.join([ Class.DRUID, Class.SORCERER, Class.WIZARD ])
+        },
+        {
+            "name": "Create Bonfire",
+            "level": Level.CANTRIP,
+            "school": School.CONJURATION,
+
+            "castingTime": "1 Action",
+            "rangeArea": "60 feet",
+            "components": "V, S",
+            "duration": "Concentration, up to 1 minute",
+
+            "description": paragraph("You create a bonfire on ground that you can see within range. Until the spell ends, the bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire's space for the first time on a turn or ends its turn there.") + paragraph(bold("At higher levels:") + " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
+
+            "classes": seperator.join([ Class.DRUID, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
         }
     ]
 }
