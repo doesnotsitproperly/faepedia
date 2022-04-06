@@ -22,7 +22,7 @@ table {
     table-layout: fixed;
     width: 100%;
 }
-tbody tr:nth-child(even) {
+tbody tr:nth-child(odd) {
     background-color: #dda0dd;
 }
 th, td {
