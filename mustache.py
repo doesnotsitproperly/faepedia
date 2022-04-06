@@ -157,6 +157,48 @@ spells = {
             "description": paragraph("You create a bonfire on ground that you can see within range. Until the spell ends, the bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire's space for the first time on a turn or ends its turn there.") + paragraph(bold("At higher levels:") + " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
 
             "classes": seperator.join([ Class.DRUID, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
+        },
+        {
+            "name": "Dancing Lights",
+            "level": Level.CANTRIP,
+            "school": School.EVOCATION,
+
+            "castingTime": "1 Action",
+            "rangeArea": "120 feet",
+            "components": "V, S, M (a bit of phosphorus or wychwood, or a glowworm)",
+            "duration": "Concentration, up to 1 minute",
+
+            "description": paragraph("You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.") + paragraph("As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range."),
+
+            "classes": seperator.join([ Class.ARTIFICER, Class.BARD, Class.SORCERER, Class.WIZARD ])
+        },
+        {
+            "name": "Druidcraft",
+            "level": Level.CANTRIP,
+            "school": School.TRANSMUTATION,
+
+            "castingTime": "1 Action",
+            "rangeArea": "30 feet",
+            "components": "V, S",
+            "duration": "Instant",
+
+            "description": paragraph("Whispering to the spirits of nature, you create one of the following effects within range:") + unorderedList("You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.", "You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.", "You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.", "You instantly light or snuff out a candle, a torch, or a small campfire."),
+
+            "classes": seperator.join([ Class.DRUID ])
+        },
+        {
+            "name": "Eldritch Blast",
+            "level": Level.CANTRIP,
+            "school": School.EVOCATION,
+
+            "castingTime": "1 Action",
+            "rangeArea": "120 feet",
+            "components": "V, S",
+            "duration": "Instant",
+
+            "description": paragraph("A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.") + paragraph(bold("At higher levels:") + " The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."),
+
+            "classes": seperator.join([ Class.WARLOCK ])
         }
     ]
 }
