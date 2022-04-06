@@ -5,8 +5,7 @@ const resizeBody = () => {
 
     if (isMobile) {
         body.style.width = `${window.innerWidth * 0.9}px`;
-    }
-    else {
+    } else {
         body.style.width = `${window.innerWidth * 0.6}px`;
     }
 }
@@ -16,8 +15,7 @@ const platformFormat = (pathToCss) => {
 
     if (isMobile) {
         stylesheet.setAttribute("href", `${pathToCss}/mobile.css`);
-    }
-    else {
+    } else {
         stylesheet.setAttribute("href", `${pathToCss}/default.css`);
     }
 }
