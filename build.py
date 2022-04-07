@@ -245,6 +245,7 @@ for file in os.listdir("css"):
 for file in os.listdir("js"):
     shutil.copy(os.path.join("js", file), os.path.join("build", "js"))
 files = [
+    "404.html",
     "backgrounds.html",
     "classes.html",
     "equipment.html",

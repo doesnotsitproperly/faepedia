@@ -36,6 +36,9 @@ footer {
 .notice {
     color: #a52a2a;
 }
+.center-align {
+    text-align: center;
+}
 .right-align {
     text-align: right;
 }
