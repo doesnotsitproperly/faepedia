@@ -2,7 +2,15 @@
 
 a very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki
 
-uses [Chevron](https://github.com/noahmorrison/chevron) for [Mustache](https://mustache.github.io/)
+stuff used:
+- for building:
+    - [Chevron](https://github.com/noahmorrison/chevron)
+    - [Mustache](https://mustache.github.io/)
+    - [Python](https://www.python.org/)
+- for GitHub Actions:
+    - [Checkout](https://github.com/marketplace/actions/checkout)
+    - [Deploy to GitHub Pages](https://github.com/marketplace/actions/deploy-to-github-pages)
+    - [Setup Python](https://github.com/marketplace/actions/setup-python)
 
 i'm dedicated to making Faepedia accessible to as many people as i can. if you know a way i can improve the site, let me know (my email is doesnotsitproperly at gmail.com)!
 
