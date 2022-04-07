@@ -1,0 +1,21 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - github-actions-test
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+      - run: pip install chevron
+      - run: python mustache.py
+
+      - uses: JamesIves/github-pages-deploy-action@v4.3.0
+        with:
+          branch: pages
+          folder: build
