@@ -124,8 +124,7 @@ const hideSpell = (spellAspect) => {
     for (let spell of spells) {
         if (spell.level == spellAspect || spell.school == spellAspect) {
             document.getElementById(spell.name).hidden = true;
-        }
-        else {
+        } else {
             for (let c of spell.classes) {
                 if (c == spellAspect) {
                     document.getElementById(spell.name).hidden = true;
