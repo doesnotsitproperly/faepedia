@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: "3.x"
       - run: pip install chevron
-      - run: python build.py
+      - run: python py/build.py
 
       - uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
