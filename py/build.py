@@ -19,7 +19,7 @@ with open("spells.mustache", "r") as f:
         spell["id"] = toCamelCase(spell.get("name"))
         spell["link"] = toKebabCase(spell.get("name"))
 
-    render = chevron.render(f, spells)
+    render = chevron.render(f, { "spells": spells })
 with open(os.path.join("build", "spells.html"), "w", encoding="utf-8") as f:
     f.write(render)
 
