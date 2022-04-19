@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 
 import chevron, html, os, shutil
 from spells import spells
@@ -15,7 +15,7 @@ os.mkdir(os.path.join("build", "spells"))
 
 # spells.html
 with open("spells.mustache", "r") as f:
-    for spell in spells.get("spells"):
+    for spell in spells:
         spell["id"] = toCamelCase(spell.get("name"))
         spell["link"] = toKebabCase(spell.get("name"))
 
@@ -24,7 +24,7 @@ with open(os.path.join("build", "spells.html"), "w", encoding="utf-8") as f:
     f.write(render)
 
 # spells/*.html
-for spell in spells.get("spells"):
+for spell in spells:
     link = spell.get("link")
 
     school = spell.get("school")
