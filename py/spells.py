@@ -126,5 +126,47 @@ spells = [
         "description": paragraph("A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.") + paragraph(bold("At higher levels:") + " The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."),
 
         "classes": Class.WARLOCK
+    },
+    {
+        "name": "Encode Thoughts",
+        "level": Level.CANTRIP,
+        "school": School.ENCHANTMENT,
+
+        "castingTime": "1 Action",
+        "rangeArea": "Self",
+        "components": "S",
+        "duration": "8 hours",
+
+        "description": paragraph("You pull a memory, an idea, or a message from your mind and transform it into a tangible string of glowing energy called a thought strand, which persists for the duration or until you cast this spell again. The thought strand appears in an unoccupied space within 5 feet of you as a Tiny, weightless, semisolid object that can be held and carried like a ribbon. It is otherwise stationary.") + paragraph("If you cast this spell while concentrating on a spell or an ability that allows you to read or manipulate the thoughts of others (such as Detect Thoughts or Modify Memory), you can transform the thoughts or memories you read, rather than your own, into a thought strand.") + paragraph("Casting this spell while holding a thought strand allows you to instantly receive whatever memory, idea, or message the thought strand contains. (Casting Detect Thoughts on the strand has the same effect.)"),
+
+        "classes": Class.WIZARD
+    },
+    {
+        "name": "Fire Bolt",
+        "level": Level.CANTRIP,
+        "school": School.EVOCATION,
+
+        "castingTime": "1 Action",
+        "rangeArea": "120 feet",
+        "components": "V, S",
+        "duration": "Instant",
+
+        "description": paragraph("You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.") + paragraph(bold("At higher levels:") + " This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."),
+
+        "classes": seperator.join([ Class.ARTIFICER, Class.SORCERER, Class.WIZARD ])
+    },
+    {
+        "name": "Friends",
+        "level": Level.CANTRIP,
+        "school": School.ENCHANTMENT,
+
+        "castingTime": "1 Action",
+        "rangeArea": "Self",
+        "components": "S, M (a small amount of makeup applied to the face as this spell is cast)",
+        "duration": "Concentration, up to 1 minute",
+
+        "description": paragraph("For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."),
+
+        "classes": seperator.join([ Class.BARD, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
     }
 ]
