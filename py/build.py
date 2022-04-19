@@ -14,13 +14,12 @@ os.mkdir(os.path.join("build", "js"))
 os.mkdir(os.path.join("build", "spells"))
 
 # spells.html
+for spell in spells:
+    spell["id"] = toCamelCase(spell.get("name"))
+    spell["link"] = toKebabCase(spell.get("name"))
 with open("spells.mustache", "r") as f:
-    for spell in spells:
-        spell["id"] = toCamelCase(spell.get("name"))
-        spell["link"] = toKebabCase(spell.get("name"))
-
     render = chevron.render(f, { "spells": spells })
-with open(os.path.join("build", "spells.html"), "w", encoding="utf-8") as f:
+with open(os.path.join("build", "spells.html"), "w", encoding = "utf-8") as f:
     f.write(render)
 
 # spells/*.html
@@ -33,7 +32,7 @@ for spell in spells:
 
     with open("spell.mustache", "r") as f:
         render = chevron.render(f, spell)
-    with open(os.path.join("build", "spells", f"{link}.html"), "w", encoding="utf-8") as f:
+    with open(os.path.join("build", "spells", f"{link}.html"), "w", encoding = "utf-8") as f:
         f.write(html.unescape(render))
 
 # All the other files
