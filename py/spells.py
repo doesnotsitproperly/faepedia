@@ -168,5 +168,47 @@ spells = [
         "description": paragraph("For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."),
 
         "classes": seperator.join([ Class.BARD, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
+    },
+    {
+        "name": "Frostbite",
+        "level": Level.CANTRIP,
+        "school": School.EVOCATION,
+
+        "castingTime": "1 Action",
+        "rangeArea": "60 feet",
+        "components": "V, S",
+        "duration": "Instant",
+
+        "description": paragraph("You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.") + paragraph(bold("At higher levels:") + " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+
+        "classes": seperator.join([ Class.ARTIFICER, Class.DRUID, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
+    },
+    {
+        "name": "Green-Flame Blade",
+        "level": Level.CANTRIP,
+        "school": School.EVOCATION,
+
+        "castingTime": "1 Action",
+        "rangeArea": "Self (5 foot radius)",
+        "components": "S, M (a melee weapon worth at least 1 silver piece)",
+        "duration": "Instant",
+
+        "description": paragraph("You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.") + paragraph(bold("At higher levels:") + " At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8)."),
+
+        "classes": seperator.join([ Class.ARTIFICER, Class.SORCERER, Class.WARLOCK, Class.WIZARD ])
+    },
+    {
+        "name": "Guidance",
+        "level": Level.CANTRIP,
+        "school": School.DIVINATION,
+
+        "castingTime": "1 Action",
+        "rangeArea": "Touch",
+        "components": "V, S",
+        "duration": "Concentration, up to 1 minute",
+
+        "description": paragraph("You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends."),
+
+        "classes": seperator.join([ Class.ARTIFICER, Class.CLERIC, Class.DRUID ])
     }
 ]
