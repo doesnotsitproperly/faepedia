@@ -1,49 +1,49 @@
 class Level:
-    CANTRIP = "Cantrip"
-    FIRST = "1st level"
-    SECOND = "2nd level"
-    THIRD = "3rd level"
-    FOURTH = "4th level"
-    FIFTH = "5th level"
-    SIXTH = "6th level"
-    SEVENTH = "7th level"
-    EIGHTH = "8th level"
-    NINTH = "9th level"
+    cantrip = "Cantrip"
+    first = "1st level"
+    second = "2nd level"
+    third = "3rd level"
+    fourth = "4th level"
+    fifth = "5th level"
+    sixth = "6th level"
+    seventh = "7th level"
+    eighth = "8th level"
+    ninth = "9th level"
 
 class School:
-    ABJURATION = "🛡️ Abjuration"
-    CONJURATION = "🔀 Conjuration"
-    DIVINATION = "🔮 Divination"
-    ENCHANTMENT = "😵‍💫 Enchantment"
-    EVOCATION = "🪄 Evocation"
-    ILLUSION = "❓ Illusion"
-    NECROMANCY = "☠️ Necromancy"
-    TRANSMUTATION = "🔁 Transmutation"
+    abjuration = "🛡️ Abjuration"
+    conjuration = "🔀 Conjuration"
+    divination = "🔮 Divination"
+    enchantment = "😵‍💫 Enchantment"
+    evocation = "🪄 Evocation"
+    illusion = "❓ Illusion"
+    necromancy = "☠️ Necromancy"
+    transmutation = "🔁 Transmutation"
 
 class Class:
-    ARTIFICER = "Artificer"
-    BARD = "Bard"
-    CLERIC = "Cleric"
-    DRUID = "Druid"
-    PALADIN = "Paladin"
-    RANGER = "Ranger"
-    SORCERER = "Sorcerer"
-    WARLOCK = "Warlock"
-    WIZARD = "Wizard"
+    artificer = "Artificer"
+    bard = "Bard"
+    cleric = "Cleric"
+    druid = "Druid"
+    paladin = "Paladin"
+    ranger = "Ranger"
+    sorcerer = "Sorcerer"
+    warlock = "Warlock"
+    wizard = "Wizard"
 
 # HTML
 def bold(s: str) -> str:
     return "<b>" + s + "</b>"
 def paragraph(s: str) -> str:
     return "<p>" + s + "</p>"
-def unorderedList(*s: str) -> str:
+def unordered_list(*s: str) -> str:
     items = ""
     for item in s:
         items += "<li>" + item + "</li>"
     return "<ul>" + items + "</ul>"
 
 # Formatting
-def toCamelCase(s: str) -> str:
+def to_camel_case(s: str) -> str:
     first = True
     newString = ""
     for c in s:
@@ -55,7 +55,7 @@ def toCamelCase(s: str) -> str:
         else:
             newString += c
     return newString
-def toKebabCase(s: str) -> str:
+def to_kebab_case(s: str) -> str:
     newString = ""
     for c in s:
         if c.isupper():

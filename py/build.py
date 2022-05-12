@@ -2,7 +2,7 @@
 
 import chevron, html, os, shutil
 from spells import spells
-from util import toCamelCase, toKebabCase
+from util import to_camel_case, to_kebab_case
 
 if os.path.isdir("build"):
     shutil.rmtree("build")
@@ -15,8 +15,8 @@ os.mkdir(os.path.join("build", "spells"))
 
 # spells.html
 for spell in spells:
-    spell["id"] = toCamelCase(spell.get("name"))
-    spell["link"] = toKebabCase(spell.get("name"))
+    spell["id"] = to_camel_case(spell.get("name"))
+    spell["link"] = to_kebab_case(spell.get("name"))
 with open("spells.mustache", "r") as f:
     render = chevron.render(f, { "spells": spells })
 with open(os.path.join("build", "spells.html"), "w", encoding = "utf-8") as f:
