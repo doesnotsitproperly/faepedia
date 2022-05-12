@@ -2,22 +2,13 @@ const isMobile = navigator.userAgent.includes("Mobi");
 
 const resizeBody = () => {
     const body = document.getElementsByTagName("body")[0];
-
-    if (isMobile) {
-        body.style.width = `${window.innerWidth * 0.9}px`;
-    } else {
-        body.style.width = `${window.innerWidth * 0.6}px`;
-    }
+    const width = window.innerWidth * (isMobile ? 0.9 : 0.6);
+    body.style.width = `${width}px`;
 }
 
 const platformFormat = (pathToCss) => {
     const stylesheet = document.getElementById("platformStylesheet");
-
-    if (isMobile) {
-        stylesheet.setAttribute("href", `${pathToCss}/mobile.css`);
-    } else {
-        stylesheet.setAttribute("href", `${pathToCss}/default.css`);
-    }
+    stylesheet.setAttribute("href", `${pathToCss}/${isMobile ? "mobile" : "default"}.css`);
 }
 
 resizeBody();
