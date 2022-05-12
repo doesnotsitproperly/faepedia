@@ -1,12 +1,12 @@
 :root {
     background-attachment: fixed;
-    background-color: #b55f8a;
+    background-color: #5b3045;
     background-repeat: no-repeat;
 }
 
 body {
-    background-color: #d8bfd8;
-    border: 3px solid black;
+    border: 3px dashed #b55f8a;
+    color: white;
     font-family: "Cousine", monospace;
     line-height: 2;
     margin: 20px auto;
@@ -23,18 +23,31 @@ table {
     width: 100%;
 }
 tbody tr:nth-child(odd) {
-    background-color: #dda0dd;
+    background-color: #743d58;
 }
 th, td {
-    border: 1px solid black;
+    border: 1px solid #b55f8a;
     padding: 10px;
 }
 footer {
     line-height: 1;
 }
 
+a {
+    color: #8cb4ff;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    color: white;
+    background-color: #8cb4ff;
+    text-decoration: none;
+}
+
 .notice {
-    color: #a52a2a;
+    color: #ff00ff;
 }
 .center-align {
     text-align: center;
