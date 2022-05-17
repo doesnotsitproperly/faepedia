@@ -8,18 +8,18 @@
         <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
 
         <link href="../logo.svg" rel="shortcut icon">
-        <title>Faepedia - {{name}}</title>
+        <title>Faepedia - {{ name }}</title>
     </head>
     <body>
         <script src="../js/format.js" onload="platformFormat('../css')"></script>
         <p><a href="../spells">Back to Spells</a></p>
-        <p class="top-block"><b>{{name}}</b></p>
-        <p class="bottom-block">{{schoolAndLevel}}</p>
-        <p class="top-block">Casting Time: {{castingTime}}</p>
-        <p class="middle-block">Range / Area: {{rangeArea}}</p>
-        <p class="middle-block">Components: {{components}}</p>
-        <p class="bottom-block">Duration: {{duration}}</p>
-        {{description}}
-        <p>Classes: {{classes}}</p>
+        <p class="top-block"><b>{{ name }}</b></p>
+        <p class="bottom-block">{{ schoolAndLevel }}</p>
+        <p class="top-block">Casting Time: {{ castingTime }}</p>
+        <p class="middle-block">Range / Area: {{ rangeArea }}</p>
+        <p class="middle-block">Components: {{ components }}</p>
+        <p class="bottom-block">Duration: {{ duration }}</p>
+        {{ description }}
+        <p>Classes: {{ classes }}</p>
     </body>
 </html>

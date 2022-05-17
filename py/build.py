@@ -17,7 +17,7 @@ os.mkdir(os.path.join("build", "spells"))
 for spell in spells:
     spell["id"] = to_camel_case(spell.get("name"))
     spell["link"] = to_kebab_case(spell.get("name"))
-with open("spells.jinja", "r") as f:
+with open(os.path.join("jinja", "spells.jinja"), "r") as f:
     template = jinja2.Template(f.read())
     render = template.render({ "spells": spells })
 with open(os.path.join("build", "spells.html"), "w", encoding = "utf-8") as f:
@@ -31,7 +31,7 @@ for spell in spells:
     level = spell.get("level")
     spell["schoolAndLevel"] = f"{school} cantrip" if spell.get("level") == "Cantrip" else f"{level} {school} spell"
 
-    with open("spell.jinja", "r") as f:
+    with open(os.path.join("jinja", "spell.jinja"), "r") as f:
         template = jinja2.Template(f.read())
         render = template.render(spell)
     with open(os.path.join("build", "spells", f"{link}.html"), "w", encoding = "utf-8") as f:

@@ -1,4 +1,4 @@
-# <img src="logo.svg" height="32" alt="The Faepedia logo: a red and indigo ampersand" /> [Faepedia](https://doesnotsitproperly.github.io/faepedia/)
+# <img src="logo.svg" height="32" alt="The Faepedia logo: a purple ampersand" /> [Faepedia](https://doesnotsitproperly.github.io/faepedia/)
 
 A very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki
 
