@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import chevron, html, os, shutil
+import jinja2, html, os, shutil
 from spells import spells
 from util import to_camel_case, to_kebab_case
 
@@ -17,8 +17,9 @@ os.mkdir(os.path.join("build", "spells"))
 for spell in spells:
     spell["id"] = to_camel_case(spell.get("name"))
     spell["link"] = to_kebab_case(spell.get("name"))
-with open("spells.mustache", "r") as f:
-    render = chevron.render(f, { "spells": spells })
+with open("spells.jinja", "r") as f:
+    template = jinja2.Template(f.read())
+    render = template.render({ "spells": spells })
 with open(os.path.join("build", "spells.html"), "w", encoding = "utf-8") as f:
     f.write(render)
 
@@ -30,8 +31,9 @@ for spell in spells:
     level = spell.get("level")
     spell["schoolAndLevel"] = f"{school} cantrip" if spell.get("level") == "Cantrip" else f"{level} {school} spell"
 
-    with open("spell.mustache", "r") as f:
-        render = chevron.render(f, spell)
+    with open("spell.jinja", "r") as f:
+        template = jinja2.Template(f.read())
+        render = template.render(spell)
     with open(os.path.join("build", "spells", f"{link}.html"), "w", encoding = "utf-8") as f:
         f.write(html.unescape(render))
 

@@ -4,13 +4,12 @@ A very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.o
 
 Stuff used:
 - For building:
-    - [Chevron](https://github.com/noahmorrison/chevron)
-    - [Mustache](https://mustache.github.io/)
-    - [Python](https://www.python.org/)
+    - [Jinja](https://github.com/pallets/jinja/)
+    - [Python](https://github.com/python/cpython)
 - For GitHub Actions:
-    - [Checkout](https://github.com/marketplace/actions/checkout)
-    - [Deploy to GitHub Pages](https://github.com/marketplace/actions/deploy-to-github-pages)
-    - [Setup Python](https://github.com/marketplace/actions/setup-python)
+    - [Checkout](https://github.com/actions/checkout)
+    - [Deploy to GitHub Pages](https://github.com/JamesIves/github-pages-deploy-action)
+    - [Setup Python](https://github.com/actions/setup-python)
 
 I'm dedicated to making Faepedia accessible to as many people as I can  
 If you know a way I can improve the site, let me know (my email is doesnotsitproperly at gmail.com)!

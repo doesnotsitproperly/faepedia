@@ -26,17 +26,17 @@
                 </tr>
             </thead>
             <tbody>
-                {{#spells}}
-                <tr id="{{id}}">
-                    <td>{{level}}</td>
-                    <td><b><a href="spells/{{link}}">{{name}}</a></b></td>
-                    <td>{{school}}</td>
-                    <td>{{castingTime}}</td>
-                    <td>{{rangeArea}}</td>
-                    <td>{{duration}}</td>
-                    <td>{{classes}}</td>
+                {% for spell in spells %}
+                <tr id="{{ spell.id }}">
+                    <td>{{ spell.level }}</td>
+                    <td><b><a href="spells/{{ spell.link }}">{{ spell.name }}</a></b></td>
+                    <td>{{ spell.school }}</td>
+                    <td>{{ spell.castingTime }}</td>
+                    <td>{{ spell.rangeArea }}</td>
+                    <td>{{ spell.duration }}</td>
+                    <td>{{ spell.classes }}</td>
                 </tr>
-                {{/spells}}
+                {% endfor %}
             </tbody>
         </table>
         <script src="js/spells.js"></script>
