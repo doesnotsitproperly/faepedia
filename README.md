@@ -4,7 +4,7 @@ A very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.o
 
 Stuff used:
 - For building:
-    - [Jinja](https://github.com/pallets/jinja/)
+    - [PHP](https://www.php.net/)
     - [Python](https://github.com/python/cpython)
 - For GitHub Actions:
     - [Checkout](https://github.com/actions/checkout)
