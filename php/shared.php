@@ -213,7 +213,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.") . paragraph(bold("At higher levels =>") . " The spell creates more than one beam when you reach higher levels => two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."),
+        "description" => paragraph("A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.") . paragraph(bold("At higher levels:") . " The spell creates more than one beam when you reach higher levels => two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam."),
 
         "classes" => _Class::WARLOCK
     ],
@@ -243,7 +243,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."),
+        "description" => paragraph("You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::SORCERER, _Class::WIZARD ])
     ],
@@ -273,7 +273,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+        "description" => paragraph("You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::DRUID, _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -288,7 +288,7 @@ $spells = [
         "components" => "S, M (a melee weapon worth at least 1 silver piece)",
         "duration" => "Instant",
 
-        "description" => paragraph("You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.") . paragraph(bold("At higher levels =>") . " At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 . your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8)."),
+        "description" => paragraph("You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.") . paragraph(bold("At higher levels:") . " At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 . your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -333,7 +333,7 @@ $spells = [
         "components" => "V, S, M (a living flea)",
         "duration" => "Instant",
 
-        "description" => paragraph("You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d6 poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d4 for the direction => 1, north; 2, south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+        "description" => paragraph("You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d6 poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d4 for the direction => 1, north; 2, south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
 
         "classes" => implode($seperator, [ _Class::DRUID, _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -363,7 +363,7 @@ $spells = [
         "components" => "V",
         "duration" => "Instant",
 
-        "description" => paragraph("You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
+        "description" => paragraph("You create a lash of lightning energy that strikes at one creature of your choice that you can see within 15 feet of you. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -438,7 +438,7 @@ $spells = [
         "components" => "V",
         "duration" => "1 Round",
 
-        "description" => paragraph("You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d6 when you reach certain levels => 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+        "description" => paragraph("You drive a disorienting spike of psychic energy into the mind of one creature you can see within range. The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d6 when you reach certain levels => 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
 
         "classes" => implode($seperator, [ _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -483,7 +483,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."),
+        "description" => paragraph("You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a Constitution saving throw or take 1d12 poison damage.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::DRUID, _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -513,7 +513,7 @@ $spells = [
         "components" => "S",
         "duration" => "Instant",
 
-        "description" => paragraph("You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage. After you make the attack, your teeth or fingernails return to normal.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."),
+        "description" => paragraph("You channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 acid damage. After you make the attack, your teeth or fingernails return to normal.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."),
 
         "classes" => _Class::DRUID
     ],
@@ -528,7 +528,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "10 minutes",
 
-        "description" => paragraph("A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.") . paragraph("You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
+        "description" => paragraph("A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.") . paragraph("You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
 
         "classes" => _Class::DRUID
     ],
@@ -543,7 +543,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
+        "description" => paragraph("A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::SORCERER, _Class::WIZARD ])
     ],
@@ -573,7 +573,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
+        "description" => paragraph("Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
 
         "classes" => _Class::CLERIC
     ],
@@ -588,7 +588,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take 1d4 necrotic damage and fall prone.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."),
+        "description" => paragraph("You sap the vitality of one creature you can see in range. The target must succeed on a Constitution saving throw or take 1d4 necrotic damage and fall prone.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."),
 
         "classes" => _Class::WIZARD
     ],
@@ -633,7 +633,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
+        "description" => paragraph("Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::SORCERER, _Class::WIZARD ])
     ],
@@ -663,7 +663,7 @@ $spells = [
         "components" => "V",
         "duration" => "Instant",
 
-        "description" => paragraph("You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+        "description" => paragraph("You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -693,7 +693,7 @@ $spells = [
         "components" => "V, S, M (the stem of a plant with thorns)",
         "duration" => "Instant",
 
-        "description" => paragraph("You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+        "description" => paragraph("You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::DRUID ])
     ],
@@ -708,7 +708,7 @@ $spells = [
         "components" => "S",
         "duration" => "Instant",
 
-        "description" => paragraph("You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+        "description" => paragraph("You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
 
         "classes" => implode($seperator, [ _Class::ARTIFICER, _Class::BARD, _Class::DRUID, _Class::SORCERER, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -723,7 +723,7 @@ $spells = [
         "components" => "V, S",
         "duration" => "Instant",
 
-        "description" => paragraph("You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12)."),
+        "description" => paragraph("You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.") . paragraph(bold("At higher levels:") . " The spell's damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12)."),
 
         "classes" => implode($seperator, [ _Class::CLERIC, _Class::WARLOCK, _Class::WIZARD ])
     ],
@@ -753,7 +753,7 @@ $spells = [
         "components" => "V",
         "duration" => "Instant",
 
-        "description" => paragraph("You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.") . paragraph(bold("At higher levels =>") . " This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."),
+        "description" => paragraph("You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.") . paragraph(bold("At higher levels:") . " This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4)."),
 
         "classes" => _Class::BARD
     ],
@@ -768,7 +768,7 @@ $spells = [
         "components" => "V, M (a holy symbol)",
         "duration" => "Instant",
 
-        "description" => paragraph("You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.") . paragraph(bold("At higher levels =>") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
+        "description" => paragraph("You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage.") . paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."),
 
         "classes" => _Class::CLERIC
     ]
