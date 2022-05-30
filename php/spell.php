@@ -12,7 +12,7 @@
     </head>
     <body>
         <script src="../js/format.js" onload="platformFormat('../css')"></script>
-        <p><a href="../spells.php">Back to Spells</a></p>
+        <p><a href="../spells">Back to Spells</a></p>
         <p class="top-block"><b><?= $name; ?></b></p>
         <p class="bottom-block"><?= $level == "Cantrip" ? sprintf("%s cantrip", $school) : sprintf("%s %s spell", $level, $school); ?></p>
         <p class="top-block">Casting Time: <?= $casting_time; ?></p>
