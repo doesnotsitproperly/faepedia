@@ -26,17 +26,18 @@
                 </tr>
             </thead>
             <tbody>
-                {% for spell in spells %}
-                <tr id="{{ spell.id }}">
-                    <td>{{ spell.level }}</td>
-                    <td><b><a href="spells/{{ spell.link }}">{{ spell.name }}</a></b></td>
-                    <td>{{ spell.school }}</td>
-                    <td>{{ spell.castingTime }}</td>
-                    <td>{{ spell.rangeArea }}</td>
-                    <td>{{ spell.duration }}</td>
-                    <td>{{ spell.classes }}</td>
+<?php include "shared.php"; ?>
+<?php foreach ($spells as $spell): ?>
+                <tr id="<?= to_camel_case($spell["name"]); ?>">
+                    <td><?= $spell["level"]; ?></td>
+                    <td><b><a href="spells/<?= to_kebab_case($spell["name"]); ?>"><?= $spell["name"]; ?></a></b></td>
+                    <td><?= $spell["school"]; ?></td>
+                    <td><?= $spell["casting_time"]; ?></td>
+                    <td><?= $spell["range_area"]; ?></td>
+                    <td><?= $spell["duration"]; ?></td>
+                    <td><?= $spell["classes"]; ?></td>
                 </tr>
-                {% endfor %}
+<?php endforeach; ?>
             </tbody>
         </table>
         <script src="js/spells.js"></script>

@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-import jinja2, html, os, shutil
-from spells import spells
-from util import to_camel_case, to_kebab_case
+import os, shutil
 
 if os.path.isdir("build"):
     shutil.rmtree("build")
@@ -12,30 +10,10 @@ os.mkdir(os.path.join("build", "classes"))
 os.mkdir(os.path.join("build", "css"))
 os.mkdir(os.path.join("build", "js"))
 os.mkdir(os.path.join("build", "spells"))
+os.mkdir(os.path.join("build", "races"))
 
-# spells.html
-for spell in spells:
-    spell["id"] = to_camel_case(spell.get("name"))
-    spell["link"] = to_kebab_case(spell.get("name"))
-with open(os.path.join("jinja", "spells.jinja"), "r") as f:
-    template = jinja2.Template(f.read())
-    render = template.render({ "spells": spells })
-with open(os.path.join("build", "spells.html"), "w", encoding = "utf-8") as f:
-    f.write(render)
-
-# spells/*.html
-for spell in spells:
-    link = spell.get("link")
-
-    school = spell.get("school")
-    level = spell.get("level")
-    spell["schoolAndLevel"] = f"{school} cantrip" if spell.get("level") == "Cantrip" else f"{level} {school} spell"
-
-    with open(os.path.join("jinja", "spell.jinja"), "r") as f:
-        template = jinja2.Template(f.read())
-        render = template.render(spell)
-    with open(os.path.join("build", "spells", f"{link}.html"), "w", encoding = "utf-8") as f:
-        f.write(html.unescape(render))
+# Create individual spell pages
+os.system("php" + " " + os.path.join("php", "create-spell-pages.php"))
 
 # All the other files
 for file in os.listdir("backgrounds"):
@@ -46,7 +24,11 @@ for file in os.listdir("css"):
     shutil.copy(os.path.join("css", file), os.path.join("build", "css"))
 for file in os.listdir("js"):
     shutil.copy(os.path.join("js", file), os.path.join("build", "js"))
+for file in os.listdir("races"):
+    shutil.copy(os.path.join("races", file), os.path.join("build", "races"))
 files = [
+    os.path.join("php", "shared.php"),
+    os.path.join("php", "spells.php"),
     "404.html",
     "backgrounds.html",
     "classes.html",

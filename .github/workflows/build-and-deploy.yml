@@ -12,8 +12,7 @@ jobs:
       - uses: actions/setup-python@v3
         with:
           python-version: "3.x"
-      - run: pip install Jinja2
-      - run: python py/build.py
+      - run: python build.py
 
       - uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
