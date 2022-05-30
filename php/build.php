@@ -20,3 +20,13 @@ foreach ($spells as $spell) {
         fclose($f);
     }
 }
+
+ob_start();
+include __DIR__ . "/spells.php";
+$output = ob_get_clean();
+$file = dirname(__DIR__) . "/build/spells.html";
+$f = fopen($file, "x");
+if ($f != false) {
+    fwrite($f, $output);
+    fclose($f);
+}

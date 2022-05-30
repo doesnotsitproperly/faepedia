@@ -13,7 +13,7 @@ os.mkdir(os.path.join("build", "spells"))
 os.mkdir(os.path.join("build", "races"))
 
 # Create individual spell pages
-os.system("php" + " " + os.path.join("php", "create-spell-pages.php"))
+os.system("php" + " " + os.path.join("php", "build.php"))
 
 # All the other files
 for file in os.listdir("backgrounds"):
@@ -27,8 +27,6 @@ for file in os.listdir("js"):
 for file in os.listdir("races"):
     shutil.copy(os.path.join("races", file), os.path.join("build", "races"))
 files = [
-    os.path.join("php", "shared.php"),
-    os.path.join("php", "spells.php"),
     "404.html",
     "backgrounds.html",
     "classes.html",

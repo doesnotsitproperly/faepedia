@@ -26,7 +26,6 @@
                 </tr>
             </thead>
             <tbody>
-<?php include "shared.php"; ?>
 <?php foreach ($spells as $spell): ?>
                 <tr id="<?= to_camel_case($spell["name"]); ?>">
                     <td><?= $spell["level"]; ?></td>

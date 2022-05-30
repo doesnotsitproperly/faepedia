@@ -193,8 +193,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -208,8 +208,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "120 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "120 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -223,8 +223,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::ENCHANTMENT,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self",
+        "casting_time" => "1 Action",
+        "range_area" => "Self",
         "components" => "S",
         "duration" => "8 hours",
 
@@ -238,8 +238,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "120 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "120 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -253,8 +253,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::ENCHANTMENT,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self",
+        "casting_time" => "1 Action",
+        "range_area" => "Self",
         "components" => "S, M (a small amount of makeup applied to the face as this spell is cast)",
         "duration" => "Concentration, up to 1 minute",
 
@@ -268,8 +268,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "60 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "60 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -283,8 +283,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self (5 foot radius)",
+        "casting_time" => "1 Action",
+        "range_area" => "Self (5 foot radius)",
         "components" => "S, M (a melee weapon worth at least 1 silver piece)",
         "duration" => "Instant",
 
@@ -298,8 +298,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::DIVINATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 Action",
+        "range_area" => "Touch",
         "components" => "V, S",
         "duration" => "Concentration, up to 1 minute",
 
@@ -313,8 +313,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -328,8 +328,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::CONJURATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "V, S, M (a living flea)",
         "duration" => "Instant",
 
@@ -343,8 +343,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 Action",
+        "range_area" => "Touch",
         "components" => "V, M (a firefly or phosphorescent moss)",
         "duration" => "1 hour",
 
@@ -358,8 +358,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self (15 foot radius)",
+        "casting_time" => "1 Action",
+        "range_area" => "Self (15 foot radius)",
         "components" => "V",
         "duration" => "Instant",
 
@@ -373,8 +373,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::CONJURATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "V, S",
         "duration" => "1 minute",
 
@@ -388,8 +388,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Bonus Action",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 Bonus Action",
+        "range_area" => "Touch",
         "components" => "V, S",
         "duration" => "1 minute",
 
@@ -403,8 +403,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 minute",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 minute",
+        "range_area" => "Touch",
         "components" => "V, S, M (two lodestones)",
         "duration" => "Instant",
 
@@ -418,8 +418,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "120 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "120 feet",
         "components" => "V, S, M (a short piece of copper wire)",
         "duration" => "1 Round",
 
@@ -433,8 +433,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::ENCHANTMENT,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "60 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "60 feet",
         "components" => "V",
         "duration" => "1 Round",
 
@@ -448,8 +448,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::ILLUSION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "S, M (a bit of fleece)",
         "duration" => "1 minute",
 
@@ -463,8 +463,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "S",
         "duration" => "Instant or 1 hour",
 
@@ -478,8 +478,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::CONJURATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "10 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "10 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -493,8 +493,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "10 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "10 feet",
         "components" => "V, S",
         "duration" => "1 hour",
 
@@ -508,8 +508,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self",
+        "casting_time" => "1 Action",
+        "range_area" => "Self",
         "components" => "S",
         "duration" => "Instant",
 
@@ -523,8 +523,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::CONJURATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self",
+        "casting_time" => "1 Action",
+        "range_area" => "Self",
         "components" => "V, S",
         "duration" => "10 minutes",
 
@@ -538,8 +538,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "60 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "60 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -553,8 +553,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::ABJURATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 Action",
+        "range_area" => "Touch",
         "components" => "V, S, M (a miniature cloak)",
         "duration" => "Concentration, up to 1 minute",
 
@@ -568,8 +568,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "60 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "60 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -583,8 +583,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::NECROMANCY,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -598,8 +598,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "S",
         "duration" => "Instant or 1 hour",
 
@@ -613,8 +613,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Bonus Action",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 Bonus Action",
+        "range_area" => "Touch",
         "components" => "V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)",
         "duration" => "1 minute",
 
@@ -628,8 +628,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 Action",
+        "range_area" => "Touch",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -643,8 +643,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::NECROMANCY,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Touch",
+        "casting_time" => "1 Action",
+        "range_area" => "Touch",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -658,8 +658,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::CONJURATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self (5 foot radius)",
+        "casting_time" => "1 Action",
+        "range_area" => "Self (5 foot radius)",
         "components" => "V",
         "duration" => "Instant",
 
@@ -673,8 +673,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "V",
         "duration" => "1 minute",
 
@@ -688,8 +688,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::TRANSMUTATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "V, S, M (the stem of a plant with thorns)",
         "duration" => "Instant",
 
@@ -703,8 +703,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "Self (5 foot radius)",
+        "casting_time" => "1 Action",
+        "range_area" => "Self (5 foot radius)",
         "components" => "S",
         "duration" => "Instant",
 
@@ -718,8 +718,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::NECROMANCY,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "60 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "60 feet",
         "components" => "V, S",
         "duration" => "Instant",
 
@@ -733,8 +733,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::DIVINATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "30 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
         "components" => "S",
         "duration" => "Concentration, up to 1 Round",
 
@@ -748,8 +748,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::ENCHANTMENT,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "60 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "60 feet",
         "components" => "V",
         "duration" => "Instant",
 
@@ -763,8 +763,8 @@ $spells = [
         "level" => Level::CANTRIP,
         "school" => School::EVOCATION,
 
-        "castingTime" => "1 Action",
-        "rangeArea" => "5 feet",
+        "casting_time" => "1 Action",
+        "range_area" => "5 feet",
         "components" => "V, M (a holy symbol)",
         "duration" => "Instant",
 
