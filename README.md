@@ -1,6 +1,6 @@
 # <img src="logo.svg" height="32" alt="The Faepedia logo: a purple ampersand" /> [Faepedia](https://doesnotsitproperly.github.io/faepedia/)
 
-A open-source (and very work-in-progress) [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki
+An open-source (and very work-in-progress) [Dungeons & Dragons](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons) wiki
 
 I'm dedicated to making Faepedia accessible to as many people as I can  
 If you know a way I can improve the site, let me know (my email is doesnotsitproperly at gmail.com)!
