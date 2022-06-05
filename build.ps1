@@ -32,7 +32,7 @@ function CopyFiles {
     param ([String] $Directory)
 
     $name = $Directory.Split([Path]::DirectorySeparatorChar)[-1]
-    foreach ($item in (Get-ChildItem (Join-Path $PSScriptRoot $name))) {
+    foreach ($item in Get-ChildItem (Join-Path $PSScriptRoot $name)) {
         Copy-Item $item $Directory
     }
 }
