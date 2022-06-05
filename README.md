@@ -5,11 +5,10 @@ A very work-in-progress, open-source [Dungeons & Dragons](https://en.wikipedia.o
 Stuff used:
 - For building:
     - [PHP](https://www.php.net/)
-    - [Python](https://github.com/python/cpython)
+    - [PowerShell](https://github.com/PowerShell/PowerShell)
 - For GitHub Actions:
     - [Checkout](https://github.com/actions/checkout)
     - [Deploy to GitHub Pages](https://github.com/JamesIves/github-pages-deploy-action)
-    - [Setup Python](https://github.com/actions/setup-python)
 
 I'm dedicated to making Faepedia accessible to as many people as I can  
 If you know a way I can improve the site, let me know (my email is doesnotsitproperly at gmail.com)!
