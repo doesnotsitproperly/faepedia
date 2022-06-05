@@ -8,12 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - uses: actions/setup-python@v3
-        with:
-          python-version: "3.x"
-      - run: python build.py
-
+      - run: pwsh build.ps1
       - uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           branch: pages
