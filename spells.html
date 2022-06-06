@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="shortcut icon" href="../logo.svg">
+        <link rel="shortcut icon" href="logo.svg">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
         <link rel="stylesheet" id="platformStylesheet">
