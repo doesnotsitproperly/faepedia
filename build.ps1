@@ -1,6 +1,7 @@
 #!/usr/bin/env pwsh
 
 using namespace System
+using namespace System.Diagnostics
 using namespace System.IO
 
 $buildDir = Join-Path $PSScriptRoot "build"
@@ -22,10 +23,10 @@ New-Item $jsDir -ItemType "directory" | Out-Null
 New-Item $racesDir -ItemType "directory" | Out-Null
 New-Item $spellsDir -ItemType "directory" | Out-Null
 
-try {
-    php (Join-Path $PSScriptRoot "php" "build.php")
-} catch {
-    Write-Output "Error calling PHP"
+$php = [Process]::Start("php", (Join-Path $PSScriptRoot "php" "build.php"))
+if ($php -ne $null) {
+    $php.WaitForExit()
+    $php.Dispose()
 }
 
 function CopyFiles {
