@@ -23,11 +23,7 @@ New-Item $jsDir -ItemType "directory" | Out-Null
 New-Item $racesDir -ItemType "directory" | Out-Null
 New-Item $spellsDir -ItemType "directory" | Out-Null
 
-$php = [Process]::Start("php", (Join-Path $PSScriptRoot "php" "build.php"))
-if ($php -ne $null) {
-    $php.WaitForExit()
-    $php.Dispose()
-}
+php (Join-Path $PSScriptRoot "php" "build.php")
 
 function CopyFiles {
     param ([String] $Directory)
