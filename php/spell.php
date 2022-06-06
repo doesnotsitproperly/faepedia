@@ -17,8 +17,10 @@
         <p class="middle-block">Range / Area: <?= $range_area; ?></p>
         <p class="middle-block">Components: <?= $components; ?></p>
         <p class="bottom-block">Duration: <?= $duration; ?></p>
-        <?= $description; ?>
+<?php foreach ($description as $element): ?>
+        <?= $element; ?>
         <?= PHP_EOL; ?>
+<?php endforeach; ?>
         <p>Classes: <?= $classes; ?></p>
     </body>
 </html>
