@@ -1,7 +1,6 @@
 #!/usr/bin/env pwsh
 
 using namespace System
-using namespace System.Diagnostics
 using namespace System.IO
 
 $buildDir = Join-Path $PSScriptRoot "build"
