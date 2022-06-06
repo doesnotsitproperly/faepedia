@@ -1,7 +1,5 @@
 :root {
-    background-attachment: fixed;
     background-color: #5b3045;
-    background-repeat: no-repeat;
 }
 
 body {
@@ -48,9 +46,6 @@ a:active {
 
 .notice {
     color: #ff00ff;
-}
-.center-align {
-    text-align: center;
 }
 .right-align {
     text-align: right;
