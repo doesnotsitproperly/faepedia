@@ -27,6 +27,7 @@ $items = @(
     "monsters.html"
     "races.html"
     "vehicles.html"
+    "LICENSE"
 )
 foreach ($item in $items) {
     Copy-Item (Join-Path $PSScriptRoot $item) $buildDir -Recurse
