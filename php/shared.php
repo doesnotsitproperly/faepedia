@@ -36,7 +36,6 @@ class SpellClass {
     const WIZARD = "Wizard";
 }
 
-// HTML
 function bold(string $s): string {
     return "<b>" . $s . "</b>";
 }
@@ -51,20 +50,6 @@ function unordered_list(string ...$s): string {
     return "<ul>" . $items . "</ul>";
 }
 
-// Formatting
-function to_camel_case(string $s): string {
-    $first = true;
-    $new_string = "";
-    foreach (str_split($s) as $char) {
-        if ($first) {
-            $new_string .= strtolower($char);
-            $first = false;
-        } elseif ($char != " ") {
-            $new_string .= $char;
-        }
-    }
-    return $new_string;
-}
 function to_kebab_case(string $s): string {
     $new_string = "";
     foreach (str_split($s) as $char) {

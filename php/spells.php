@@ -25,7 +25,7 @@
             </thead>
             <tbody>
 <?php foreach ($spells as $spell): ?>
-                <tr id="<?= to_camel_case($spell["name"]); ?>">
+                <tr id="<?= $spell["name"]; ?>">
                     <td><?= $spell["level"]; ?></td>
                     <td><b><a href="spells/<?= to_kebab_case($spell["name"]); ?>"><?= $spell["name"]; ?></a></b></td>
                     <td><?= $spell["school"]; ?></td>
