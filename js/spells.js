@@ -1,4 +1,4 @@
-fetch("../spells.json")
+fetch("spells.json")
     .then((response) => response.json())
     .then((spells) => {
         // This should work in the reverse way, only showing spells with the given aspect
