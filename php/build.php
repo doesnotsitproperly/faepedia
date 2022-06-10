@@ -61,6 +61,6 @@ foreach ($spells as $spell) {
 $file = dirname(__DIR__) . "/build/spells.json";
 $f = fopen($file, "x");
 if ($f != false) {
-    fwrite($f, json_encode($spellsJSON, JSON_PRETTY_PRINT) . PHP_EOL);
+    fwrite($f, json_encode([ "array" => $spellsJSON ], JSON_PRETTY_PRINT) . PHP_EOL);
     fclose($f);
 }
