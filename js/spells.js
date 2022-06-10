@@ -18,7 +18,8 @@ fetch("../spells.json")
             }
         }
 
-        for (const [ key, _ ] of new URLSearchParams(window.location.search)) {
+        const searchParams = new URLSearchParams(window.location.search);
+        for (const [ key, _ ] of searchParams) {
             hideSpell(key);
         }
     });
