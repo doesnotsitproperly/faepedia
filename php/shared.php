@@ -1,5 +1,44 @@
 <?php
 
+class EquipmentType {
+    const ADVENTURING_GEAR = "Adventuring Gear";
+    const AMMUNITION = "Ammuntion";
+    const ARCANE_FOCUS = "Arcane Focus";
+    const ARMOR_HEAVY = "Armor (Heavy)";
+    const ARMOR_LIGHT = "Armor (Light)";
+    const ARMOR_MEDIUM = "Armor (Medium)";
+    const DRUIDIC_FOCUS = "Druidic Focus";
+    const EQUIPMENT_PACK = "Equipment Pack";
+    const GEMSTONE = "Gemstone";
+    const HOLY_SYMBOL = "Holy Symbol";
+    const MOUNT = "Mount";
+    const POISON = "Poison";
+    const POTION = "Potion";
+    const SHIELD = "Shield";
+    const TOOL = "Tool";
+    const VEHICLE_LAND = "Vehicle (Land)";
+    const VEHICLE_WATER = "Vehicle (Water)";
+    const WEAPON_MELEE_MARTIAL = "Weapon (Melee, Martial)";
+    const WEAPON_MELEE_SIMPLE = "Weapon (Melee, Simple)";
+    const WEAPON_RANGED_FIREARM = "Weapon (Ranged, Firearm)";
+    const WEAPON_RANGED_MARTIAL = "Weapon (Ranged, Martial)";
+    const WEAPON_RANGED_SIMPLE = "Weapon (Ranged, Simple)";
+}
+
+class EquipmentTag {
+    const COMBAT = "Combat";
+    const CONSUMABLE = "Consumable";
+    const CONTAINER = "Container";
+    const CONTROL = "Control";
+    const DAMAGE = "Damage";
+    const EXPLORATION = "Exploration";
+    const HEALING = "Healing";
+    const INSTRUMENT = "Instrument";
+    const MOVEMENT = "Movement";
+    const RELOADING = "Reloading";
+    const UTILITY = "Utility";
+}
+
 class SpellLevel {
     const CANTRIP = "Cantrip";
     const FIRST = "1st level";
@@ -66,7 +105,87 @@ function to_kebab_case(string $s): string {
 
 $seperator = ", ";
 
+$equipment = [
+    // Adventuring Gear
+    [
+        // https://www.dndbeyond.com/equipment/abacus
+        "name" => "Abacus",
+        "type" => EquipmentType::ADVENTURING_GEAR,
+        "cost" => 2,
+        "weight" => 2,
+        "tags" => EquipmentTag::UTILITY
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/acid-vial
+        "name" => "Acid (Vial)",
+        "type" => EquipmentType::ADVENTURING_GEAR,
+        "cost" => 25,
+        "weight" => 1,
+        "tags" => implode($seperator, [ EquipmentTag::COMBAT, EquipmentTag::DAMAGE, EquipmentTag::UTILITY ])
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/alchemists-fire-flask
+        "name" => "Alchemist's Fire (Flask)",
+        "type" => EquipmentType::ADVENTURING_GEAR,
+        "cost" => 50,
+        "weight" => 1,
+        "tags" => implode($seperator, [ EquipmentTag::COMBAT, EquipmentTag::CONSUMABLE, EquipmentTag::DAMAGE, EquipmentTag::UTILITY ])
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/alms-box
+        "name" => "Alms Box",
+        "type" => EquipmentType::ADVENTURING_GEAR,
+        "cost" => 0,
+        "weight" => 0,
+        "tags" => EquipmentTag::UTILITY
+    ],
+    // Gemstones
+    [
+        // https://www.dndbeyond.com/equipment/alexandrite
+        "name" => "Alexandrite",
+        "type" => EquipmentType::GEMSTONE,
+        "cost" => 500,
+        "weight" => 0,
+        "tags" => ""
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/amber
+        "name" => "Amber",
+        "type" => EquipmentType::GEMSTONE,
+        "cost" => 100,
+        "weight" => 0,
+        "tags" => ""
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/amethyst
+        "name" => "Amethyst",
+        "type" => EquipmentType::GEMSTONE,
+        "cost" => 100,
+        "weight" => 0,
+        "tags" => ""
+    ],
+    // Holy Symbols
+    [
+        // https://www.dndbeyond.com/equipment/amulet
+        "name" => "Amulet",
+        "type" => EquipmentType::HOLY_SYMBOL,
+        "cost" => 5,
+        "weight" => 1,
+        "tags" => EquipmentTag::UTILITY
+    ],
+    // Tools
+    [
+        // https://www.dndbeyond.com/equipment/alchemists-supplies
+        "name" => "Alchemist's Supplies",
+        "type" => EquipmentType::TOOL,
+        "cost" => 50,
+        "weight" => 8,
+        "tags" => EquipmentTag::UTILITY
+    ]
+];
+
 $spells = [
+    // Cantrips
     [
         // https://www.dndbeyond.com/spells/acid-splash
         "name" => "Acid Splash",
