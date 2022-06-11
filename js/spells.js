@@ -33,6 +33,9 @@ const hideSpell = (spellAspect) => {
     for (const spell of filteredSpells) {
         const [ level, school, classes ] = getSpellAspects(spell);
         if (level != spellAspect && !school.includes(spellAspect) && !classes.includes(spellAspect)) {
+            filteredSpells = filteredSpells.filter((value) => {
+                return value != spell;
+            });
             spell.hidden = true;
         }
     }
