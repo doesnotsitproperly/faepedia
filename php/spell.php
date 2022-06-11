@@ -12,7 +12,7 @@
         <script src="../js/format.js" onload="platformFormat('../css')"></script>
         <p><a href="../spells">Back to Spells</a></p>
         <p class="top-block"><b><?= $name; ?></b></p>
-        <p class="bottom-block"><?= $level == "Cantrip" ? sprintf("%s cantrip", $school) : sprintf("%s %s spell", $level, $school); ?></p>
+        <p class="bottom-block"><?= $level == "Cantrip" ? $school . " cantrip" : $level . " " . $school . " spell"; ?></p>
         <p class="top-block">Casting Time: <?= $casting_time; ?></p>
         <p class="middle-block">Range / Area: <?= $range_area; ?></p>
         <p class="middle-block">Components: <?= $components; ?></p>

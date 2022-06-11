@@ -103,6 +103,19 @@ function to_kebab_case(string $s): string {
     return $new_string;
 }
 
+function pluralize(float $number, string $units, string $aspect): string {
+    $new_string = "";
+    if ($number > 0) {
+        $new_string = strval($number) . " " . $units;
+        if ($number > 1 || $number < 1) {
+            $new_string .= "s";
+        }
+    } else {
+        $new_string = "No applicable " . $aspect;
+    }
+    return $new_string;
+}
+
 $seperator = ", ";
 
 $equipment = [

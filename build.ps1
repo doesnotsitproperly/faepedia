@@ -6,7 +6,6 @@ if (Test-Path $buildDir) {
     Remove-Item $buildDir -Recurse
 }
 New-Item $buildDir -ItemType "directory" | Out-Null
-New-Item (Join-Path $buildDir "equipment") -ItemType "directory" | Out-Null
 New-Item (Join-Path $buildDir "spells") -ItemType "directory" | Out-Null
 
 php (Join-Path $PSScriptRoot "php" "build.php")

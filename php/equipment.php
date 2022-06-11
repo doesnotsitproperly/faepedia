@@ -25,10 +25,10 @@
 <?php foreach ($equipment as $item): ?>
                 <tr id="<?= $item["name"]; ?>">
                     <td><?= $item["type"]; ?></td>
-                    <td><b><a href="equipment/<?= to_kebab_case($item["name"]); ?>"><?= $item["name"]; ?></a></b></td>
-                    <td><?= $item["cost"] > 0 ? sprintf("%s gold piece(s)", $item["cost"]) : "Not applicable"; ?></td>
-                    <td><?= $item["weight"] > 0 ? sprintf("%s pound(s)", $item["weight"]) : "Not applicable"; ?></td>
-                    <td><?= $item["tags"]; ?></td>
+                    <td><b><?= $item["name"]; ?></b></td>
+                    <td><?= pluralize($item["cost"], "gold piece", "cost"); ?></td>
+                    <td><?= pluralize($item["weight"], "pound", "weight"); ?></td>
+                    <td><?= strlen($item["tags"]) > 0 ? $item["tags"] : "No applicable tags" ?></td>
                 </tr>
 <?php endforeach; ?>
             </tbody>
