@@ -1,5 +1,7 @@
 #!/usr/bin/env pwsh
 
+using namespace System.IO
+
 $buildDir = Join-Path $PSScriptRoot "build"
 
 if (Test-Path $buildDir) {
@@ -8,7 +10,10 @@ if (Test-Path $buildDir) {
 New-Item $buildDir -ItemType "directory" | Out-Null
 New-Item (Join-Path $buildDir "spells") -ItemType "directory" | Out-Null
 
+$directorySeparatorFile = Join-Path $PSScriptRoot "directory_separator.txt"
+[File]::WriteAllText($directorySeparatorFile, [Path]::DirectorySeparatorChar)
 php (Join-Path $PSScriptRoot "php" "build.php")
+Remove-Item $directorySeparatorFile
 
 $items = @(
     "backgrounds"
