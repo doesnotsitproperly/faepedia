@@ -1,80 +1,5 @@
 <?php
 
-class EquipmentType {
-    const ADVENTURING_GEAR = "Adventuring Gear";
-    const AMMUNITION = "Ammuntion";
-    const ARCANE_FOCUS = "Arcane Focus";
-    const ARMOR_HEAVY = "Armor (Heavy)";
-    const ARMOR_LIGHT = "Armor (Light)";
-    const ARMOR_MEDIUM = "Armor (Medium)";
-    const DRUIDIC_FOCUS = "Druidic Focus";
-    const EQUIPMENT_PACK = "Equipment Pack";
-    const GEMSTONE = "Gemstone";
-    const HOLY_SYMBOL = "Holy Symbol";
-    const MOUNT = "Mount";
-    const POISON = "Poison";
-    const POTION = "Potion";
-    const SHIELD = "Shield";
-    const TOOL = "Tool";
-    const VEHICLE_LAND = "Vehicle (Land)";
-    const VEHICLE_WATER = "Vehicle (Water)";
-    const WEAPON_MELEE_MARTIAL = "Weapon (Melee, Martial)";
-    const WEAPON_MELEE_SIMPLE = "Weapon (Melee, Simple)";
-    const WEAPON_RANGED_FIREARM = "Weapon (Ranged, Firearm)";
-    const WEAPON_RANGED_MARTIAL = "Weapon (Ranged, Martial)";
-    const WEAPON_RANGED_SIMPLE = "Weapon (Ranged, Simple)";
-}
-
-class EquipmentTag {
-    const COMBAT = "Combat";
-    const CONSUMABLE = "Consumable";
-    const CONTAINER = "Container";
-    const CONTROL = "Control";
-    const DAMAGE = "Damage";
-    const EXPLORATION = "Exploration";
-    const HEALING = "Healing";
-    const INSTRUMENT = "Instrument";
-    const MOVEMENT = "Movement";
-    const RELOADING = "Reloading";
-    const UTILITY = "Utility";
-}
-
-class SpellLevel {
-    const CANTRIP = "Cantrip";
-    const FIRST = "1st level";
-    const SECOND = "2nd level";
-    const THIRD = "3rd level";
-    const FOURTH = "4th level";
-    const FIFTH = "5th level";
-    const SIXTH = "6th level";
-    const SEVENTH = "7th level";
-    const EIGHTH = "8th level";
-    const NINTH = "9th level";
-}
-
-class SpellSchool {
-    const ABJURATION = "🛡️ Abjuration";
-    const CONJURATION = "🔀 Conjuration";
-    const DIVINATION = "🔮 Divination";
-    const ENCHANTMENT = "😵‍💫 Enchantment";
-    const EVOCATION = "🪄 Evocation";
-    const ILLUSION = "❓ Illusion";
-    const NECROMANCY = "☠️ Necromancy";
-    const TRANSMUTATION = "🔁 Transmutation";
-}
-
-class SpellClass {
-    const ARTIFICER = "Artificer";
-    const BARD = "Bard";
-    const CLERIC = "Cleric";
-    const DRUID = "Druid";
-    const PALADIN = "Paladin";
-    const RANGER = "Ranger";
-    const SORCERER = "Sorcerer";
-    const WARLOCK = "Warlock";
-    const WIZARD = "Wizard";
-}
-
 function bold(string $s): string {
     return "<b>" . $s . "</b>";
 }
@@ -117,6 +42,45 @@ function pluralize(float $number, string $units, string $aspect): string {
 }
 
 $seperator = ", ";
+
+class EquipmentType {
+    const ADVENTURING_GEAR = "Adventuring Gear";
+    const AMMUNITION = "Ammuntion";
+    const ARCANE_FOCUS = "Arcane Focus";
+    const ARMOR_HEAVY = "Armor (Heavy)";
+    const ARMOR_LIGHT = "Armor (Light)";
+    const ARMOR_MEDIUM = "Armor (Medium)";
+    const DRUIDIC_FOCUS = "Druidic Focus";
+    const EQUIPMENT_PACK = "Equipment Pack";
+    const GEMSTONE = "Gemstone";
+    const HOLY_SYMBOL = "Holy Symbol";
+    const MOUNT = "Mount";
+    const POISON = "Poison";
+    const POTION = "Potion";
+    const SHIELD = "Shield";
+    const TOOL = "Tool";
+    const VEHICLE_LAND = "Vehicle (Land)";
+    const VEHICLE_WATER = "Vehicle (Water)";
+    const WEAPON_MELEE_MARTIAL = "Weapon (Melee, Martial)";
+    const WEAPON_MELEE_SIMPLE = "Weapon (Melee, Simple)";
+    const WEAPON_RANGED_FIREARM = "Weapon (Ranged, Firearm)";
+    const WEAPON_RANGED_MARTIAL = "Weapon (Ranged, Martial)";
+    const WEAPON_RANGED_SIMPLE = "Weapon (Ranged, Simple)";
+}
+
+class EquipmentTag {
+    const COMBAT = "Combat";
+    const CONSUMABLE = "Consumable";
+    const CONTAINER = "Container";
+    const CONTROL = "Control";
+    const DAMAGE = "Damage";
+    const EXPLORATION = "Exploration";
+    const HEALING = "Healing";
+    const INSTRUMENT = "Instrument";
+    const MOVEMENT = "Movement";
+    const RELOADING = "Reloading";
+    const UTILITY = "Utility";
+}
 
 $equipment = [
     // Adventuring Gear
@@ -196,6 +160,101 @@ $equipment = [
         "tags" => EquipmentTag::UTILITY
     ]
 ];
+
+class MonsterType {
+    const BEAST = "Beast";
+}
+
+class MonsterSize {
+    const TINY = "Tiny";
+}
+
+class MonsterAlignment {
+    const UNALIGNED = "Unaligned";
+}
+
+class MonsterTag {
+    const MISC_CREATURE = "Misc. Creature";
+}
+
+$monsters = [
+    // Aberrations
+    // Beasts
+    [
+        "name" => "Rat",
+        "challenge_rating" => 0,
+        "type" => MonsterType::BEAST,
+        "alignment" => MonsterAlignment::UNALIGNED,
+        "tags" => MonsterTag::MISC_CREATURE,
+
+        "armor_class" => 10,
+        "hit_points" => "1 (1d4 - 1)",
+        "speed" => "20 feet",
+
+        "strength" => 2,
+        "dexterity" => 11,
+        "constitution" => 9,
+        "intelligence" => 2,
+        "wisdom" => 10,
+        "charisma" => 4,
+
+        "senses" => "Darkvision (30 feet), Passive Perception (10)",
+        "languages" => "None",
+        "proficiency_bonus" => 2,
+
+        "abilities" => [ bold("Keen Smell:") . " Rats have advantage on Wisdom (Perception) checks that rely on smell." ],
+
+        "actions" => [ bold("Bite:") . " (Melee Weapon Attack) +0 to hit, 5 feet reach, one target, 1 piercing damage on hit" ]
+    ]
+    // Celestials
+    // Constructs
+    // Dragons
+    // Elementals
+    // Fey
+    // Fiends
+    // Giants
+    // Humanoids
+    // Monstrosities
+    // Oozes
+    // Plants
+    // Undead
+];
+
+class SpellLevel {
+    const CANTRIP = "Cantrip";
+    const FIRST = "1st level";
+    const SECOND = "2nd level";
+    const THIRD = "3rd level";
+    const FOURTH = "4th level";
+    const FIFTH = "5th level";
+    const SIXTH = "6th level";
+    const SEVENTH = "7th level";
+    const EIGHTH = "8th level";
+    const NINTH = "9th level";
+}
+
+class SpellSchool {
+    const ABJURATION = "🛡️ Abjuration";
+    const CONJURATION = "🔀 Conjuration";
+    const DIVINATION = "🔮 Divination";
+    const ENCHANTMENT = "😵‍💫 Enchantment";
+    const EVOCATION = "🪄 Evocation";
+    const ILLUSION = "❓ Illusion";
+    const NECROMANCY = "☠️ Necromancy";
+    const TRANSMUTATION = "🔁 Transmutation";
+}
+
+class SpellClass {
+    const ARTIFICER = "Artificer";
+    const BARD = "Bard";
+    const CLERIC = "Cleric";
+    const DRUID = "Druid";
+    const PALADIN = "Paladin";
+    const RANGER = "Ranger";
+    const SORCERER = "Sorcerer";
+    const WARLOCK = "Warlock";
+    const WIZARD = "Wizard";
+}
 
 $spells = [
     // Cantrips
