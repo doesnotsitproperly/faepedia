@@ -9,11 +9,26 @@ const toKebabCase = (text) => {
     }
     return newString;
 }
+
 const getSpellAspects = (spell) => {
-    const level = toKebabCase(spell.children[0].textContent);
-    const school = spell.children[2].textContent.toLowerCase();
-    const classes = spell.children[6].textContent.toLowerCase();
-    return [ level, school, classes ];
+    return [
+        toKebabCase(spell.children[0].textContent),
+        spell.children[2].textContent.toLowerCase(),
+        spell.children[6].textContent.toLowerCase()
+    ];
+}
+
+const styleRows = (rows) => {
+    let color = true;
+    for (const row of rows) {
+        if (color) {
+            row.style.backgroundColor = "#743d58";
+            color = false;
+        } else {
+            row.style.backgroundColor = "#5b3045";
+            color = true;
+        }
+    }
 }
 
 const spells = Array.from(document.getElementsByTagName("tr"));
@@ -28,6 +43,7 @@ const showSpell = (spellAspect) => {
             spell.hidden = false;
         }
     }
+    styleRows(filteredSpells);
 }
 const hideSpell = (spellAspect) => {
     for (const spell of filteredSpells) {
@@ -39,6 +55,7 @@ const hideSpell = (spellAspect) => {
             spell.hidden = true;
         }
     }
+    styleRows(filteredSpells);
 }
 
 let aspects = [];
