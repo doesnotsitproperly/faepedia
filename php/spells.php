@@ -28,7 +28,7 @@
                     <td><?= $spell["school"]; ?></td>
                     <td><?= $spell["classes"]; ?></td>
                 </tr>
-                <tr id="<?= $spell["name"] . " Details"; ?>">
+                <tr id="<?= $spell["name"] . " Details"; ?>" class="small-text">
                     <td colspan="4">
                         <p class="top-block">Casting Time: <?= $spell["casting_time"]; ?></p>
                         <p class="middle-block">Range / Area: <?= $spell["range_area"]; ?></p>
