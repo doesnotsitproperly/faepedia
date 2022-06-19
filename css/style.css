@@ -50,9 +50,6 @@ a:active {
 .right-align {
     text-align: right;
 }
-.spell-table tr td:nth-last-child(1) {
-    font-size: 75%;
-}
 
 .top-block {
     margin-bottom: 0;
