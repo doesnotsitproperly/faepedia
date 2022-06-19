@@ -11,28 +11,34 @@
     <body>
         <script src="js/format.js" onload="platformFormat('css')"></script>
         <p><a href="./">Back to homepage</a></p>
-        <table class="spell-table">
+        <table>
             <thead>
                 <tr>
                     <th>Level</th>
                     <th>Name</th>
                     <th>School</th>
-                    <th>Casting Time</th>
-                    <th>Range / Area</th>
-                    <th>Duration</th>
                     <th>Classes</th>
                 </tr>
             </thead>
             <tbody>
 <?php foreach ($spells as $spell): ?>
-                <tr id="<?= $spell["name"]; ?>">
+                <tr id="<?= $spell["name"]; ?>" class="spell">
                     <td><?= $spell["level"]; ?></td>
-                    <td><b><a href="spells/<?= to_kebab_case($spell["name"]); ?>"><?= $spell["name"]; ?></a></b></td>
+                    <td><b><?= $spell["name"]; ?></b></td>
                     <td><?= $spell["school"]; ?></td>
-                    <td><?= $spell["casting_time"]; ?></td>
-                    <td><?= $spell["range_area"]; ?></td>
-                    <td><?= $spell["duration"]; ?></td>
                     <td><?= $spell["classes"]; ?></td>
+                </tr>
+                <tr id="<?= $spell["name"] . " Details"; ?>">
+                    <td colspan="4">
+                        <p class="top-block">Casting Time: <?= $spell["casting_time"]; ?></p>
+                        <p class="middle-block">Range / Area: <?= $spell["range_area"]; ?></p>
+                        <p class="middle-block">Components: <?= $spell["components"]; ?></p>
+                        <p class="bottom-block">Duration: <?= $spell["duration"]; ?></p>
+<?php foreach ($spell["description"] as $element): ?>
+                        <?= $element; ?>
+                        <?= PHP_EOL; ?>
+<?php endforeach; ?>
+                    </td>
                 </tr>
 <?php endforeach; ?>
             </tbody>

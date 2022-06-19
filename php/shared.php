@@ -14,20 +14,6 @@ function unordered_list(string ...$s): string {
     return "<ul>" . $items . "</ul>";
 }
 
-function to_kebab_case(string $s): string {
-    $new_string = "";
-    foreach (str_split($s) as $char) {
-        if (ctype_upper($char)) {
-            $new_string .= strtolower($char);
-        } elseif ($char == " ") {
-            $new_string .= "-";
-        } else {
-            $new_string .= $char;
-        }
-    }
-    return $new_string;
-}
-
 function pluralize(float $number, string $units, string $aspect): string {
     $new_string = "";
     if ($number > 0) {

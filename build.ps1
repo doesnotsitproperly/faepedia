@@ -8,7 +8,6 @@ if (Test-Path $buildDir) {
     Remove-Item $buildDir -Recurse
 }
 New-Item $buildDir -ItemType "directory" | Out-Null
-New-Item (Join-Path $buildDir "spells") -ItemType "directory" | Out-Null
 
 $directorySeparatorFile = Join-Path $PSScriptRoot "directory_separator.txt"
 [File]::WriteAllText($directorySeparatorFile, [Path]::DirectorySeparatorChar)
