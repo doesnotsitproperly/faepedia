@@ -50,6 +50,9 @@ a:active {
 .right-align {
     text-align: right;
 }
+.small-text {
+    font-size: 75%;
+}
 
 .top-block {
     margin-bottom: 0;
