@@ -264,11 +264,10 @@ class SpellClass {
 class SpellComponent {
     const VERBAL = "Verbal";
     const SOMATIC = "Somatic";
-    function material(string $s): string {
+    static function material(string $s): string {
         return "Material " . "(" . $s . ")";
     }
 }
-const SPELL_COMPONENT = new SpellComponent;
 
 $spells = [
     // Cantrips
@@ -310,7 +309,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "Self (5 foot radius)",
-        "components" => join_list(SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a melee weapon worth at least 1 silver piece")),
+        "components" => join_list(SpellComponent::SOMATIC, SpellComponent::material("a melee weapon worth at least 1 silver piece")),
         "duration" => "1 Round",
 
         "description" => [ paragraph("You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves 5 feet or more before then, the target takes 1d8 thunder damage, and the spell ends."), paragraph(bold("At higher levels:") . " At 5th level, the melee attack deals an extra 1d8 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).") ],
@@ -370,7 +369,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "120 feet",
-        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a bit of phosphorus or wychwood, or a glowworm")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("a bit of phosphorus or wychwood, or a glowworm")),
         "duration" => "Concentration, up to 1 minute",
 
         "description" => [ paragraph("You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius."), paragraph("As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.") ],
@@ -445,7 +444,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "Self",
-        "components" => join_list(SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a small amount of makeup applied to the face as this spell is cast")),
+        "components" => join_list(SpellComponent::SOMATIC, SpellComponent::material("a small amount of makeup applied to the face as this spell is cast")),
         "duration" => "Concentration, up to 1 minute",
 
         "description" => [ paragraph("For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it.") ],
@@ -475,7 +474,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "Self (5 foot radius)",
-        "components" => join_list(SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a melee weapon worth at least 1 silver piece")),
+        "components" => join_list(SpellComponent::SOMATIC, SpellComponent::material("a melee weapon worth at least 1 silver piece")),
         "duration" => "Instant",
 
         "description" => [ paragraph("You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier."), paragraph(bold("At higher levels:") . " At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 . your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).") ],
@@ -520,7 +519,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "30 feet",
-        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a living flea")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("a living flea")),
         "duration" => "Instant",
 
         "description" => [ paragraph("You cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must succeed on a Constitution saving throw, or it takes 1d6 poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet. Roll a d4 for the direction: 1, north; 2, south; 3, east; or 4, west. This movement doesn't provoke opportunity attacks, and if the direction rolled is blocked, the target doesn't move."), paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
@@ -535,7 +534,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "Touch",
-        "components" => join_list(SpellComponent::VERBAL, SPELL_COMPONENT -> material("a firefly or phosphorescent moss")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::material("a firefly or phosphorescent moss")),
         "duration" => "1 hour",
 
         "description" => [ paragraph("You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action."), paragraph("If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.") ],
@@ -595,7 +594,7 @@ $spells = [
 
         "casting_time" => "1 minute",
         "range_area" => "Touch",
-        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SPELL_COMPONENT -> material("two lodestones")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("two lodestones")),
         "duration" => "Instant",
 
         "description" => [ paragraph("This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage."), paragraph("This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.") ],
@@ -610,7 +609,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "120 feet",
-        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a short piece of copper wire")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("a short piece of copper wire")),
         "duration" => "1 Round",
 
         "description" => [ paragraph("You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear."), paragraph("You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.") ],
@@ -640,7 +639,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "30 feet",
-        "components" => join_list(SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a bit of fleece")),
+        "components" => join_list(SpellComponent::SOMATIC, SpellComponent::material("a bit of fleece")),
         "duration" => "1 minute",
 
         "description" => [ paragraph("You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again."), paragraph("If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends."), paragraph("If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it."), paragraph("If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.") ],
@@ -745,7 +744,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "Touch",
-        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SPELL_COMPONENT -> material("a miniature cloak")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("a miniature cloak")),
         "duration" => "Concentration, up to 1 minute",
 
         "description" => [ paragraph("You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.") ],
@@ -805,7 +804,7 @@ $spells = [
 
         "casting_time" => "1 Bonus Action",
         "range_area" => "Touch",
-        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SPELL_COMPONENT -> material("mistletoe, a shamrock leaf, and a club or quarterstaff")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("mistletoe, a shamrock leaf, and a club or quarterstaff")),
         "duration" => "1 minute",
 
         "description" => [ paragraph("The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.") ],
@@ -880,7 +879,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "30 feet",
-        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SPELL_COMPONENT -> material("the stem of a plant with thorns")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("the stem of a plant with thorns")),
         "duration" => "Instant",
 
         "description" => [ paragraph("You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you."), paragraph(bold("At higher levels:") . " This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
@@ -955,7 +954,7 @@ $spells = [
 
         "casting_time" => "1 Action",
         "range_area" => "5 feet",
-        "components" => join_list(SpellComponent::VERBAL, SPELL_COMPONENT -> material("a holy symbol")),
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::material("a holy symbol")),
         "duration" => "Instant",
 
         "description" => [ paragraph("You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage."), paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
