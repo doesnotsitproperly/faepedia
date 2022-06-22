@@ -86,7 +86,7 @@ $equipment = [
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 25,
         "weight" => 1,
-        "tags" => implode($separator, [ EquipmentTag::COMBAT, EquipmentTag::DAMAGE, EquipmentTag::UTILITY ])
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE, EquipmentTag::UTILITY)
     ],
     [
         // https://www.dndbeyond.com/equipment/alchemists-fire-flask
@@ -94,7 +94,7 @@ $equipment = [
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 50,
         "weight" => 1,
-        "tags" => implode($separator, [ EquipmentTag::COMBAT, EquipmentTag::CONSUMABLE, EquipmentTag::DAMAGE, EquipmentTag::UTILITY ])
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::CONSUMABLE, EquipmentTag::DAMAGE, EquipmentTag::UTILITY)
     ],
     [
         // https://www.dndbeyond.com/equipment/alms-box
