@@ -46,7 +46,6 @@ class EquipmentType {
     const VEHICLE_WATER = "Vehicle (Water)";
     const WEAPON_MELEE_MARTIAL = "Weapon (Melee, Martial)";
     const WEAPON_MELEE_SIMPLE = "Weapon (Melee, Simple)";
-    const WEAPON_RANGED_FIREARM = "Weapon (Ranged, Firearm)";
     const WEAPON_RANGED_MARTIAL = "Weapon (Ranged, Martial)";
     const WEAPON_RANGED_SIMPLE = "Weapon (Ranged, Simple)";
 }
@@ -65,6 +64,22 @@ class EquipmentTag {
     const UTILITY = "Utility";
 }
 
+class WeaponProperty {
+    const AMMUNITION = "Ammunition";
+    const FINESSE = "Finesse";
+    const HEAVY = "Heavy";
+    const LIGHT = "Light";
+    const LOADING = "Loading";
+    const REACH = "Reach";
+    const SPECIAL = "Special";
+    const THROWN = "Thrown";
+    const TWO_HANDED = "Two-Handed";
+    const VERSATILE = "Versatile";
+    static function range(int $normal_range, int $long_range): string {
+        return "Range " . "(" . strval($normal_range). "/" . strval($long_range) . ")";
+    }
+}
+
 $equipment = [
     // Adventuring Gear
     [
@@ -73,7 +88,9 @@ $equipment = [
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 2,
         "weight" => 2,
-        "tags" => EquipmentTag::UTILITY
+        "tags" => EquipmentTag::UTILITY,
+
+        "description" => [ paragraph("A standard tool used to make calculations.") ]
     ],
     [
         // https://www.dndbeyond.com/equipment/acid-vial
@@ -81,7 +98,9 @@ $equipment = [
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 25,
         "weight" => 1,
-        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE, EquipmentTag::UTILITY)
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE, EquipmentTag::UTILITY),
+
+        "description" => [ paragraph("As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.") ]
     ],
     [
         // https://www.dndbeyond.com/equipment/alchemists-fire-flask
@@ -89,7 +108,9 @@ $equipment = [
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 50,
         "weight" => 1,
-        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::CONSUMABLE, EquipmentTag::DAMAGE, EquipmentTag::UTILITY)
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::CONSUMABLE, EquipmentTag::DAMAGE, EquipmentTag::UTILITY),
+
+        "description" => [ paragraph("This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.") ]
     ],
     [
         // https://www.dndbeyond.com/equipment/alms-box
@@ -97,7 +118,9 @@ $equipment = [
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => null,
         "weight" => null,
-        "tags" => EquipmentTag::UTILITY
+        "tags" => EquipmentTag::UTILITY,
+
+        "description" => [ paragraph("A small box for alms, typically found in a priest's pack.") ]
     ],
     [
         // https://www.dndbeyond.com/equipment/antitoxin
@@ -105,7 +128,9 @@ $equipment = [
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 50,
         "weight" => null,
-        "tags" => join_list(EquipmentTag::HEALING, EquipmentTag::UTILITY)
+        "tags" => join_list(EquipmentTag::HEALING, EquipmentTag::UTILITY),
+
+        "description" => [ paragraph("A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.") ]
     ],
     // Ammunitions
     [
@@ -114,7 +139,9 @@ $equipment = [
         "type" => EquipmentType::AMMUNITION,
         "cost" => 1,
         "weight" => 1,
-        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE)
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE),
+
+        "description" => [ paragraph("Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.") ]
     ],
     // Arcane Focuses
     [
@@ -123,7 +150,9 @@ $equipment = [
         "type" => EquipmentType::ARCANE_FOCUS,
         "cost" => null,
         "weight" => null,
-        "tags" => EquipmentTag::UTILITY
+        "tags" => EquipmentTag::UTILITY,
+
+        "description" => [ paragraph("An arcane focus is a special item designed to channel the power of arcane spells. A sorcerer, warlock, or wizard can use such an item as a spellcasting focus, as described in the Spellcasting section.") ]
     ],
     // Gemstones
     [
@@ -132,7 +161,9 @@ $equipment = [
         "type" => EquipmentType::GEMSTONE,
         "cost" => 500,
         "weight" => 0,
-        "tags" => null
+        "tags" => null,
+
+        "description" => [ paragraph("A transparent dark green gemstone worth 500 gold pieces.") ]
     ],
     [
         // https://www.dndbeyond.com/equipment/amber
@@ -140,7 +171,9 @@ $equipment = [
         "type" => EquipmentType::GEMSTONE,
         "cost" => 100,
         "weight" => null,
-        "tags" => null
+        "tags" => null,
+
+        "description" => [ paragraph("A transparent watery gold to rich gold gemstone worth 100 gold pieces. ") ]
     ],
     [
         // https://www.dndbeyond.com/equipment/amethyst
@@ -148,7 +181,9 @@ $equipment = [
         "type" => EquipmentType::GEMSTONE,
         "cost" => 100,
         "weight" => null,
-        "tags" => null
+        "tags" => null,
+
+        "description" => [ paragraph("A transparent deep purple gemstone worth 100 gold pieces.") ]
     ],
     [
         // https://www.dndbeyond.com/equipment/aquamarine
@@ -156,7 +191,9 @@ $equipment = [
         "type" => EquipmentType::GEMSTONE,
         "cost" => 500,
         "weight" => null,
-        "tags" => null
+        "tags" => null,
+
+        "description" => [ paragraph("A transparent pale blue-green gemstone worth 500 gold pieces.") ]
     ],
     // Holy Symbols
     [
@@ -165,7 +202,9 @@ $equipment = [
         "type" => EquipmentType::HOLY_SYMBOL,
         "cost" => 5,
         "weight" => 1,
-        "tags" => EquipmentTag::UTILITY
+        "tags" => EquipmentTag::UTILITY,
+
+        "description" => [ paragraph("A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.") ]
     ],
     // Tools
     [
@@ -174,16 +213,9 @@ $equipment = [
         "type" => EquipmentType::TOOL,
         "cost" => 50,
         "weight" => 8,
-        "tags" => EquipmentTag::UTILITY
-    ],
-    // Weapons (Ranged, Firearm)
-    [
-        // https://www.dndbeyond.com/equipment/antimatter-rifle
-        "name" => "Antimatter Rifle",
-        "type" => EquipmentType::WEAPON_RANGED_FIREARM,
-        "cost" => null,
-        "weight" => 10,
-        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE)
+        "tags" => EquipmentTag::UTILITY,
+
+        "description" => [ paragraph("These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.") ]
     ]
 ];
 
