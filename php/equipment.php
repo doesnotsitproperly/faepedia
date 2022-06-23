@@ -26,9 +26,9 @@
                 <tr id="<?= $item["name"]; ?>">
                     <td><?= $item["type"]; ?></td>
                     <td><b><?= $item["name"]; ?></b></td>
-                    <td><?= pluralize($item["cost"], "gold piece", "cost"); ?></td>
-                    <td><?= pluralize($item["weight"], "pound", "weight"); ?></td>
-                    <td><?= strlen($item["tags"]) > 0 ? $item["tags"] : "No applicable tags"; ?></td>
+                    <td><?= $item["cost"] == null ? "No applicable cost" : pluralize($item["cost"], "gold piece") ; ?></td>
+                    <td><?= $item["weight"] == null ? "No applicable weight" : pluralize($item["weight"], "pound"); ?></td>
+                    <td><?= $item["tags"] == null ? "No applicable tags" : $item["tags"]; ?></td>
                 </tr>
 <?php endforeach; ?>
             </tbody>

@@ -14,15 +14,10 @@ function unordered_list(string ...$s): string {
     return "<ul>" . $items . "</ul>";
 }
 
-function pluralize(float $number, string $units, string $aspect): string {
-    $new_string = "";
-    if ($number > 0) {
-        $new_string = strval($number) . " " . $units;
-        if ($number > 1 || $number < 1) {
-            $new_string .= "s";
-        }
-    } else {
-        $new_string = "No applicable " . $aspect;
+function pluralize(float $number, string $units): string {
+    $new_string = strval($number) . " " . $units;
+    if ($number > 1 || $number < 1) {
+        $new_string .= "s";
     }
     return $new_string;
 }
@@ -100,8 +95,8 @@ $equipment = [
         // https://www.dndbeyond.com/equipment/alms-box
         "name" => "Alms Box",
         "type" => EquipmentType::ADVENTURING_GEAR,
-        "cost" => 0,
-        "weight" => 0,
+        "cost" => null,
+        "weight" => null,
         "tags" => EquipmentTag::UTILITY
     ],
     [
@@ -109,7 +104,7 @@ $equipment = [
         "name" => "Antitoxin",
         "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 50,
-        "weight" => 0,
+        "weight" => null,
         "tags" => join_list(EquipmentTag::HEALING, EquipmentTag::UTILITY)
     ],
     // Gemstones
@@ -119,23 +114,23 @@ $equipment = [
         "type" => EquipmentType::GEMSTONE,
         "cost" => 500,
         "weight" => 0,
-        "tags" => ""
+        "tags" => null
     ],
     [
         // https://www.dndbeyond.com/equipment/amber
         "name" => "Amber",
         "type" => EquipmentType::GEMSTONE,
         "cost" => 100,
-        "weight" => 0,
-        "tags" => ""
+        "weight" => null,
+        "tags" => null
     ],
     [
         // https://www.dndbeyond.com/equipment/amethyst
         "name" => "Amethyst",
         "type" => EquipmentType::GEMSTONE,
         "cost" => 100,
-        "weight" => 0,
-        "tags" => ""
+        "weight" => null,
+        "tags" => null
     ],
     // Holy Symbols
     [
@@ -160,7 +155,7 @@ $equipment = [
         // https://www.dndbeyond.com/equipment/antimatter-rifle
         "name" => "Antimatter Rifle",
         "type" => EquipmentType::WEAPON_RANGED_FIREARM,
-        "cost" => 0,
+        "cost" => null,
         "weight" => 10,
         "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE)
     ]
