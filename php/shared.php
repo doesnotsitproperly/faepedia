@@ -107,6 +107,24 @@ $equipment = [
         "weight" => null,
         "tags" => join_list(EquipmentTag::HEALING, EquipmentTag::UTILITY)
     ],
+    // Ammunitions
+    [
+        // https://www.dndbeyond.com/equipment/arrows
+        "name" => "Arrows",
+        "type" => EquipmentType::AMMUNITION,
+        "cost" => 1,
+        "weight" => 1,
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE)
+    ],
+    // Arcane Focuses
+    [
+        // https://www.dndbeyond.com/equipment/arcane-focus
+        "name" => "Arcane Focus",
+        "type" => EquipmentType::ARCANE_FOCUS,
+        "cost" => null,
+        "weight" => null,
+        "tags" => EquipmentTag::UTILITY
+    ],
     // Gemstones
     [
         // https://www.dndbeyond.com/equipment/alexandrite
@@ -129,6 +147,14 @@ $equipment = [
         "name" => "Amethyst",
         "type" => EquipmentType::GEMSTONE,
         "cost" => 100,
+        "weight" => null,
+        "tags" => null
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/aquamarine
+        "name" => "Aquamarine",
+        "type" => EquipmentType::GEMSTONE,
+        "cost" => 500,
         "weight" => null,
         "tags" => null
     ],
