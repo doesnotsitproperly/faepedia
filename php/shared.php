@@ -62,6 +62,7 @@ class EquipmentTag {
     const MOVEMENT = "Movement";
     const RELOADING = "Reloading";
     const UTILITY = "Utility";
+    const WARDING = "Warding";
 }
 
 class WeaponProperty {
@@ -165,7 +166,7 @@ $equipment = [
     [
         // https://www.dndbeyond.com/equipment/barrel
         "name" => "Barrel",
-        "type" => EquipmentTag::ADVENTURING_GEAR,
+        "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 2,
         "weight" => 70,
         "tags" => EquipmentTag::CONTAINER,
@@ -175,7 +176,7 @@ $equipment = [
     [
         // https://www.dndbeyond.com/equipment/basket
         "name" => "Basket",
-        "type" => EquipmentTag::ADVENTURING_GEAR,
+        "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 0.4,
         "weight" => 2,
         "tags" => EquipmentTag::CONTAINER,
@@ -185,7 +186,7 @@ $equipment = [
     [
         // https://www.dndbeyond.com/equipment/bedroll
         "name" => "Bedroll",
-        "type" => EquipmentTag::ADVENTURING_GEAR,
+        "type" => EquipmentType::ADVENTURING_GEAR,
         "cost" => 1,
         "weight" => 7,
         "tags" => EquipmentTag::UTILITY,
@@ -322,7 +323,7 @@ $equipment = [
     [
         // https://www.dndbeyond.com/equipment/battleaxe
         "name" => "Battleaxe",
-        "type" => EquipmentType::WEAPON_MARTIAL_MELEE,
+        "type" => EquipmentType::WEAPON_MELEE_MARTIAL,
         "cost" => 10,
         "weight" => 4,
         "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE),
