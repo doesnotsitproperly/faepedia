@@ -132,6 +132,66 @@ $equipment = [
 
         "description" => [ paragraph("A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.") ]
     ],
+    [
+        // https://www.dndbeyond.com/equipment/backpack
+        "name" => "Backpack",
+        "type" => EquipmentType::ADVENTURING_GEAR,
+        "cost" => 2,
+        "weight" => 5,
+        "tags" => EquipmentTag::CONTAINER,
+
+        "description" => [ paragraph("A backpack is a leather pack carried on the back, typically with straps to secure it. A backpack can hold 1 cubic foot/ 30 pounds of gear."), paragraph("You can also strap items, such as a bedroll or a coil of rope, to the outside of a backpack.") ]
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/ball-bearings-bag-of-1-000
+        "name" => "Ball Bearings (Bag of 1,000)",
+        "type" => EquipmentType::ADVENTURING_GEAR,
+        "cost" => 1,
+        "weight" => 2,
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::CONTROL, EquipmentTag::UTILITY),
+
+        "description" => [ paragraph("As an action, you can spill these tiny metal balls from their pouch to cover a level, square area that is 10 feet on a side. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the save.") ]
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/barding
+        "name" => "Barding",
+        "type" => EquipmentType::ADVENTURING_GEAR,
+        "cost" => null,
+        "weight" => null,
+        "tags" => EquipmentTag::WARDING,
+
+        "description" => null // Table
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/barrel
+        "name" => "Barrel",
+        "type" => EquipmentTag::ADVENTURING_GEAR,
+        "cost" => 2,
+        "weight" => 70,
+        "tags" => EquipmentTag::CONTAINER,
+
+        "description" => [ paragraph("A barrel can hold 40 gallons of liquid, or 4 cubic feet of solid material.") ]
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/basket
+        "name" => "Basket",
+        "type" => EquipmentTag::ADVENTURING_GEAR,
+        "cost" => 0.4,
+        "weight" => 2,
+        "tags" => EquipmentTag::CONTAINER,
+
+        "description" => [ paragraph("A basket can hold 2 cubic feet / 40 pounds of gear.") ]
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/bedroll
+        "name" => "Bedroll",
+        "type" => EquipmentTag::ADVENTURING_GEAR,
+        "cost" => 1,
+        "weight" => 7,
+        "tags" => EquipmentTag::UTILITY,
+
+        "description" => [ paragraph("You never know where you're going to sleep, and a bedroll helps you get better sleep in a hayloft or on the cold ground. A bedroll consists of bedding and a blanket thin enough to be rolled up and tied. In an emergency, it can double as a stretcher.") ]
+    ],
     // Ammunitions
     [
         // https://www.dndbeyond.com/equipment/arrows
@@ -195,6 +255,26 @@ $equipment = [
 
         "description" => [ paragraph("A transparent pale blue-green gemstone worth 500 gold pieces.") ]
     ],
+    [
+        // https://www.dndbeyond.com/equipment/azurite
+        "name" => "Azurite",
+        "type" => EquipmentType::GEMSTONE,
+        "cost" => 10,
+        "weight" => null,
+        "tags" => null,
+
+        "description" => [ paragraph("An opaque mottled deep blue gemstone worth 10 gold pieces.") ]
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/banded-agate
+        "name" => "Banded Agate",
+        "type" => EquipmentType::GEMSTONE,
+        "cost" => 10,
+        "weight" => null,
+        "tags" => null,
+
+        "description" => [ paragraph("A translucent striped brown, blue, white, or red gemstone worth 10 gold pieces.") ]
+    ],
     // Holy Symbols
     [
         // https://www.dndbeyond.com/equipment/amulet
@@ -206,6 +286,17 @@ $equipment = [
 
         "description" => [ paragraph("A holy symbol is a representation of a god or pantheon. A cleric or paladin can use a holy symbol as a spellcasting focus, as described in the Spellcasting section. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.") ]
     ],
+    // Poisons
+    [
+        // https://www.dndbeyond.com/equipment/assassins-blood-ingested
+        "name" => "Assassin's Blood (Ingested)",
+        "type" => EquipmentType::POISON,
+        "cost" => 150,
+        "weight" => null,
+        "tags" => join_list(EquipmentTag::CONSUMABLE, EquipmentTag::DAMAGE),
+
+        "description" => [ paragraph("A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn't poisoned."), paragraph(bold("Ingested:") . " A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You may decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save.") ]
+    ],
     // Tools
     [
         // https://www.dndbeyond.com/equipment/alchemists-supplies
@@ -216,6 +307,27 @@ $equipment = [
         "tags" => EquipmentTag::UTILITY,
 
         "description" => [ paragraph("These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.") ]
+    ],
+    [
+        // https://www.dndbeyond.com/equipment/bagpipes
+        "name" => "Bagpipes",
+        "type" => EquipmentType::TOOL,
+        "cost" => 30,
+        "weight" => 6,
+        "tags" => EquipmentTag::INSTRUMENT,
+
+        "description" => [ paragraph("If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use bagpipes as a spellcasting focus.") ]
+    ],
+    // Weapons (Melee, Martial)
+    [
+        // https://www.dndbeyond.com/equipment/battleaxe
+        "name" => "Battleaxe",
+        "type" => EquipmentType::WEAPON_MARTIAL_MELEE,
+        "cost" => 10,
+        "weight" => 4,
+        "tags" => join_list(EquipmentTag::COMBAT, EquipmentTag::DAMAGE),
+
+        "description" => null // Table
     ]
 ];
 
