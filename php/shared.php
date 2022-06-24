@@ -393,15 +393,15 @@ $monsters = [
 
 class SpellLevel {
     const CANTRIP = "Cantrip";
-    const FIRST = "1st level";
-    const SECOND = "2nd level";
-    const THIRD = "3rd level";
-    const FOURTH = "4th level";
-    const FIFTH = "5th level";
-    const SIXTH = "6th level";
-    const SEVENTH = "7th level";
-    const EIGHTH = "8th level";
-    const NINTH = "9th level";
+    const FIRST = "1st Level";
+    const SECOND = "2nd Level";
+    const THIRD = "3rd Level";
+    const FOURTH = "4th Level";
+    const FIFTH = "5th Level";
+    const SIXTH = "6th Level";
+    const SEVENTH = "7th Level";
+    const EIGHTH = "8th Level";
+    const NINTH = "9th Level";
 }
 
 class SpellSchool {
@@ -1140,7 +1140,9 @@ $spells = [
         "components" => SpellComponent::SOMATIC,
         "duration" => "1 Round",
 
-        "description" => [ paragraph("The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends."), paragraph(bold("At higher levels:") . " When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st."), paragraph(bold("Note:") . " which you take when you take acid, cold, fire, lightning, or thunder damage") ]
+        "description" => [ paragraph("The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends."), paragraph(bold("At higher levels:") . " When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st."), paragraph(bold("Note:") . " which you take when you take acid, cold, fire, lightning, or thunder damage") ],
+
+        "classes" => join_list(SpellClass::ARTIFICER, SpellClass::DRUID, SpellClass::RANGER, SpellClass::SORCERER, SpellClass::WIZARD)
     ],
     /* [
         // https://www.dndbeyond.com/spells/alarm
