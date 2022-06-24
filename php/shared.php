@@ -497,7 +497,7 @@ $spells = [
         "classes" => join_list(SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
     ],
     [
-        // http://dnd5e.wikidot.com/spell:control-flames
+        // https://www.dndbeyond.com/spells/control-flames
         "name" => "Control Flames",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::TRANSMUTATION,
@@ -505,14 +505,14 @@ $spells = [
         "casting_time" => "1 Action",
         "range_area" => "60 feet",
         "components" => SpellComponent::SOMATIC,
-        "duration" => "Instant or 1 hour",
+        "duration" => "Instant",
 
         "description" => [ paragraph("You choose a nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:"), unordered_list("You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.", "You instantaneously extinguish the flames within the cube.", "You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.", "You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour."), paragraph("If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.") ],
 
         "classes" => join_list(SpellClass::DRUID, SpellClass::SORCERER, SpellClass::WIZARD)
     ],
     [
-        // http://dnd5e.wikidot.com/spell:create-bonfire
+        // https://www.dndbeyond.com/spells/create-bonfire
         "name" => "Create Bonfire",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::CONJURATION,
@@ -522,9 +522,9 @@ $spells = [
         "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC),
         "duration" => "Concentration, up to 1 minute",
 
-        "description" => [ paragraph("You create a bonfire on ground that you can see within range. Until the spell ends, the bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire's space for the first time on a turn or ends its turn there."), paragraph(bold("At higher levels:") . " The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).") ],
+        "description" => [ paragraph("You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there."), paragraph("The bonfire ignites flammable objects in its area that aren't being worn or carried."), paragraph("The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).") ],
 
-        "classes" => join_list(SpellClass::DRUID, SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
+        "classes" => join_list(SpellClass::ARTIFICER, SpellClass::DRUID, SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
     ],
     [
         // https://www.dndbeyond.com/spells/dancing-lights
@@ -542,7 +542,7 @@ $spells = [
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::BARD, SpellClass::SORCERER, SpellClass::WIZARD)
     ],
     [
-        // https://www.dndbeyond.com/spells/DRUIDcraft
+        // https://www.dndbeyond.com/spells/druidcraft
         "name" => "Druidcraft",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::TRANSMUTATION,
@@ -617,6 +617,7 @@ $spells = [
         "classes" => join_list(SpellClass::BARD, SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
     ],
     [
+        // https://www.dndbeyond.com/spells/frostbite
         // http://dnd5e.wikidot.com/spell:frostbite
         "name" => "Frostbite",
         "level" => SpellLevel::CANTRIP,
@@ -627,7 +628,7 @@ $spells = [
         "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC),
         "duration" => "Instant",
 
-        "description" => [ paragraph("You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn."), paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
+        "description" => [ paragraph("You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn."), paragraph("The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
 
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::DRUID, SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
     ],
@@ -662,7 +663,7 @@ $spells = [
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::CLERIC, SpellClass::DRUID)
     ],
     [
-        // http://dnd5e.wikidot.com/spell:gust
+        // https://www.dndbeyond.com/spells/gust
         "name" => "Gust",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::TRANSMUTATION,
@@ -672,7 +673,7 @@ $spells = [
         "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC),
         "duration" => "Instant",
 
-        "description" => [ paragraph("You seize the air and compel it to create one of the following effects at a point you can see within range:"), unordered_list("One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.", "You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.", "You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.") ],
+        "description" => [ paragraph("You seize the air and compel it to create one of the following effects at a point you can see within range:"), unordered_list("One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.", "You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.", "You create a harmless sensory effect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to ripple in a breeze.") ],
 
         "classes" => join_list(SpellClass::DRUID, SpellClass::SORCERER, SpellClass::WIZARD)
     ],
@@ -737,7 +738,7 @@ $spells = [
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::BARD, SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
     ],
     [
-        // http://dnd5e.wikidot.com/spell:magic-stone
+        // https://www.dndbeyond.com/spells/magic-stone
         "name" => "Magic Stone",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::TRANSMUTATION,
@@ -747,7 +748,7 @@ $spells = [
         "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC),
         "duration" => "1 minute",
 
-        "description" => [ paragraph("You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 . your spellcasting ability modifier. Hit or miss, the spell then ends on the stone."), paragraph("If you cast this spell again, the spell ends early on any pebbles still affected by it.") ],
+        "description" => [ paragraph("You touch one to three pebbles and imbue them with magic. You or someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit, the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone."), paragraph("If you cast this spell again, the spell ends early on any pebbles still affected by it.") ],
 
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::DRUID, SpellClass::WARLOCK)
     ],
@@ -812,7 +813,7 @@ $spells = [
         "classes" => join_list(SpellClass::BARD, SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
     ],
     [
-        // http://dnd5e.wikidot.com/spell:mold-earth
+        // https://www.dndbeyond.com/spells/mold-earth
         "name" => "Mold Earth",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::TRANSMUTATION,
@@ -820,7 +821,7 @@ $spells = [
         "casting_time" => "1 Action",
         "range_area" => "30 feet",
         "components" => SpellComponent::SOMATIC,
-        "duration" => "Instant or 1 hour",
+        "duration" => "Instant",
 
         "description" => [ paragraph("You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:") . unordered_list("If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't have enough force to cause damage.", "You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.", "If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour."), paragraph("If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.") ],
 
@@ -947,7 +948,7 @@ $spells = [
         "classes" => SpellClass::WIZARD
     ],
     [
-        // http://dnd5e.wikidot.com/spell:shape-water
+        // https://www.dndbeyond.com/spells/shape-water
         "name" => "Shape Water",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::TRANSMUTATION,
@@ -955,7 +956,7 @@ $spells = [
         "casting_time" => "1 Action",
         "range_area" => "30 feet",
         "components" => SpellComponent::SOMATIC,
-        "duration" => "Instant or 1 hour",
+        "duration" => "Instant",
 
         "description" => [ paragraph("You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:"), unordered_list("You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.", "You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour.", "You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.", "You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour."), paragraph("If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.") ],
 
@@ -1052,17 +1053,17 @@ $spells = [
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::DRUID)
     ],
     [
-        // http://dnd5e.wikidot.com/spell:thunderclap
+        // https://www.dndbeyond.com/spells/thunderclap
         "name" => "Thunderclap",
         "level" => SpellLevel::CANTRIP,
         "school" => SpellSchool::EVOCATION,
 
         "casting_time" => "1 Action",
-        "range_area" => "Self (5 foot radius)",
+        "range_area" => "5 feet",
         "components" => SpellComponent::SOMATIC,
         "duration" => "Instant",
 
-        "description" => [ paragraph("You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage."), paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
+        "description" => [ paragraph("You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must succeed on a Constitution saving throw or take 1d6 thunder damage."), paragraph("The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
 
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::BARD, SpellClass::DRUID, SpellClass::SORCERER, SpellClass::WARLOCK, SpellClass::WIZARD)
     ],
