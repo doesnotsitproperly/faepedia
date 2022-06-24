@@ -12,6 +12,7 @@ jobs:
       - run: pwsh ps1/build-1.ps1
       - run: php php/build.php
       - run: pwsh ps1/build-2.ps1
+      - run: pwsh ps1/build-3.ps1
 
       - run: git config user.name "github-actions[bot]"
       - run: git config user.email "github-actions[bot]@users.noreply.github.com"
