@@ -8,7 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: pwsh build.ps1
+
+      - run: pwsh .github/build-1.ps1
+      - run: php php/build.php
+      - run: pwsh .github/build-2.ps1
+
       - uses: JamesIves/github-pages-deploy-action@v4.3.0
         with:
           branch: pages
