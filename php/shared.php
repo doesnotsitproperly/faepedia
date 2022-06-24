@@ -1127,5 +1127,339 @@ $spells = [
         "description" => [ paragraph("You utter a divine word, and burning radiance erupts from you. Each creature of your choice that you can see within range must succeed on a Constitution saving throw or take 1d6 radiant damage."), paragraph(bold("At higher levels:") . " The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).") ],
 
         "classes" => SpellClass::CLERIC
-    ]
+    ],
+    // 1st-Level Spells
+    [
+        // https://www.dndbeyond.com/spells/absorb-elements
+        "name" => "Absorb Elements",
+        "level" => SpellLevel::FIRST,
+        "school" => SpellSchool::ABJURATION,
+
+        "casting_time" => "1 Reaction (see note)",
+        "range_area" => "Self",
+        "components" => SpellComponent::SOMATIC,
+        "duration" => "1 Round",
+
+        "description" => [ paragraph("The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends."), paragraph(bold("At higher levels:") . " When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st."), paragraph(bold("Note:") . " which you take when you take acid, cold, fire, lightning, or thunder damage") ]
+    ],
+    /* [
+        // https://www.dndbeyond.com/spells/alarm
+        "name" => "Alarm"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/animal-friendship
+        "name" => "Animal Friendship"
+    ],
+    [
+        //
+        "name" => "Armor of Agathys"
+    ],
+    [
+        //
+        "name" => "Arms of Hadar"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/bane
+        "name" => "Bane"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/beast-bond
+        "name" => "Beast Bond"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/bless
+        "name" => "Bless"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/burning-hands
+        "name" => "Burning Hands"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/catapult
+        "name" => "Catapult"
+    ],
+    [
+        //
+        "name" => "Cause Fear"
+    ],
+    [
+        //
+        "name" => "Ceremony"
+    ],
+    [
+        //
+        "name" => "Chaos Bolt"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/charm-person
+        "name" => "Charm Person"
+    ],
+    [
+        //
+        "name" => "Chromatic Orb"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/color-spray
+        "name" => "Color Spray"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/command
+        "name" => "Command"
+    ],
+    [
+        //
+        "name" => "Compelled Duel"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/comprehend-languages
+        "name" => "Comprehend Languages"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/create-or-destroy-water
+        "name" => "Create or Destroy Water"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/cure-wounds
+        "name" => "Cure Wounds"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/detect-evil-and-good
+        "name" => "Detect Evil and Good"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/detect-magic
+        "name" => "Detect Magic"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/detect-poison-and-disease
+        "name" => "Detect Poison and Disease"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/disguise-self
+        "name" => "Disguise Self"
+    ],
+    [
+        //
+        "name" => "Dissonant Whispers"
+    ],
+    [
+        //
+        "name" => "Distort Value"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/divine-favor
+        "name" => "Divine Favor"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/earth-tremor
+        "name" => "Earth Tremor"
+    ],
+    [
+        //
+        "name" => "Ensnaring Strike"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/entangle
+        "name" => "Entangle"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/expeditious-retreat
+        "name" => "Expeditious Retreat"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/faerie-fire
+        "name" => "Faerie Fire"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/false-life
+        "name" => "False Life"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/feather-fall
+        "name" => "Feather Fall"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/find-familiar
+        "name" => "Find Familiar"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/floating-disk
+        "name" => "Floating Disk"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/fog-cloud
+        "name" => "Fog Cloud"
+    ],
+    [
+        //
+        "name" => "Frost Fingers"
+    ],
+    [
+        //
+        "name" => "Gift of Alacrity"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/goodberry
+        "name" => "Goodberry"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/grease
+        "name" => "Grease"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/guiding-bolt
+        "name" => "Guiding Bolt"
+    ],
+    [
+        //
+        "name" => "Hail of Thorns"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/healing-word
+        "name" => "Healing Word"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/hellish-rebuke
+        "name" => "Hellish Rebuke"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/heroism
+        "name" => "Heroism"
+    ],
+    [
+        //
+        "name" => "Hex"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/hideous-laughter
+        "name" => "Hideous Laughter"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/hunters-mark
+        "name" => "Hunter's Mark"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/ice-knife
+        "name" => "Ice Knife"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/identify
+        "name" => "Identify"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/illusory-script
+        "name" => "Illusory Script"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/inflict-wounds
+        "name" => "Inflict Wounds"
+    ],
+    [
+        //
+        "name" => "Jim's Magic Missile"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/jump
+        "name" => "Jump"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/longstrider
+        "name" => "Longstrider"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/mage-armor
+        "name" => "Mage Armor"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/magic-missile
+        "name" => "Magic Missile"
+    ],
+    [
+        //
+        "name" => "Magnify Gravity"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/protection-from-evil-and-good
+        "name" => "Protection from Evil and Good"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/purify-food-and-drink
+        "name" => "Purify Food and Drink"
+    ],
+    [
+        //
+        "name" => "Ray of Sickness"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/sanctuary
+        "name" => "Sanctuary"
+    ],
+    [
+        //
+        "name" => "Searing Smite"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/shield
+        "name" => "Shield"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/shield-of-faith
+        "name" => "Shield of Faith"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/silent-image
+        "name" => "Silent Image"
+    ],
+    [
+        //
+        "name" => "Silvery Barbs"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/sleep
+        "name" => "Sleep"
+    ],
+    [
+        //
+        "name" => "Snare"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/speak-with-animals
+        "name" => "Speak with Animals"
+    ],
+    [
+        //
+        "name" => "Tasha's Caustic Brew"
+    ],
+    [
+        //
+        "name" => "Tasha's Hideous Laughter"
+    ],
+    [
+        //
+        "name" => "Tenser's Floating Disk"
+    ],
+    [
+        //
+        "name" => "Thunderous Smite"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/thunderwave
+        "name" => "Thunderwave"
+    ],
+    [
+        // https://www.dndbeyond.com/spells/unseen-servant
+        "name" => "Unseen Servant"
+    ],
+    [
+        //
+        "name" => "Witch Bolt"
+    ],
+    [
+        //
+        "name" => "Wrathful Smite"
+    ],
+    [
+        //
+        "name" => "Zephyr Strike"
+    ] */
 ];
