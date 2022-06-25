@@ -1144,15 +1144,38 @@ $spells = [
 
         "classes" => join_list(SpellClass::ARTIFICER, SpellClass::DRUID, SpellClass::RANGER, SpellClass::SORCERER, SpellClass::WIZARD)
     ],
-    /* [
+    [
         // https://www.dndbeyond.com/spells/alarm
-        "name" => "Alarm"
+        "name" => "Alarm",
+        "level" => SpellLevel::FIRST,
+        "school" => SpellSchool::ABJURATION,
+
+        "casting_time" => "1 minute (Ritual)",
+        "range_area" => "30 feet",
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("a tiny bell and a piece of fine silver wire")),
+        "duration" => "8 hours",
+
+        "description" => [ paragraph("You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible."),
+        paragraph("A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping."), paragraph("An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.") ],
+
+        "classes" => join_list(SpellClass::ARTIFICER, SpellClass::RANGER, SpellClass::WIZARD)
     ],
     [
         // https://www.dndbeyond.com/spells/animal-friendship
-        "name" => "Animal Friendship"
+        "name" => "Animal Friendship",
+        "level" => SpellLevel::FIRST,
+        "school" => SpellSchool::ENCHANTMENT,
+
+        "casting_time" => "1 Action",
+        "range_area" => "30 feet",
+        "components" => join_list(SpellComponent::VERBAL, SpellComponent::SOMATIC, SpellComponent::material("a morsel of food")),
+        "duration" => "24 hours",
+
+        "description" => [ paragraph("This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spell ends."), paragraph(bold("At higher levels:") . " When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.") ],
+
+        "classes" => join_list(SpellClass::BARD, SpellClass::DRUID, SpellClass::RANGER)
     ],
-    [
+    /* [
         //
         "name" => "Armor of Agathys"
     ],
