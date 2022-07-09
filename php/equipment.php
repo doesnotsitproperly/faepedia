@@ -25,7 +25,7 @@
 <?php foreach ($equipment as $item): ?>
                 <tr id="<?= $item["name"]; ?>">
                     <td><?= $item["type"]; ?></td>
-                    <td><b><?= $item["name"]; ?></b></td>
+                    <td><a href="equipment/<?= to_kebab_case($item["name"]); ?>"><b><?= $item["name"]; ?></b></a></td>
                     <td><?= $item["cost"] == null ? "No applicable cost" : pluralize($item["cost"], "gold piece") ; ?></td>
                     <td><?= $item["weight"] == null ? "No applicable weight" : pluralize($item["weight"], "pound"); ?></td>
                     <td><?= $item["tags"] == null ? "No applicable tags" : $item["tags"]; ?></td>

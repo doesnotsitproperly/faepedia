@@ -1,7 +1,5 @@
 #!/usr/bin/env pwsh
 
-using namespace System.IO
-
 $rootDir = (Get-Item $PSScriptRoot).Parent.FullName
 $buildDir = Join-Path $rootDir "build"
 
@@ -12,5 +10,5 @@ if (Test-Path $buildDir) {
 }
 New-Item $buildDir -ItemType "directory" | Out-Null
 
-$directorySeparatorFile = Join-Path $rootDir "directory_separator.txt"
-[File]::WriteAllText($directorySeparatorFile, [Path]::DirectorySeparatorChar)
+New-Item (Join-Path $buildDir "equipment") -ItemType "directory" | Out-Null
+New-Item (Join-Path $buildDir "spells") -ItemType "directory" | Out-Null

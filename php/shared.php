@@ -1,5 +1,6 @@
 <?php
 
+// HTML
 function bold(string $s): string {
     return "<b>" . $s . "</b>";
 }
@@ -14,6 +15,10 @@ function unordered_list(string ...$s): string {
     return "<ul>" . $items . "</ul>";
 }
 
+function join_list(string ...$s): string {
+    return implode(", ", $s);
+}
+
 function pluralize(float $number, string $units): string {
     $new_string = strval($number) . " " . $units;
     if ($number > 1 || $number < 1) {
@@ -22,8 +27,18 @@ function pluralize(float $number, string $units): string {
     return $new_string;
 }
 
-function join_list(string ...$s): string {
-    return implode(", ", $s);
+function to_kebab_case(string $s): string {
+    $new_string = "";
+    foreach (str_split($s) as $char) {
+        if (ctype_upper($char)) {
+            $new_string .= strtolower($char);
+        } elseif ($char == " ") {
+            $new_string .= "-";
+        } else {
+            $new_string .= $char;
+        }
+    }
+    return $new_string;
 }
 
 class EquipmentType {

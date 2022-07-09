@@ -1,14 +1,9 @@
 #!/usr/bin/env pwsh
 
-using namespace System.IO
-
 $rootDir = (Get-Item $PSScriptRoot).Parent.FullName
 $buildDir = Join-Path $rootDir "build"
 
 # Build (Step 2)
-
-$directorySeparatorFile = Join-Path $rootDir "directory_separator.txt"
-Remove-Item $directorySeparatorFile
 
 $items = @(
     "backgrounds"
