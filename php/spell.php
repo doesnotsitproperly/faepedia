@@ -11,12 +11,12 @@
     <body>
         <script src="../js/format.js" onload="platformFormat('../css')"></script>
         <p><a href="../spells">Back to Spells</a></p>
-        <p class="top-block"><b><?= $name; ?></b></p>
-        <p class="bottom-block"><?= $level == "Cantrip" ? $school . " cantrip" : $level . " " . $school . " spell"; ?></p>
-        <p class="top-block">Casting Time: <?= $casting_time; ?></p>
-        <p class="middle-block">Range / Area: <?= $range_area; ?></p>
-        <p class="middle-block">Components: <?= $components; ?></p>
-        <p class="bottom-block">Duration: <?= $duration; ?></p>
+        <p class="block top"><b><?= $name; ?></b></p>
+        <p class="block bottom"><?= $level == "Cantrip" ? $school . " cantrip" : $level . " " . $school . " spell"; ?></p>
+        <p class="block top">Casting Time: <?= $casting_time; ?></p>
+        <p class="block middle">Range / Area: <?= $range_area; ?></p>
+        <p class="block middle">Components: <?= $components; ?></p>
+        <p class="block bottom">Duration: <?= $duration; ?></p>
 <?php foreach ($description as $element): ?>
         <?= $element; ?>
         <?= PHP_EOL; ?>

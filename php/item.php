@@ -11,10 +11,10 @@
     <body>
         <script src="../js/format.js" onload="platformFormat('../css')"></script>
         <p><a href="../equipment">Back to Equipment</a></p>
-        <p class="top-block"><b><?= $name; ?></b></p>
-        <p class="bottom-block"><?= $type; ?></p>
-        <p class="top-block">Cost: <?= $cost > 0 ? pluralize($cost, "gold piece") : "Not applicable"; ?></p>
-        <p class="bottom-block">Weight: <?= $weight > 0 ? pluralize($weight, "pound") : "Not applicable"; ?></p>
+        <p class="block top"><b><?= $name; ?></b></p>
+        <p class="block bottom"><?= $type; ?></p>
+        <p class="block top">Cost: <?= $cost > 0 ? pluralize($cost, "gold piece") : "Not applicable"; ?></p>
+        <p class="block bottom">Weight: <?= $weight > 0 ? pluralize($weight, "pound") : "Not applicable"; ?></p>
 <?php foreach ($description as $element): ?>
         <?= $element; ?>
         <?= PHP_EOL; ?>
