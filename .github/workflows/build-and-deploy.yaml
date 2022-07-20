@@ -13,12 +13,12 @@ jobs:
         with:
           node-version: 16
       - name: Node
-      - run: |
-        npm install --location=global handlebars
-        cd node
-        npm install
-        cd ..
-        node node/build.cjs
+        run: |
+          npm install --location=global handlebars
+          cd node
+          npm install
+          cd ..
+          node node/build.cjs
 
       - uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
