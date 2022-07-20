@@ -2,52 +2,14 @@
 <html>
     <head>
         <link rel="shortcut icon" href="logo.svg">
+        <link rel="stylesheet" href="https://doesnotsitproperly.github.io/faepedia/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
+        <link rel="stylesheet" id="platformStylesheet">
         <meta charset="utf-8">
-        <style>
-            :root {
-                background-color: #5b3045;
-            }
-            body {
-                border: 3px dashed #b55f8a;
-                color: white;
-                font-family: "Cousine", monospace;
-                line-height: 2;
-                margin: 20px auto;
-                padding: 20px;
-            }
-            a {
-                color: #8cb4ff;
-                text-decoration: underline;
-            }
-            a:hover {
-                text-decoration: none;
-            }
-            a:active {
-                color: white;
-                background-color: #8cb4ff;
-                text-decoration: none;
-            }
-            .center-align {
-                text-align: center;
-            }
-        </style>
         <title>Faepedia - 404</title>
     </head>
     <body>
-        <script>
-            const body = document.getElementsByTagName("body")[0];
-
-            const isMobile = navigator.userAgent.includes("Mobi");
-            const resizeBody = () => {
-                const width = window.innerWidth * (isMobile ? 0.9 : 0.6);
-                body.style.width = `${width}px`;
-            }
-            resizeBody();
-            window.onresize = resizeBody;
-
-            body.style.fontSize = (isMobile ? 32 : 16) + "px";
-        </script>
+        <script src="https://doesnotsitproperly.github.io/js/format.js" onload="platformFormat('https://doesnotsitproperly.github.io/faepedia/css')"></script>
         <p class="center-align"><b>404</b></p>
         <p class="center-align">Page not found</p>
         <p class="center-align"><a href="https://doesnotsitproperly.github.io/faepedia/">Back to homepage</a></p>
