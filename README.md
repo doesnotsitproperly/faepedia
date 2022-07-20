@@ -5,7 +5,7 @@ An open-source (and very work-in-progress) [Dungeons & Dragons 5th edition](http
 I'm dedicated to making Faepedia accessible to as many people as I can  
 If you know a way I can improve the site, let me know (my email is doesnotsitproperly at gmail.com)!
 
-Building requires both [PowerShell](https://github.com/PowerShell/PowerShell) and [PHP](https://github.com/php/php-src)
+Build using [Node.js](https://github.com/nodejs/node) and [Handlebars](https://github.com/handlebars-lang/handlebars.js)
 
 Other useful Dungeons & Dragons sites:
 - [5e.tools](https://5e.tools/)

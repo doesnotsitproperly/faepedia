@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="../logo.svg">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
+        <link rel="stylesheet" id="platformStylesheet">
+        <meta charset="utf-8">
+        <title>Faepedia - {{name}}</title>
+    </head>
+    <body>
+        <script src="../js/format.js" onload="platformFormat('../css')"></script>
+        <p><a href="../equipment">Back to Equipment</a></p>
+        <p class="block top"><b>{{name}}</b></p>
+        <p class="block bottom">{{type}}</p>
+        <p class="block top">Cost:{{write " "}}
+            {{~#if (equal cost null)~}}
+            Not applicable
+            {{~else~}}
+            {{pluralize cost "gold piece"}}
+            {{~/if~}}
+        </p>
+        <p class="block bottom">Weight:{{write " "}}
+            {{~#if (equal weight null)~}}
+            Not applicable
+            {{~else~}}
+            {{pluralize weight "pound"}}
+            {{~/if~}}
+        </p>
+        {{#each description}}
+        {{{this}}}
+        {{/each}}
+        <p>Tags:{{write " "}}
+            {{~#if (equal tags null)~}}
+            None
+            {{~else~}}
+            {{tags}}
+            {{~/if~}}
+        </p>
+    </body>
+</html>

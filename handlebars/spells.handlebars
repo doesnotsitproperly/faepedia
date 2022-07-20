@@ -21,14 +21,14 @@
                 </tr>
             </thead>
             <tbody>
-<?php foreach ($spells as $spell): ?>
-                <tr id="<?= $spell["name"]; ?>" class="spell">
-                    <td><?= $spell["level"]; ?></td>
-                    <td><a href="spells/<?= to_kebab_case($spell["name"]); ?>"><b><?= $spell["name"]; ?></b></a></td>
-                    <td><?= $spell["school"]; ?></td>
-                    <td><?= $spell["classes"]; ?></td>
+                {{#each spells}}
+                <tr id="{{this.name}}" class="spell">
+                    <td>{{this.level}}</td>
+                    <td><a href="spells/{{kebabCase this.name}}"><b>{{this.name}}</b></a></td>
+                    <td>{{this.school}}</td>
+                    <td>{{this.classes}}</td>
                 </tr>
-<?php endforeach; ?>
+                {{/each}}
             </tbody>
         </table>
         <script src="js/spells.js"></script>

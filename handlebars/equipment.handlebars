@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="logo.svg">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
+        <link rel="stylesheet" id="platformStylesheet">
+        <meta charset="utf-8">
+        <title>Faepedia - Equipment</title>
+    </head>
+    <body>
+        <script src="js/format.js" onload="platformFormat('css')"></script>
+        <p><a href="./">Back to homepage</a></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Weight</th>
+                    <th>Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each equipment}}
+                <tr id="{{this.name}}">
+                    <td>{{this.type}}</td>
+                    <td><a href="equipment/{{kebabCase this.name}}"><b>{{this.name}}</b></a></td>
+                    <td>
+                        {{~#if (equal this.cost null)~}}
+                        No applicable cost
+                        {{~else~}}
+                        {{pluralize this.cost "gold piece"}}
+                        {{~/if~}}
+                    </td>
+                    <td>
+                        {{~#if (equal this.weight null)~}}
+                        No applicable weight
+                        {{~else~}}
+                        {{pluralize this.weight "pound"}}
+                        {{~/if~}}
+                    </td>
+                    <td>
+                        {{~#if (equal this.tags null)}}
+                        No applicable Tags
+                        {{~else~}}
+                        {{this.tags}}
+                        {{~/if~}}
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </body>
+</html>
