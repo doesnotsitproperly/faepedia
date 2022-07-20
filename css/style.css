@@ -53,3 +53,6 @@ th, td {
 .block.top {
     margin-bottom: 0;
 }
+.center-align {
+    text-align: center;
+}
