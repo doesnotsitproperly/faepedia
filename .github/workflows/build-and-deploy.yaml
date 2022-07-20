@@ -12,11 +12,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: >
-        cd node
-        npm install
-        cd ..
-        node node/build.cjs
+      - run: cd node
+      - run: npm install
+      - run: cd ..
+      - run: node node/build.cjs
 
       - uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
