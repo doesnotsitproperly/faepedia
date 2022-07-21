@@ -98,7 +98,6 @@ const spellLevel = {
 const spellSchool = {
     abjuration: "🛡️ Abjuration",
     conjuration: "🔀 Conjuration",
-    conjuration: "🔀 Conjuration",
     divination: "🔮 Divination",
     enchantment: "😵‍💫 Enchantment",
     evocation: "🪄 Evocation",
