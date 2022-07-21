@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="logo.svg">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
+        <link rel="stylesheet" id="platformStylesheet">
+        <meta charset="utf-8">
+        <title>Faepedia - Backgrounds</title>
+    </head>
+    <body>
+        <script src="https://doesnotsitproperly.github.io/js/format.js" onload="platformFormat('css')"></script>
+        <p><a href="./">Back to homepage</a></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Skill Proficiencies</th>
+                    <th>Tool Proficiencies</th>
+                    <th>Languages</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each backgrounds}}
+                <tr id="{{this.name}}">
+                    <td><a href="backgrounds/{{kebabCase this.name}}"><b>{{this.name}}</b></a></td>
+                    <td>
+                        {{~#if (equal this.skillProficiencies null)~}}
+                        No applicable skill proficiencies
+                        {{~else~}}
+                        {{this.skillProficiencies}}
+                        {{~/if~}}
+                    </td>
+                    <td>
+                        {{~#if (equal this.toolProficiencies null)~}}
+                        No applicable tool proficiencies
+                        {{~else~}}
+                        {{this.toolProficiencies}}
+                        {{~/if~}}
+                    </td>
+                    <td>
+                        {{~#if (equal this.languages null)~}}
+                        No applicable languages
+                        {{~else~}}
+                        {{this.languages}}
+                        {{~/if~}}
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <script src="js/spells.js"></script>
+    </body>
+</html>

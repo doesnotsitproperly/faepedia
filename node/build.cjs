@@ -13,6 +13,7 @@ if (fs.existsSync(buildDir)) {
 }
 fs.mkdirSync(buildDir);
 
+fs.mkdirSync(path.join(buildDir, "backgrounds"));
 fs.mkdirSync(path.join(buildDir, "equipment"));
 fs.mkdirSync(path.join(buildDir, "spells"));
 
@@ -20,6 +21,18 @@ handlebars.registerHelper("equal", equal);
 handlebars.registerHelper("kebabCase", kebabCase);
 handlebars.registerHelper("pluralize", pluralize);
 handlebars.registerHelper("write", write);
+
+// Backgrounds
+
+const backgroundsText = read(path.join(handlebarsDir, "backgrounds.handlebars"));
+const backgroundsRender = handlebars.compile(backgroundsText);
+fs.writeFileSync(path.join(buildDir, "backgrounds.html"), backgroundsRender(renderData));
+
+const backgroundText = read(path.join(handlebarsDir, "background.handlebars"));
+const backgroundRender = handlebars.compile(backgroundText);
+for (const background of renderData.backgrounds) {
+    fs.writeFileSync(path.join(buildDir, "backgrounds", kebabCase(background.name) + ".html"), backgroundRender(background));
+}
 
 // Equipment
 
@@ -46,7 +59,6 @@ for (const spell of renderData.spells) {
 }
 
 const dirs = [
-    "backgrounds",
     "classes",
     "css",
     "js",
@@ -65,7 +77,6 @@ for (const item of dirs) {
 
 const files = [
     "404.html",
-    "backgrounds.html",
     "classes.html",
     "feats.html",
     "index.html",

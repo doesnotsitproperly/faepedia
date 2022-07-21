@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="../logo.svg">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
+        <link rel="stylesheet" id="platformStylesheet">
+        <meta charset="utf-8">
+        <title>Faepedia - {{name}}</title>
+    </head>
+    <body>
+        <script src="https://doesnotsitproperly.github.io/js/format.js" onload="platformFormat('../css')"></script>
+        <p><a href="../backgrounds">Back to Backgrounds</a></p>
+        <p><b>{{name}}</b></p>
+        <p class="block top">Skill Proficiencies:{{write " "}}
+            {{~#if (equal skillProficiencies null)~}}
+            Not applicable
+            {{~else~}}
+            {{skillProficiencies}}
+            {{~/if~}}
+        </p>
+        <p class="block middle">Tool Proficiencies:{{write " "}}
+            {{~#if (equal toolProficiencies null)~}}
+            Not applicable
+            {{~else~}}
+            {{toolProficiencies}}
+            {{~/if~}}
+        </p>
+        <p class="block bottom">Languages:{{write " "}}
+            {{~#if (equal languages null)~}}
+            Not applicable
+            {{~else~}}
+            {{languages}}
+            {{~/if~}}
+        </p>
+        <p>Feature: {{feature.name}}</p>
+        {{#each feature.description}}
+        {{{this}}}
+        {{/each}}
+    </body>
+</html>
