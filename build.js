@@ -67,7 +67,6 @@ for (const spell of renderData.spells) {
 // HTML files
 
 const dirs = [
-    path.join(rootDir, "css"),
     path.join(rootDir, "js"),
     path.join(htmlDir, "classes")
 ];
@@ -93,5 +92,6 @@ for (const file of files) {
     fs.copyFileSync(path.join(htmlDir, file), path.join(buildDir, file));
 }
 fs.copyFileSync(path.join(rootDir, "icon.svg"), path.join(buildDir, "icon.svg"));
+fs.copyFileSync(path.join(rootDir, "style.css"), path.join(buildDir, "style.css"));
 fs.copyFileSync(path.join(rootDir, "LICENSE"), path.join(buildDir, "LICENSE"));
 fs.copyFileSync(path.join(rootDir, "README.md"), path.join(buildDir, "README.md"));
