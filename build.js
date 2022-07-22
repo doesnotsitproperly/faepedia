@@ -92,6 +92,6 @@ const files = [
 for (const file of files) {
     fs.copyFileSync(path.join(htmlDir, file), path.join(buildDir, file));
 }
-fs.copyFileSync(path.join(rootDir, "logo.svg"), path.join(buildDir, "logo.svg"));
+fs.copyFileSync(path.join(rootDir, "icon.svg"), path.join(buildDir, "icon.svg"));
 fs.copyFileSync(path.join(rootDir, "LICENSE"), path.join(buildDir, "LICENSE"));
 fs.copyFileSync(path.join(rootDir, "README.md"), path.join(buildDir, "README.md"));
