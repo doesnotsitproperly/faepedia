@@ -56,3 +56,26 @@ th, td {
 .center-align {
     text-align: center;
 }
+
+@media (orientation: landscape) {
+    body {
+        font-size: 1.2em;
+        width: 60vw;
+    }
+    footer {
+        font-size: 80%;
+    }
+    table {
+        font-size: 85%;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        font-size: 2.4em;
+        width: 90vw;
+    }
+    footer {
+        font-size: 50%;
+    }
+}
