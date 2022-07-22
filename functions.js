@@ -1,4 +1,4 @@
-const fs = require("node:fs");
+import * as fs from "node:fs";
 
 const bold = (s) => `<b>${s}</b>`;
 
@@ -46,7 +46,7 @@ const unorderedList = (...s) => {
 
 const write = (s) => s;
 
-module.exports = {
+export {
     bold,
     equal,
     joinList,

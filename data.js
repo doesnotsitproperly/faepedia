@@ -1,4 +1,4 @@
-const { bold, joinList, paragraph, unorderedList } = require("./functions.cjs");
+import { bold, joinList, paragraph, unorderedList } from "./functions.js";
 
 const backgroundSkillProficiency = {
     insight: "Insight",
@@ -1679,6 +1679,6 @@ const renderData = {
     ]
 };
 
-module.exports = {
+export {
     renderData
 };
