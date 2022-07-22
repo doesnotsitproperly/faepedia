@@ -2,7 +2,7 @@
 <!DOCTYPE svg>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="16.9312mm" height="16.9312mm" viewBox="0 0 64 64">
-    <path id="Selection" fill="#b55f8a" stroke="#b55f8a" stroke-width="1"
+    <path id="Selection" fill="#B55F8A" stroke="#B55F8A" stroke-width="1"
         d="M 20.00, 30.00
            C 14.91, 27.52 11.02, 21.73 14.02, 16.09
              15.17, 13.93 18.07, 11.72 20.00, 10.21
