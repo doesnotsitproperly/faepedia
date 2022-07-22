@@ -3,12 +3,12 @@
 }
 
 a {
-    color: #8CB4FF;
+    color: #BDD4FF;
     text-decoration: underline;
 }
 a:active {
-    background-color: #8CB4FF;
-    color: white;
+    background-color: #BDD4FF;
+    color: #003699;
     text-decoration: none;
 }
 a:hover {
