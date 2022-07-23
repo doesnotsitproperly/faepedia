@@ -14,6 +14,8 @@ const buildDir = path.join(rootDir, "build");
 const handlebarsDir = path.join(rootDir, "handlebars");
 const htmlDir = path.join(rootDir, "html");
 
+const dataDir = path.join(buildDir, "data");
+
 if (fs.existsSync(buildDir)) {
     fs.rmSync(buildDir, { recursive: true });
 }
@@ -23,10 +25,30 @@ fs.mkdirSync(path.join(buildDir, "backgrounds"));
 fs.mkdirSync(path.join(buildDir, "equipment"));
 fs.mkdirSync(path.join(buildDir, "spells"));
 
+fs.mkdirSync(dataDir);
+
 Handlebars.registerHelper("equal", equal);
 Handlebars.registerHelper("kebabCase", kebabCase);
 Handlebars.registerHelper("pluralize", pluralize);
 Handlebars.registerHelper("write", write);
+
+// JSON API
+
+let spellsData = [];
+for (const i in renderData.spells) {
+    const spell = Object.assign({}, renderData.spells[i]);
+
+    spell.school = spell.school.replace(new RegExp(/🛡️|🔀|🔮|😵‍💫|🪄|❓|☠️|🔁| /, "g"), "");
+    spell.description = [];
+    for (const j in renderData.spells[i].description) {
+        spell.description.push(renderData.spells[i].description[j].replace(new RegExp(/<b>|<\/b>|<li>|<\/<li>|<p>|<\/p>|<ul>|<\/ul>/, "g"), ""));
+    }
+
+    spellsData.push(spell);
+}
+
+const spellsString = JSON.stringify(spellsData, null, 4);
+fs.writeFileSync(path.join(dataDir, "spells.json"), spellsString);
 
 // Backgrounds
 
@@ -64,7 +86,7 @@ for (const spell of renderData.spells) {
     fs.writeFileSync(path.join(buildDir, "spells", kebabCase(spell.name) + ".html"), spellRender(spell));
 }
 
-// HTML files
+// Other files
 
 const dirs = [
     path.join(rootDir, "js"),
