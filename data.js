@@ -914,7 +914,7 @@ const renderData = {
             // https://www.dndbeyond.com/spells/minor-illusion
             level: spellLevel.cantrip,
             name: "Minor Illusion",
-            school: spellSchool.ILLUSION,
+            school: spellSchool.illusion,
             classes: joinList(spellClass.bard, spellClass.sorcerer, spellClass.warlock, spellClass.wizard),
 
             castingTime: "1 Action",
@@ -1365,11 +1365,11 @@ const renderData = {
             ]
         },
         /* {
-            //
+            // http://dnd5e.wikidot.com/spell:armor-of-agathys
             name: "Armor of Agathys"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:arms-of-hadar
             name: "Arms of Hadar"
         },
         {
@@ -1393,15 +1393,15 @@ const renderData = {
             name: "Catapult"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:cause-fear
             name: "Cause Fear"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:ceremony
             name: "Ceremony"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:chaos-bolt
             name: "Chaos Bolt"
         },
         {
@@ -1409,7 +1409,7 @@ const renderData = {
             name: "Charm Person"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:chromatic-orb
             name: "Chromatic Orb"
         },
         {
@@ -1421,7 +1421,7 @@ const renderData = {
             name: "Command"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:compelled-duel
             name: "Compelled Duel"
         },
         {
@@ -1453,11 +1453,11 @@ const renderData = {
             name: "Disguise Self"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:dissonant-whispers
             name: "Dissonant Whispers"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:distort-value
             name: "Distort Value"
         },
         {
@@ -1469,7 +1469,7 @@ const renderData = {
             name: "Earth Tremor"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:ensnaring-strike
             name: "Ensnaring Strike"
         },
         {
@@ -1505,11 +1505,11 @@ const renderData = {
             name: "Fog Cloud"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:frost-fingers
             name: "Frost Fingers"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:gift-of-alacrity
             name: "Gift of Alacrity"
         },
         {
@@ -1525,7 +1525,7 @@ const renderData = {
             name: "Guiding Bolt"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:hail-of-thorns
             name: "Hail of Thorns"
         },
         {
@@ -1541,7 +1541,7 @@ const renderData = {
             name: "Heroism"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:hex
             name: "Hex"
         },
         {
@@ -1569,7 +1569,7 @@ const renderData = {
             name: "Inflict Wounds"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:jims-magic-missile
             name: "Jim's Magic Missile"
         },
         {
@@ -1589,7 +1589,7 @@ const renderData = {
             name: "Magic Missile"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:magnify-gravity
             name: "Magnify Gravity"
         },
         {
@@ -1601,7 +1601,7 @@ const renderData = {
             name: "Purify Food and Drink"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:ray-of-sickness
             name: "Ray of Sickness"
         },
         {
@@ -1609,7 +1609,7 @@ const renderData = {
             name: "Sanctuary"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:searing-smite
             name: "Searing Smite"
         },
         {
@@ -1625,7 +1625,7 @@ const renderData = {
             name: "Silent Image"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:silvery-barbs
             name: "Silvery Barbs"
         },
         {
@@ -1633,7 +1633,7 @@ const renderData = {
             name: "Sleep"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:snare
             name: "Snare"
         },
         {
@@ -1641,19 +1641,19 @@ const renderData = {
             name: "Speak with Animals"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:tashas-caustic-brew
             name: "Tasha's Caustic Brew"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:tashas-hideous-laughter
             name: "Tasha's Hideous Laughter"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:tensers-floating-disk
             name: "Tenser's Floating Disk"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:thunderous-smite
             name: "Thunderous Smite"
         },
         {
@@ -1665,15 +1665,15 @@ const renderData = {
             name: "Unseen Servant"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:witch-bolt
             name: "Witch Bolt"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:wrathful-smite
             name: "Wrathful Smite"
         },
         {
-            //
+            // http://dnd5e.wikidot.com/spell:zephyr-strike
             name: "Zephyr Strike"
         } */
     ]
